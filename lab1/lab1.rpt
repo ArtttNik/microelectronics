@@ -1,8 +1,8 @@
-Project Information                                      c:\labs\lab1\lab1.rpt
+Project Information                     c:\labs\microelectronics\lab1\lab1.rpt
 
 MAX+plus II Compiler Report File
 Version 9.01 07/30/98
-Compiled: 09/18/21 01:13:45
+Compiled: 09/18/21 02:29:21
 
 Copyright (C) 1988-1998 Altera Corporation
 Any megafunction design, and related net list (encrypted or decrypted),
@@ -42,7 +42,7 @@ User Pins:                 2        2        0
 
 
 
-Device-Specific Information:                             c:\labs\lab1\lab1.rpt
+Device-Specific Information:            c:\labs\microelectronics\lab1\lab1.rpt
 lab1
 
 ***** Logic for device 'lab1' compiled without errors.
@@ -96,7 +96,7 @@ RESERVED = Unused I/O pin, which MUST be left unconnected.
 
 
 
-Device-Specific Information:                             c:\labs\lab1\lab1.rpt
+Device-Specific Information:            c:\labs\microelectronics\lab1\lab1.rpt
 lab1
 
 ** RESOURCE USAGE **
@@ -130,7 +130,7 @@ Synthesized logic cells:                         0/  32   (  0%)
 
 
 
-Device-Specific Information:                             c:\labs\lab1\lab1.rpt
+Device-Specific Information:            c:\labs\microelectronics\lab1\lab1.rpt
 lab1
 
 ** INPUTS **
@@ -151,7 +151,7 @@ t = Turbo logic cell
 r = Fitter-inserted logic cell
 
 
-Device-Specific Information:                             c:\labs\lab1\lab1.rpt
+Device-Specific Information:            c:\labs\microelectronics\lab1\lab1.rpt
 lab1
 
 ** OUTPUTS **
@@ -172,7 +172,7 @@ t = Turbo logic cell
 r = Fitter-inserted logic cell
 
 
-Device-Specific Information:                             c:\labs\lab1\lab1.rpt
+Device-Specific Information:            c:\labs\microelectronics\lab1\lab1.rpt
 lab1
 
 ** LOGIC CELL INTERCONNECTIONS **
@@ -196,7 +196,7 @@ Pin
 - = The logic cell or pin is not an input to the logic cell (or LAB).
 
 
-Device-Specific Information:                             c:\labs\lab1\lab1.rpt
+Device-Specific Information:            c:\labs\microelectronics\lab1\lab1.rpt
 lab1
 
 ** EQUATIONS **
@@ -221,7 +221,7 @@ Y        : INPUT;
 
 
 
-Project Information                                      c:\labs\lab1\lab1.rpt
+Project Information                     c:\labs\microelectronics\lab1\lab1.rpt
 
 ** COMPILATION SETTINGS & TIMES **
 
@@ -310,4 +310,4 @@ Compilation Times
 Memory Allocated
 -----------------
 
-Peak memory allocated during compilation  = 2,469K
+Peak memory allocated during compilation  = 2,553K
