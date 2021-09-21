@@ -1,8 +1,8 @@
-Project Information                 c:\labs\microelectronics\lab1_1\lab1_1.rpt
+Project Informationc:\labs\microelectronics\lab1\half-adder-1\half-adder-1.rpt
 
 MAX+plus II Compiler Report File
 Version 9.01 07/30/98
-Compiled: 09/18/21 14:07:54
+Compiled: 09/21/21 15:33:54
 
 Copyright (C) 1988-1998 Altera Corporation
 Any megafunction design, and related net list (encrypted or decrypted),
@@ -36,26 +36,17 @@ needed under any third party's intellectual property, are provided herein.
 Chip/                     Input   Output   Bidir         Shareable
 POF       Device          Pins    Pins     Pins     LCs  Expanders  % Utilized
 
-lab1_1    EPM7032LC44-6    3        2        0      2       0           6  %
+half-adder-1
+      EPM7032LC44-6        2        2        0      2       0           6  %
 
-User Pins:                 3        2        0  
+User Pins:                 2        2        0  
 
 
 
-Project Information                 c:\labs\microelectronics\lab1_1\lab1_1.rpt
+Device-Specific Information:c:\labs\microelectronics\lab1\half-adder-1\half-adder-1.rpt
+half-adder-1
 
-** FILE HIERARCHY **
-
-
-
-|lab1:9|
-|lab1:10|
-
-
-Device-Specific Information:        c:\labs\microelectronics\lab1_1\lab1_1.rpt
-lab1_1
-
-***** Logic for device 'lab1_1' compiled without errors.
+***** Logic for device 'half-adder-1' compiled without errors.
 
 
 
@@ -66,14 +57,14 @@ Device Options:
     Turbo Bit                                    = ON
     Security Bit                                 = OFF
 
-                                               
-                                               
-                                               
-                                               
-                                               
-                       V  G  G  G  G  G        
-                       C  N  N  N  N  N        
-              Z  Y  X  C  D  D  D  D  D  C  P  
+              R                                
+              E                                
+              S                                
+              E                                
+              R                                
+              V        V  G  G  G  G  G        
+              E        C  N  N  N  N  N        
+              D  Y  X  C  D  D  D  D  D  C  P  
             -----------------------------------_ 
           /   6  5  4  3  2  1 44 43 42 41 40   | 
 RESERVED |  7                                39 | RESERVED 
@@ -106,33 +97,33 @@ RESERVED = Unused I/O pin, which MUST be left unconnected.
 
 
 
-Device-Specific Information:        c:\labs\microelectronics\lab1_1\lab1_1.rpt
-lab1_1
+Device-Specific Information:c:\labs\microelectronics\lab1\half-adder-1\half-adder-1.rpt
+half-adder-1
 
 ** RESOURCE USAGE **
 
                                                 Shareable     External
 Logic Array Block     Logic Cells   I/O Pins    Expanders   Interconnect
 
-A:     LC1 - LC16     0/16(  0%)   3/16( 18%)   0/16(  0%)   0/36(  0%) 
-B:    LC17 - LC32     2/16( 12%)   2/16( 12%)   0/16(  0%)   3/36(  8%) 
+A:     LC1 - LC16     0/16(  0%)   2/16( 12%)   0/16(  0%)   0/36(  0%) 
+B:    LC17 - LC32     2/16( 12%)   2/16( 12%)   0/16(  0%)   2/36(  5%) 
 
 
 Total dedicated input pins used:                 0/4      (  0%)
-Total I/O pins used:                             5/32     ( 15%)
+Total I/O pins used:                             4/32     ( 12%)
 Total logic cells used:                          2/32     (  6%)
 Total shareable expanders used:                  0/32     (  0%)
 Total Turbo logic cells used:                    2/32     (  6%)
 Total shareable expanders not available (n/a):   0/32     (  0%)
-Average fan-in:                                  3.00
-Total fan-in:                                     6
+Average fan-in:                                  2.00
+Total fan-in:                                     4
 
-Total input pins required:                       3
+Total input pins required:                       2
 Total output pins required:                      2
 Total bidirectional pins required:               0
 Total logic cells required:                      2
 Total flipflops required:                        0
-Total product terms required:                    6
+Total product terms required:                    3
 Total logic cells lending parallel expanders:    0
 Total shareable expanders in database:           0
 
@@ -140,8 +131,8 @@ Synthesized logic cells:                         0/  32   (  0%)
 
 
 
-Device-Specific Information:        c:\labs\microelectronics\lab1_1\lab1_1.rpt
-lab1_1
+Device-Specific Information:c:\labs\microelectronics\lab1\half-adder-1\half-adder-1.rpt
+half-adder-1
 
 ** INPUTS **
 
@@ -150,7 +141,6 @@ lab1_1
  Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
    4    (1)  (A)      INPUT               0      0   0    0    0    2    0  X
    5    (2)  (A)      INPUT               0      0   0    0    0    2    0  Y
-   6    (3)  (A)      INPUT               0      0   0    0    0    2    0  Z
 
 
 Code:
@@ -162,16 +152,16 @@ t = Turbo logic cell
 r = Fitter-inserted logic cell
 
 
-Device-Specific Information:        c:\labs\microelectronics\lab1_1\lab1_1.rpt
-lab1_1
+Device-Specific Information:c:\labs\microelectronics\lab1\half-adder-1\half-adder-1.rpt
+half-adder-1
 
 ** OUTPUTS **
 
                                          Shareable
                                          Expanders     Fan-In    Fan-Out
  Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
-  41     17    B     OUTPUT      t        0      0   0    3    0    0    0  C
-  40     18    B     OUTPUT      t        0      0   0    3    0    0    0  P
+  41     17    B     OUTPUT      t        0      0   0    2    0    0    0  C
+  40     18    B     OUTPUT      t        0      0   0    2    0    0    0  P
 
 
 Code:
@@ -183,8 +173,8 @@ t = Turbo logic cell
 r = Fitter-inserted logic cell
 
 
-Device-Specific Information:        c:\labs\microelectronics\lab1_1\lab1_1.rpt
-lab1_1
+Device-Specific Information:c:\labs\microelectronics\lab1\half-adder-1\half-adder-1.rpt
+half-adder-1
 
 ** LOGIC CELL INTERCONNECTIONS **
 
@@ -201,33 +191,28 @@ LC      | | | A B |     Logic cells that feed LAB 'B':
 Pin
 4    -> * * | - * | <-- X
 5    -> * * | - * | <-- Y
-6    -> * * | - * | <-- Z
 
 
 * = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
 - = The logic cell or pin is not an input to the logic cell (or LAB).
 
 
-Device-Specific Information:        c:\labs\microelectronics\lab1_1\lab1_1.rpt
-lab1_1
+Device-Specific Information:c:\labs\microelectronics\lab1\half-adder-1\half-adder-1.rpt
+half-adder-1
 
 ** EQUATIONS **
 
 X        : INPUT;
 Y        : INPUT;
-Z        : INPUT;
 
 -- Node name is 'C' 
 -- Equation name is 'C', location is LC017, type is output.
- C       = LCELL( _EQ001 $  X);
-  _EQ001 = !Y &  Z
-         #  Y & !Z;
+ C       = LCELL( Y $  X);
 
 -- Node name is 'P' 
 -- Equation name is 'P', location is LC018, type is output.
- P       = LCELL( _EQ002 $  Z);
-  _EQ002 =  X &  Y & !Z
-         # !X & !Y &  Z;
+ P       = LCELL( _EQ001 $  GND);
+  _EQ001 =  X &  Y;
 
 
 
@@ -237,7 +222,7 @@ Z        : INPUT;
 
 
 
-Project Information                 c:\labs\microelectronics\lab1_1\lab1_1.rpt
+Project Informationc:\labs\microelectronics\lab1\half-adder-1\half-adder-1.rpt
 
 ** COMPILATION SETTINGS & TIMES **
 
@@ -326,4 +311,4 @@ Compilation Times
 Memory Allocated
 -----------------
 
-Peak memory allocated during compilation  = 2,497K
+Peak memory allocated during compilation  = 2,397K

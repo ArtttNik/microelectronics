@@ -27,13 +27,13 @@ RESERVED = Unused I/O pin, which MUST be left unconnected.
 
 ----------------------------------------------------------------------------
 
-CHIP "lab1" ASSIGNED TO AN EPM7032LC44-6
+CHIP "adder1" ASSIGNED TO AN EPM7032LC44-6
 GND                              : 1
 GND                              : 2
 VCC                              : 3
 X                                : 4
 Y                                : 5
-RESERVED                         : 6
+Z                                : 6
 RESERVED                         : 7
 RESERVED                         : 8
 RESERVED                         : 9
