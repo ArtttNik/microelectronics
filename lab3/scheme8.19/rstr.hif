@@ -43,7 +43,7 @@ TREE
 {
 	rstr::(0,0):(0): rstr.vhd
 	{
-		notand:1:(35,9):(10,u2): notand.vhd;
-		notand:1:(28,9):(9,u1): notand.vhd;
+		notand:1:(18,7):(5,u1): notand.vhd;
+		notand:1:(19,7):(6,u2): notand.vhd;
 	}
 }

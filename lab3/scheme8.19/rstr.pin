@@ -66,9 +66,9 @@ VCC                              : 35
 RESERVED                         : 36
 RESERVED                         : 37
 RESERVED                         : 38
-qb                               : 39
-q                                : 40
-RESERVED                         : 41
+RESERVED                         : 39
+qb                               : 40
+q                                : 41
 GND                              : 42
 GND                              : 43
 GND                              : 44

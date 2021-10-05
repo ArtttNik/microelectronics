@@ -67,8 +67,8 @@ RESERVED                         : 36
 RESERVED                         : 37
 RESERVED                         : 38
 RESERVED                         : 39
-qb                               : 40
-q                                : 41
+q                                : 40
+qb                               : 41
 GND                              : 42
 GND                              : 43
 GND                              : 44

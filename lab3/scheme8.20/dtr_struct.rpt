@@ -2,7 +2,7 @@ Project Information    c:\labs\microelectronics\lab3\scheme8.20\dtr_struct.rpt
 
 MAX+plus II Compiler Report File
 Version 9.01 07/30/98
-Compiled: 10/02/21 15:15:04
+Compiled: 10/06/21 01:28:58
 
 Copyright (C) 1988-1998 Altera Corporation
 Any megafunction design, and related net list (encrypted or decrypted),
@@ -38,7 +38,7 @@ Chip/                     Input   Output   Bidir         Shareable
 POF       Device          Pins    Pins     Pins     LCs  Expanders  % Utilized
 
 dtr_struct
-      EPM7032LC44-6        2        2        0      3       0           9  %
+      EPM7032LC44-6        2        2        0      2       3           6  %
 
 User Pins:                 2        2        0  
 
@@ -78,8 +78,8 @@ Device Options:
               E                                
               R                                
               V        V  G  G  G  G  G        
-              E        C  N  N  N  N  N     q  
-              D  l  d  C  D  D  D  D  D  q  b  
+              E        C  N  N  N  N  N  q     
+              D  l  d  C  D  D  D  D  D  b  q  
             -----------------------------------_ 
           /   6  5  4  3  2  1 44 43 42 41 40   | 
 RESERVED |  7                                39 | RESERVED 
@@ -121,28 +121,28 @@ dtr_struct
 Logic Array Block     Logic Cells   I/O Pins    Expanders   Interconnect
 
 A:     LC1 - LC16     0/16(  0%)   2/16( 12%)   0/16(  0%)   0/36(  0%) 
-B:    LC17 - LC32     3/16( 18%)   2/16( 12%)   0/16(  0%)   3/36(  8%) 
+B:    LC17 - LC32     2/16( 12%)   2/16( 12%)   3/16( 18%)   3/36(  8%) 
 
 
 Total dedicated input pins used:                 0/4      (  0%)
 Total I/O pins used:                             4/32     ( 12%)
-Total logic cells used:                          3/32     (  9%)
-Total shareable expanders used:                  0/32     (  0%)
-Total Turbo logic cells used:                    3/32     (  9%)
+Total logic cells used:                          2/32     (  6%)
+Total shareable expanders used:                  3/32     (  9%)
+Total Turbo logic cells used:                    2/32     (  6%)
 Total shareable expanders not available (n/a):   0/32     (  0%)
 Average fan-in:                                  3.00
-Total fan-in:                                     9
+Total fan-in:                                     6
 
 Total input pins required:                       2
 Total output pins required:                      2
 Total bidirectional pins required:               0
-Total logic cells required:                      3
+Total logic cells required:                      2
 Total flipflops required:                        0
-Total product terms required:                    6
+Total product terms required:                    5
 Total logic cells lending parallel expanders:    0
-Total shareable expanders in database:           0
+Total shareable expanders in database:           3
 
-Synthesized logic cells:                         1/  32   (  3%)
+Synthesized logic cells:                         0/  32   (  0%)
 
 
 
@@ -154,8 +154,8 @@ dtr_struct
                                          Shareable
                                          Expanders     Fan-In    Fan-Out
  Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
-   4    (1)  (A)      INPUT               0      0   0    0    0    2    1  d
-   5    (2)  (A)      INPUT               0      0   0    0    0    2    1  l
+   4    (1)  (A)      INPUT               0      0   0    0    0    2    0  d
+   5    (2)  (A)      INPUT               0      0   0    0    0    2    0  l
 
 
 Code:
@@ -175,28 +175,8 @@ dtr_struct
                                          Shareable
                                          Expanders     Fan-In    Fan-Out
  Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
-  41     17    B     OUTPUT      t        0      0   0    2    1    0    0  q
-  40     18    B     OUTPUT      t        0      0   0    2    1    0    0  qb
-
-
-Code:
-
-s = Synthesized pin or logic cell
-t = Turbo logic cell
-+ = Synchronous flipflop
-! = NOT gate push-back
-r = Fitter-inserted logic cell
-
-
-Device-Specific Information:c:\labs\microelectronics\lab3\scheme8.20\dtr_struct.rpt
-dtr_struct
-
-** BURIED LOGIC **
-
-                                         Shareable
-                                         Expanders     Fan-In    Fan-Out
- Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
- (39)    19    B      LCELL    s t        0      0   0    2    1    2    1  |rstr:rs|notand:u1|~6~1
+  40     18    B     OUTPUT      t        1      1   0    2    1    0    0  q
+  41     17    B     OUTPUT      t        3      1   0    2    1    2    0  qb
 
 
 Code:
@@ -215,19 +195,18 @@ dtr_struct
 
 Logic Array Block 'B':
 
-               Logic cells placed in LAB 'B'
-        +----- LC17 q
-        | +--- LC18 qb
-        | | +- LC19 |rstr:rs|notand:u1|~6~1
-        | | | 
-        | | |   Other LABs fed by signals
-        | | |   that feed LAB 'B'
-LC      | | | | A B |     Logic cells that feed LAB 'B':
-LC19 -> * * * | - * | <-- |rstr:rs|notand:u1|~6~1
+             Logic cells placed in LAB 'B'
+        +--- LC18 q
+        | +- LC17 qb
+        | | 
+        | |   Other LABs fed by signals
+        | |   that feed LAB 'B'
+LC      | | | A B |     Logic cells that feed LAB 'B':
+LC17 -> * * | - * | <-- qb
 
 Pin
-4    -> * * * | - * | <-- d
-5    -> * * * | - * | <-- l
+4    -> * * | - * | <-- d
+5    -> * * | - * | <-- l
 
 
 * = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
@@ -243,22 +222,18 @@ d        : INPUT;
 l        : INPUT;
 
 -- Node name is 'q' 
--- Equation name is 'q', location is LC017, type is output.
- q       = LCELL( _EQ001 $  GND);
-  _EQ001 =  d &  l
-         # !l &  _LC019;
+-- Equation name is 'q', location is LC018, type is output.
+ q       = LCELL( _EQ001 $  VCC);
+  _EQ001 =  qb &  _X001;
+  _X001  = EXP( d &  l);
 
 -- Node name is 'qb' 
--- Equation name is 'qb', location is LC018, type is output.
- qb      = LCELL( _EQ002 $ !_LC019);
-  _EQ002 = !d &  l &  _LC019;
-
--- Node name is '|rstr:rs|notand:u1|~6~1' 
--- Equation name is '_LC019', type is buried 
--- synthesized logic cell 
-_LC019   = LCELL( _EQ003 $  GND);
-  _EQ003 =  d &  l
-         # !l &  _LC019;
+-- Equation name is 'qb', location is LC017, type is output.
+ qb      = LCELL( _EQ002 $  VCC);
+  _EQ002 =  _X002 &  _X003;
+  _X002  = EXP(!d &  l);
+  _X003  = EXP( qb &  _X001);
+  _X001  = EXP( d &  l);
 
 
 
@@ -357,4 +332,4 @@ Compilation Times
 Memory Allocated
 -----------------
 
-Peak memory allocated during compilation  = 3,400K
+Peak memory allocated during compilation  = 3,631K

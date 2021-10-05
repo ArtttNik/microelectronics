@@ -12,13 +12,13 @@ The number of name info structs is : 10
 
 InsOrder BitField SymTableIndex NextSyn SynParent Loc ChainType NextChain ChainParent FanOut DirExp ParExp ShareExp NodeName
 -------- -------- ------------- ------- --------- --- --------- --------- ----------- ------ ------ ------ -------- --------
-"	IeE[	!	8	5	q	q
-#	IeE[	!	9	5	qb	r
-$	L8ef	!	7	5	3	(	"	#	r	p
-%	L8ef	!	6	5	2	(	"	s	o
-&	IeEA	.	15	17	:5	"*
-'	IeEA	.	15	17	:6	"+
-(	L7m!	.	15	17	3	(	"	#	~6~1	"+
-)	IeEA	:	15	17	:5	"5
-*	IeEA	:	15	17	:6	"6
-+	IdL3	:	15	17	~5~1	"5
+"	L8ei	!	7	7	1	#	q	q
+#	L8ei	!	8	7	1	"	qb	r
+$	L8ef	!	6	7	1	#	r	p
+%	L8ef	!	5	7	1	"	s	o
+&	IeEA	.	15	17	:5	"&
+'	IeEA	.	15	17	:6	"'
+(	IeEA	.	9	9	:7	"(
+)	IeEA	:	15	17	:5	"2
+*	IeEA	:	15	17	:6	"3
++	IeEA	:	9	9	:7	"4

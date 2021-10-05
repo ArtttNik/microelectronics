@@ -20,7 +20,7 @@
 
 -- MAX+plus II Include File
 -- Version 9.0 07/10/98
--- Created: Fri Oct 17 23:49:14 2025
+-- Created: Wed Oct 06 01:09:27 2021
 
 FUNCTION rstr (s, r)
     RETURNS (q, qb);

@@ -2,7 +2,7 @@ Project Information    c:\labs\microelectronics\lab3\scheme8.20\scheme8_20.rpt
 
 MAX+plus II Compiler Report File
 Version 9.01 07/30/98
-Compiled: 10/02/21 15:03:02
+Compiled: 10/06/21 01:13:08
 
 Copyright (C) 1988-1998 Altera Corporation
 Any megafunction design, and related net list (encrypted or decrypted),
@@ -37,7 +37,7 @@ Chip/                     Input   Output   Bidir         Shareable
 POF       Device          Pins    Pins     Pins     LCs  Expanders  % Utilized
 
 scheme8_20
-      EPM7032LC44-6        2        2        0      3       0           9  %
+      EPM7032LC44-6        2        2        0      2       0           6  %
 
 User Pins:                 2        2        0  
 
@@ -49,9 +49,9 @@ Project Information    c:\labs\microelectronics\lab3\scheme8.20\scheme8_20.rpt
 
 
 
-|rstr:7|
-|rstr:7|notand:u1|
-|rstr:7|notand:u2|
+|rstr:8|
+|rstr:8|notand:u1|
+|rstr:8|notand:u2|
 
 
 Device-Specific Information:c:\labs\microelectronics\lab3\scheme8.20\scheme8_20.rpt
@@ -117,28 +117,28 @@ scheme8_20
 Logic Array Block     Logic Cells   I/O Pins    Expanders   Interconnect
 
 A:     LC1 - LC16     0/16(  0%)   2/16( 12%)   0/16(  0%)   0/36(  0%) 
-B:    LC17 - LC32     3/16( 18%)   2/16( 12%)   0/16(  0%)   3/36(  8%) 
+B:    LC17 - LC32     2/16( 12%)   2/16( 12%)   0/16(  0%)   4/36( 11%) 
 
 
 Total dedicated input pins used:                 0/4      (  0%)
 Total I/O pins used:                             4/32     ( 12%)
-Total logic cells used:                          3/32     (  9%)
+Total logic cells used:                          2/32     (  6%)
 Total shareable expanders used:                  0/32     (  0%)
-Total Turbo logic cells used:                    3/32     (  9%)
+Total Turbo logic cells used:                    2/32     (  6%)
 Total shareable expanders not available (n/a):   0/32     (  0%)
 Average fan-in:                                  3.00
-Total fan-in:                                     9
+Total fan-in:                                     6
 
 Total input pins required:                       2
 Total output pins required:                      2
 Total bidirectional pins required:               0
-Total logic cells required:                      3
+Total logic cells required:                      2
 Total flipflops required:                        0
-Total product terms required:                    6
+Total product terms required:                    4
 Total logic cells lending parallel expanders:    0
 Total shareable expanders in database:           0
 
-Synthesized logic cells:                         1/  32   (  3%)
+Synthesized logic cells:                         0/  32   (  0%)
 
 
 
@@ -150,8 +150,8 @@ scheme8_20
                                          Shareable
                                          Expanders     Fan-In    Fan-Out
  Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
-   4    (1)  (A)      INPUT               0      0   0    0    0    2    1  D
-   5    (2)  (A)      INPUT               0      0   0    0    0    2    1  L
+   4    (1)  (A)      INPUT               0      0   0    0    0    2    0  D
+   5    (2)  (A)      INPUT               0      0   0    0    0    2    0  L
 
 
 Code:
@@ -171,28 +171,8 @@ scheme8_20
                                          Shareable
                                          Expanders     Fan-In    Fan-Out
  Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
-  41     17    B     OUTPUT      t        0      0   0    2    1    0    0  Q
-  40     18    B     OUTPUT      t        0      0   0    2    1    0    0  QB
-
-
-Code:
-
-s = Synthesized pin or logic cell
-t = Turbo logic cell
-+ = Synchronous flipflop
-! = NOT gate push-back
-r = Fitter-inserted logic cell
-
-
-Device-Specific Information:c:\labs\microelectronics\lab3\scheme8.20\scheme8_20.rpt
-scheme8_20
-
-** BURIED LOGIC **
-
-                                         Shareable
-                                         Expanders     Fan-In    Fan-Out
- Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
- (39)    19    B      LCELL    s t        0      0   0    2    1    2    1  |RSTR:7|notand:u1|~6~1
+  41     17    B     OUTPUT      t        0      0   0    2    1    1    0  Q
+  40     18    B     OUTPUT      t        0      0   0    2    1    1    0  QB
 
 
 Code:
@@ -211,19 +191,19 @@ scheme8_20
 
 Logic Array Block 'B':
 
-               Logic cells placed in LAB 'B'
-        +----- LC17 Q
-        | +--- LC18 QB
-        | | +- LC19 |RSTR:7|notand:u1|~6~1
-        | | | 
-        | | |   Other LABs fed by signals
-        | | |   that feed LAB 'B'
-LC      | | | | A B |     Logic cells that feed LAB 'B':
-LC19 -> * * * | - * | <-- |RSTR:7|notand:u1|~6~1
+             Logic cells placed in LAB 'B'
+        +--- LC17 Q
+        | +- LC18 QB
+        | | 
+        | |   Other LABs fed by signals
+        | |   that feed LAB 'B'
+LC      | | | A B |     Logic cells that feed LAB 'B':
+LC17 -> - * | - * | <-- Q
+LC18 -> * - | - * | <-- QB
 
 Pin
-4    -> * * * | - * | <-- D
-5    -> * * * | - * | <-- L
+4    -> * * | - * | <-- D
+5    -> * * | - * | <-- L
 
 
 * = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
@@ -240,21 +220,13 @@ L        : INPUT;
 
 -- Node name is 'Q' 
 -- Equation name is 'Q', location is LC017, type is output.
- Q       = LCELL( _EQ001 $  GND);
-  _EQ001 =  D &  L
-         # !L &  _LC019;
+ Q       = LCELL( _EQ001 $ !QB);
+  _EQ001 =  D &  L &  QB;
 
 -- Node name is 'QB' 
 -- Equation name is 'QB', location is LC018, type is output.
- QB      = LCELL( _EQ002 $ !_LC019);
-  _EQ002 = !D &  L &  _LC019;
-
--- Node name is '|RSTR:7|notand:u1|~6~1' 
--- Equation name is '_LC019', type is buried 
--- synthesized logic cell 
-_LC019   = LCELL( _EQ003 $  GND);
-  _EQ003 =  D &  L
-         # !L &  _LC019;
+ QB      = LCELL( _EQ002 $ !Q);
+  _EQ002 = !D &  L &  Q;
 
 
 
@@ -353,4 +325,4 @@ Compilation Times
 Memory Allocated
 -----------------
 
-Peak memory allocated during compilation  = 2,634K
+Peak memory allocated during compilation  = 2,700K

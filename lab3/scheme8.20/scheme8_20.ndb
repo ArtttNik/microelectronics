@@ -5,24 +5,22 @@ The length of the symbol table is: 51
 Index Hierarchy Path
 ----- --------------
 !	&null_hpath&
-.	|RSTR:7|notand:u1|
-A	|RSTR:7|notand:u2|
+.	|RSTR:8|notand:u1|
+A	|RSTR:8|notand:u2|
 
-The number of name info structs is : 14
+The number of name info structs is : 12
 
 InsOrder BitField SymTableIndex NextSyn SynParent Loc ChainType NextChain ChainParent FanOut DirExp ParExp ShareExp NodeName
 -------- -------- ------------- ------- --------- --- --------- --------- ----------- ------ ------ ------ -------- --------
 "	IGdW	!	:5	x
 #	IGdW	!	:6	y
-$	Ky&|	!	3	&	'	*	D	o
-%	Ky&|	!	3	&	'	*	L	p
-&	IGdq	!	Q	q
-'	IGdq	!	QB	r
-(	IeEA	.	15	17	:5	":
-)	IeEA	.	15	17	:6	";
-*	L7m!	.	15	17	3	&	'	*	~6~1	";
-+	IeEA	A	15	17	:5	"E
-,	IeEA	A	15	17	:6	"F
--	IdL3	A	15	17	~5~1	"E
-.	IFkI	!	~5~1	x
-/	IFkI	!	~6~1	y
+$	Ky&|	!	2	&	'	D	o
+%	Ky&|	!	2	&	'	L	p
+&	Ky&}	!	1	'	Q	q
+'	Ky&}	!	1	&	QB	r
+(	IeEA	.	15	17	:5	"6
+)	IeEA	.	15	17	:6	"7
+*	IeEA	.	9	9	:7	"8
++	IeEA	A	15	17	:5	"B
+,	IeEA	A	15	17	:6	"C
+-	IeEA	A	9	9	:7	"D

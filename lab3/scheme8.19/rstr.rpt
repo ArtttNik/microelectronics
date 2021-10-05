@@ -2,7 +2,7 @@ Project Information          c:\labs\microelectronics\lab3\scheme8.19\rstr.rpt
 
 MAX+plus II Compiler Report File
 Version 9.01 07/30/98
-Compiled: 10/17/25 22:45:58
+Compiled: 10/06/21 01:29:38
 
 Copyright (C) 1988-1998 Altera Corporation
 Any megafunction design, and related net list (encrypted or decrypted),
@@ -37,9 +37,9 @@ RSTR
 Chip/                     Input   Output   Bidir         Shareable
 POF       Device          Pins    Pins     Pins     LCs  Expanders  % Utilized
 
-rstr      EPM7032LC44-6    2        2        0      3       0           9  %
+rstr      EPM7032LC44-6    2        0        2      2       0           6  %
 
-User Pins:                 2        2        0  
+User Pins:                 2        0        2  
 
 
 
@@ -67,17 +67,17 @@ Device Options:
     Turbo Bit                                    = ON
     Security Bit                                 = OFF
 
-              R                          R     
-              E                          E     
-              S                          S     
-              E                          E     
-              R                          R     
-              V        V  G  G  G  G  G  V     
-              E        C  N  N  N  N  N  E     
-              D  s  r  C  D  D  D  D  D  D  q  
+              R                                
+              E                                
+              S                                
+              E                                
+              R                                
+              V        V  G  G  G  G  G        
+              E        C  N  N  N  N  N     q  
+              D  s  r  C  D  D  D  D  D  q  b  
             -----------------------------------_ 
           /   6  5  4  3  2  1 44 43 42 41 40   | 
-RESERVED |  7                                39 | qb 
+RESERVED |  7                                39 | RESERVED 
 RESERVED |  8                                38 | RESERVED 
 RESERVED |  9                                37 | RESERVED 
      GND | 10                                36 | RESERVED 
@@ -116,28 +116,28 @@ rstr
 Logic Array Block     Logic Cells   I/O Pins    Expanders   Interconnect
 
 A:     LC1 - LC16     0/16(  0%)   2/16( 12%)   0/16(  0%)   0/36(  0%) 
-B:    LC17 - LC32     3/16( 18%)   2/16( 12%)   0/16(  0%)   3/36(  8%) 
+B:    LC17 - LC32     2/16( 12%)   2/16( 12%)   0/16(  0%)   4/36( 11%) 
 
 
 Total dedicated input pins used:                 0/4      (  0%)
 Total I/O pins used:                             4/32     ( 12%)
-Total logic cells used:                          3/32     (  9%)
+Total logic cells used:                          2/32     (  6%)
 Total shareable expanders used:                  0/32     (  0%)
-Total Turbo logic cells used:                    3/32     (  9%)
+Total Turbo logic cells used:                    2/32     (  6%)
 Total shareable expanders not available (n/a):   0/32     (  0%)
-Average fan-in:                                  2.66
-Total fan-in:                                     8
+Average fan-in:                                  2.00
+Total fan-in:                                     4
 
 Total input pins required:                       2
-Total output pins required:                      2
-Total bidirectional pins required:               0
-Total logic cells required:                      3
+Total output pins required:                      0
+Total bidirectional pins required:               2
+Total logic cells required:                      2
 Total flipflops required:                        0
-Total product terms required:                    5
+Total product terms required:                    2
 Total logic cells lending parallel expanders:    0
 Total shareable expanders in database:           0
 
-Synthesized logic cells:                         1/  32   (  3%)
+Synthesized logic cells:                         0/  32   (  0%)
 
 
 
@@ -149,8 +149,10 @@ rstr
                                          Shareable
                                          Expanders     Fan-In    Fan-Out
  Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
-   4    (1)  (A)      INPUT               0      0   0    0    0    2    1  r
-   5    (2)  (A)      INPUT               0      0   0    0    0    1    1  s
+  41     17    B      BIDIR               0      0   0    1    1    1    0  q
+  40     18    B      BIDIR               0      0   0    1    1    1    0  qb
+   4    (1)  (A)      INPUT               0      0   0    0    0    1    0  r
+   5    (2)  (A)      INPUT               0      0   0    0    0    1    0  s
 
 
 Code:
@@ -170,28 +172,8 @@ rstr
                                          Shareable
                                          Expanders     Fan-In    Fan-Out
  Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
-  40     18    B     OUTPUT      t        0      0   0    2    1    0    0  q
-  39     19    B     OUTPUT      t        0      0   0    1    1    0    0  qb
-
-
-Code:
-
-s = Synthesized pin or logic cell
-t = Turbo logic cell
-+ = Synchronous flipflop
-! = NOT gate push-back
-r = Fitter-inserted logic cell
-
-
-Device-Specific Information: c:\labs\microelectronics\lab3\scheme8.19\rstr.rpt
-rstr
-
-** BURIED LOGIC **
-
-                                         Shareable
-                                         Expanders     Fan-In    Fan-Out
- Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
- (41)    17    B      LCELL    s t        0      0   0    2    1    2    1  |notand:u1|~6~1
+  41     17    B        TRI      t        0      0   0    1    1    1    0  q
+  40     18    B        TRI      t        0      0   0    1    1    1    0  qb
 
 
 Code:
@@ -210,19 +192,19 @@ rstr
 
 Logic Array Block 'B':
 
-               Logic cells placed in LAB 'B'
-        +----- LC17 |notand:u1|~6~1
-        | +--- LC18 q
-        | | +- LC19 qb
-        | | | 
-        | | |   Other LABs fed by signals
-        | | |   that feed LAB 'B'
-LC      | | | | A B |     Logic cells that feed LAB 'B':
-LC17 -> * * * | - * | <-- |notand:u1|~6~1
+             Logic cells placed in LAB 'B'
+        +--- LC17 q
+        | +- LC18 qb
+        | | 
+        | |   Other LABs fed by signals
+        | |   that feed LAB 'B'
+LC      | | | A B |     Logic cells that feed LAB 'B':
+LC17 -> - * | - * | <-- q
+LC18 -> * - | - * | <-- qb
 
 Pin
-4    -> * * * | - * | <-- r
-5    -> * * - | - * | <-- s
+4    -> - * | - * | <-- r
+5    -> * - | - * | <-- s
 
 
 * = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
@@ -238,20 +220,16 @@ r        : INPUT;
 s        : INPUT;
 
 -- Node name is 'q' 
--- Equation name is 'q', location is LC018, type is output.
- q       = LCELL( _EQ001 $ !s);
-  _EQ001 =  _LC017 &  r &  s;
+-- Equation name is 'q', location is LC017, type is bidir.
+q        = TRI(_LC017,  VCC);
+_LC017   = LCELL( _EQ001 $  VCC);
+  _EQ001 =  qb &  s;
 
 -- Node name is 'qb' 
--- Equation name is 'qb', location is LC019, type is output.
- qb      = LCELL( _EQ002 $  VCC);
-  _EQ002 =  _LC017 &  r;
-
--- Node name is '|notand:u1|~6~1' 
--- Equation name is '_LC017', type is buried 
--- synthesized logic cell 
-_LC017   = LCELL( _EQ003 $ !s);
-  _EQ003 =  _LC017 &  r &  s;
+-- Equation name is 'qb', location is LC018, type is bidir.
+qb       = TRI(_LC018,  VCC);
+_LC018   = LCELL( _EQ002 $  VCC);
+  _EQ002 =  q &  r;
 
 
 
@@ -350,4 +328,4 @@ Compilation Times
 Memory Allocated
 -----------------
 
-Peak memory allocated during compilation  = 3,300K
+Peak memory allocated during compilation  = 3,463K

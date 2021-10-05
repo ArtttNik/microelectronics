@@ -2,7 +2,7 @@ Project Information       c:\labs\microelectronics\lab3\scheme8.20\dtr_beh.rpt
 
 MAX+plus II Compiler Report File
 Version 9.01 07/30/98
-Compiled: 10/02/21 15:16:33
+Compiled: 10/06/21 01:27:04
 
 Copyright (C) 1988-1998 Altera Corporation
 Any megafunction design, and related net list (encrypted or decrypted),
@@ -325,4 +325,4 @@ Compilation Times
 Memory Allocated
 -----------------
 
-Peak memory allocated during compilation  = 3,440K
+Peak memory allocated during compilation  = 3,209K

@@ -2,7 +2,7 @@ Project Information        c:\labs\microelectronics\lab3\scheme8.19\notand.rpt
 
 MAX+plus II Compiler Report File
 Version 9.01 07/30/98
-Compiled: 10/17/25 22:37:05
+Compiled: 10/06/21 01:29:29
 
 Copyright (C) 1988-1998 Altera Corporation
 Any megafunction design, and related net list (encrypted or decrypted),
@@ -37,9 +37,9 @@ NOTAND
 Chip/                     Input   Output   Bidir         Shareable
 POF       Device          Pins    Pins     Pins     LCs  Expanders  % Utilized
 
-notand    EPM7032LC44-6    2        1        0      1       0           3  %
+notand    EPM7032LC44-6    2        0        1      1       0           3  %
 
-User Pins:                 2        1        0  
+User Pins:                 2        0        1  
 
 
 
@@ -119,8 +119,8 @@ Average fan-in:                                  2.00
 Total fan-in:                                     2
 
 Total input pins required:                       2
-Total output pins required:                      1
-Total bidirectional pins required:               0
+Total output pins required:                      0
+Total bidirectional pins required:               1
 Total logic cells required:                      1
 Total flipflops required:                        0
 Total product terms required:                    1
@@ -141,6 +141,7 @@ notand
  Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
    4    (1)  (A)      INPUT               0      0   0    0    0    1    0  a
    5    (2)  (A)      INPUT               0      0   0    0    0    1    0  b
+  41     17    B      BIDIR               0      0   0    2    0    0    0  c
 
 
 Code:
@@ -160,7 +161,7 @@ notand
                                          Shareable
                                          Expanders     Fan-In    Fan-Out
  Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
-  41     17    B     OUTPUT      t        0      0   0    2    0    0    0  c
+  41     17    B        TRI      t        0      0   0    2    0    0    0  c
 
 
 Code:
@@ -204,8 +205,9 @@ a        : INPUT;
 b        : INPUT;
 
 -- Node name is 'c' 
--- Equation name is 'c', location is LC017, type is output.
- c       = LCELL( _EQ001 $  VCC);
+-- Equation name is 'c', location is LC017, type is bidir.
+c        = TRI(_LC017,  VCC);
+_LC017   = LCELL( _EQ001 $  VCC);
   _EQ001 =  a &  b;
 
 
@@ -305,4 +307,4 @@ Compilation Times
 Memory Allocated
 -----------------
 
-Peak memory allocated during compilation  = 3,498K
+Peak memory allocated during compilation  = 2,793K
