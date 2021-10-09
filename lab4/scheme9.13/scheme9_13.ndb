@@ -1,0 +1,26 @@
+NDB006
+The number of symbol table entries is: 3
+The length of the symbol table is: 45
+
+Index Hierarchy Path
+----- --------------
+!	&null_hpath&
+.	|scheme9_12:10|
+>	|scheme9_12:11|
+
+The number of name info structs is : 12
+
+InsOrder BitField SymTableIndex NextSyn SynParent Loc ChainType NextChain ChainParent FanOut DirExp ParExp ShareExp NodeName
+-------- -------- ------------- ------- --------- --- --------- --------- ----------- ------ ------ ------ -------- --------
+"	(@>U^	!	2	+	(	C1	p
+#	Ky&|	!	2	%	&	C2	q
+$	Ky&|	!	1	(	D	r
+%	Ky&}	!	1	+	Q1	t
+&	IGdq	!	Q2	s
+'	(@>U^	!	4	&	%	+	(	R	o
+(	Ky'5	.	1	%	:1	"-
+)	IVOA	.	*	:2	".
+*	INum	.	)	Q	".
++	Ky'5	>	1	&	:1	"9
+,	IVOA	>	-	:2	":
+-	INum	>	,	Q	":
