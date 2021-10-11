@@ -2,7 +2,7 @@ Project Information    c:\labs\microelectronics\lab4\scheme9.11\scheme9_11.rpt
 
 MAX+plus II Compiler Report File
 Version 9.01 07/30/98
-Compiled: 10/09/21 18:20:32
+Compiled: 10/12/21 01:28:54
 
 Copyright (C) 1988-1998 Altera Corporation
 Any megafunction design, and related net list (encrypted or decrypted),
@@ -29,6 +29,7 @@ needed under any third party's intellectual property, are provided herein.
 ***** Project compilation was successful
 
 
+SCHEME9_11
 
 
 ** DEVICE SUMMARY **
@@ -37,9 +38,9 @@ Chip/                     Input   Output   Bidir         Shareable
 POF       Device          Pins    Pins     Pins     LCs  Expanders  % Utilized
 
 scheme9_11
-      EPM7032LC44-6        3        2        0      4       0           12 %
+      EPM7032LC44-6        2        2        0      2       0           6  %
 
-User Pins:                 3        2        0  
+User Pins:                 2        2        0  
 
 
 
@@ -49,7 +50,7 @@ Project Information    c:\labs\microelectronics\lab4\scheme9.11\scheme9_11.rpt
 
 
 
-INFO: Signal 'R' chosen for auto global Clear
+INFO: Signal 'clk' chosen for auto global Clock
 
 
 Device-Specific Information:c:\labs\microelectronics\lab4\scheme9.11\scheme9_11.rpt
@@ -66,14 +67,14 @@ Device Options:
     Turbo Bit                                    = ON
     Security Bit                                 = OFF
 
-              R                                
-              E                                
-              S                                
-              E                                
-              R                                
-              V        V  G     G  G  G        
-              E        C  N     N  N  N  Q  Q  
-              D  D  C  C  D  R  D  D  D  1  2  
+              R  R                             
+              E  E                             
+              S  S                             
+              E  E                             
+              R  R                             
+              V  V     V  G  G  G  c  G        
+              E  E     C  N  N  N  l  N  q  q  
+              D  D  d  C  D  D  D  k  D  1  2  
             -----------------------------------_ 
           /   6  5  4  3  2  1 44 43 42 41 40   | 
 RESERVED |  7                                39 | RESERVED 
@@ -114,25 +115,25 @@ scheme9_11
                                                 Shareable     External
 Logic Array Block     Logic Cells   I/O Pins    Expanders   Interconnect
 
-A:     LC1 - LC16     0/16(  0%)   2/16( 12%)   0/16(  0%)   0/36(  0%) 
-B:    LC17 - LC32     4/16( 25%)   2/16( 12%)   0/16(  0%)   5/36( 13%) 
+A:     LC1 - LC16     0/16(  0%)   1/16(  6%)   0/16(  0%)   0/36(  0%) 
+B:    LC17 - LC32     2/16( 12%)   2/16( 12%)   0/16(  0%)   2/36(  5%) 
 
 
 Total dedicated input pins used:                 1/4      ( 25%)
-Total I/O pins used:                             4/32     ( 12%)
-Total logic cells used:                          4/32     ( 12%)
+Total I/O pins used:                             3/32     (  9%)
+Total logic cells used:                          2/32     (  6%)
 Total shareable expanders used:                  0/32     (  0%)
-Total Turbo logic cells used:                    4/32     ( 12%)
+Total Turbo logic cells used:                    2/32     (  6%)
 Total shareable expanders not available (n/a):   0/32     (  0%)
-Average fan-in:                                  3.00
-Total fan-in:                                    12
+Average fan-in:                                  2.00
+Total fan-in:                                     4
 
-Total input pins required:                       3
+Total input pins required:                       2
 Total output pins required:                      2
 Total bidirectional pins required:               0
-Total logic cells required:                      4
-Total flipflops required:                        4
-Total product terms required:                    8
+Total logic cells required:                      2
+Total flipflops required:                        2
+Total product terms required:                    2
 Total logic cells lending parallel expanders:    0
 Total shareable expanders in database:           0
 
@@ -148,9 +149,8 @@ scheme9_11
                                          Shareable
                                          Expanders     Fan-In    Fan-Out
  Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
-   4    (1)  (A)      INPUT               0      0   0    0    0    2    2  C
-   5    (2)  (A)      INPUT               0      0   0    0    0    0    1  D
-   1      -   -       INPUT  G            0      0   0    0    0    0    0  R
+  43      -   -       INPUT  G            0      0   0    0    0    0    0  clk
+   4    (1)  (A)      INPUT               0      0   0    0    0    1    0  d
 
 
 Code:
@@ -175,29 +175,8 @@ scheme9_11
                                          Shareable
                                          Expanders     Fan-In    Fan-Out
  Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
-  41     17    B         FF      t        0      0   0    1    1    0    1  Q1
-  40     18    B         FF      t        0      0   0    1    1    0    0  Q2
-
-
-Code:
-
-s = Synthesized pin or logic cell
-t = Turbo logic cell
-+ = Synchronous flipflop
-! = NOT gate push-back
-r = Fitter-inserted logic cell
-
-
-Device-Specific Information:c:\labs\microelectronics\lab4\scheme9.11\scheme9_11.rpt
-scheme9_11
-
-** BURIED LOGIC **
-
-                                         Shareable
-                                         Expanders     Fan-In    Fan-Out
- Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
- (39)    19    B       DFFE      t        0      0   0    2    0    1    0  :10
- (38)    20    B       DFFE      t        0      0   0    1    1    1    0  :12
+  41     17    B         FF   +  t        0      0   0    1    0    1    0  q1 (:6)
+  40     18    B         FF   +  t        0      0   0    0    1    0    0  q2
 
 
 Code:
@@ -216,23 +195,18 @@ scheme9_11
 
 Logic Array Block 'B':
 
-                 Logic cells placed in LAB 'B'
-        +------- LC17 Q1
-        | +----- LC18 Q2
-        | | +--- LC19 :10
-        | | | +- LC20 :12
-        | | | | 
-        | | | |   Other LABs fed by signals
-        | | | |   that feed LAB 'B'
-LC      | | | | | A B |     Logic cells that feed LAB 'B':
-LC17 -> - - - * | - * | <-- Q1
-LC19 -> * - - - | - * | <-- :10
-LC20 -> - * - - | - * | <-- :12
+             Logic cells placed in LAB 'B'
+        +--- LC17 q1
+        | +- LC18 q2
+        | | 
+        | |   Other LABs fed by signals
+        | |   that feed LAB 'B'
+LC      | | | A B |     Logic cells that feed LAB 'B':
+LC17 -> - * | - * | <-- q1
 
 Pin
-4    -> * * * * | - * | <-- C
-5    -> - - * - | - * | <-- D
-1    -> - - - - | - - | <-- R
+43   -> - - | - - | <-- clk
+4    -> * - | - * | <-- d
 
 
 * = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
@@ -244,25 +218,16 @@ scheme9_11
 
 ** EQUATIONS **
 
-C        : INPUT;
-D        : INPUT;
-R        : INPUT;
+clk      : INPUT;
+d        : INPUT;
 
--- Node name is 'Q1' = ':11' 
--- Equation name is 'Q1', type is output 
- Q1      = DFFE( _LC019 $  GND, !C, GLOBAL( R),  VCC,  VCC);
+-- Node name is 'q1' = 'internal_q1' 
+-- Equation name is 'q1', location is LC017, type is output.
+ q1      = DFFE( d $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
 
--- Node name is 'Q2' = ':13' 
--- Equation name is 'Q2', type is output 
- Q2      = DFFE( _LC020 $  GND, !C, GLOBAL( R),  VCC,  VCC);
-
--- Node name is ':10' 
--- Equation name is '_LC019', type is buried 
-_LC019   = DFFE( D $  GND,  C, GLOBAL( R),  VCC,  VCC);
-
--- Node name is ':12' 
--- Equation name is '_LC020', type is buried 
-_LC020   = DFFE( Q1 $  GND,  C, GLOBAL( R),  VCC,  VCC);
+-- Node name is 'q2' = ':4' 
+-- Equation name is 'q2', type is output 
+ q2      = DFFE( q1 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
 
 
 
@@ -361,4 +326,4 @@ Compilation Times
 Memory Allocated
 -----------------
 
-Peak memory allocated during compilation  = 2,555K
+Peak memory allocated during compilation  = 3,262K

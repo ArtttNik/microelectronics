@@ -24,18 +24,18 @@ HIF003
 --
 FILES
 {
-	scheme9_12.gdf
-	{
-		scheme9_12 [] []
-		{
-			2 [] [];
-		}
-	}
 	lab_4_3.gdf
 	{
 		lab_4_3 [] []
 		{
 			1 [] [];
+		}
+	}
+	scheme9_12.gdf
+	{
+		scheme9_12 [] []
+		{
+			2 [] [];
 		}
 	}
 	scheme9_13.gdf
@@ -50,7 +50,7 @@ TREE
 {
 	scheme9_13::(0,0):(0): scheme9_13.gdf
 	{
-		scheme9_12::(0,0):(11): scheme9_12.gdf;
 		scheme9_12::(0,0):(10): scheme9_12.gdf;
+		scheme9_12::(0,0):(11): scheme9_12.gdf;
 	}
 }
