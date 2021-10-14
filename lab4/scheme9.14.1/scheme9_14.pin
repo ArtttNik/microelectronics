@@ -27,18 +27,18 @@ RESERVED = Unused I/O pin, which MUST be left unconnected.
 
 ----------------------------------------------------------------------------
 
-CHIP "scheme9_15" ASSIGNED TO AN EPM7032LC44-6
-r                                : 1
+CHIP "scheme9_14" ASSIGNED TO AN EPM7032LC44-6
+RESET                            : 1
 GND                              : 2
 VCC                              : 3
-c                                : 4
-ser                              : 5
-load                             : 6
-d4                               : 7
-d3                               : 8
-d1                               : 9
+X4                               : 4
+X3                               : 5
+X2                               : 6
+X1                               : 7
+READ                             : 8
+RESERVED                         : 9
 GND                              : 10
-d2                               : 11
+RESERVED                         : 11
 RESERVED                         : 12
 RESERVED                         : 13
 RESERVED                         : 14
@@ -61,14 +61,14 @@ GND                              : 30
 RESERVED                         : 31
 RESERVED                         : 32
 RESERVED                         : 33
-RESERVED                         : 34
+Q2                               : 34
 VCC                              : 35
-RESERVED                         : 36
-s                                : 37
-q4                               : 38
-q2                               : 39
-q1                               : 40
-q3                               : 41
+Q3                               : 36
+Q4                               : 37
+Q1                               : 38
+RESERVED                         : 39
+RESERVED                         : 40
+RESERVED                         : 41
 GND                              : 42
-GND                              : 43
-o                                : 44
+WRITE                            : 43
+GND                              : 44

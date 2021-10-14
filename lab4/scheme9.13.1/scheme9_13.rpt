@@ -1,8 +1,8 @@
-Project Information    c:\labs\microelectronics\lab4\scheme9_15\scheme9_15.rpt
+Project Information  c:\labs\microelectronics\lab4\scheme9.13.1\scheme9_13.rpt
 
 MAX+plus II Compiler Report File
 Version 9.01 07/30/98
-Compiled: 10/14/21 23:46:32
+Compiled: 10/15/21 00:02:54
 
 Copyright (C) 1988-1998 Altera Corporation
 Any megafunction design, and related net list (encrypted or decrypted),
@@ -29,6 +29,7 @@ needed under any third party's intellectual property, are provided herein.
 ***** Project compilation was successful
 
 
+SCHEME9_13
 
 
 ** DEVICE SUMMARY **
@@ -36,36 +37,27 @@ needed under any third party's intellectual property, are provided herein.
 Chip/                     Input   Output   Bidir         Shareable
 POF       Device          Pins    Pins     Pins     LCs  Expanders  % Utilized
 
-scheme9_15
-      EPM7032LC44-6        9        5        0      5       0           15 %
+scheme9_13
+      EPM7032LC44-6        4        1        1      4       0           12 %
 
-User Pins:                 9        5        0  
+User Pins:                 4        1        1  
 
 
 
-Project Information    c:\labs\microelectronics\lab4\scheme9_15\scheme9_15.rpt
+Project Information  c:\labs\microelectronics\lab4\scheme9.13.1\scheme9_13.rpt
 
 ** AUTO GLOBAL SIGNALS **
 
 
 
-INFO: Signal 'r' chosen for auto global Clear
-INFO: Signal 'o' chosen for auto global Output Enable
+INFO: Signal 'C1' chosen for auto global Clock
+INFO: Signal 'R' chosen for auto global Clear
 
 
-Project Information    c:\labs\microelectronics\lab4\scheme9_15\scheme9_15.rpt
+Device-Specific Information:c:\labs\microelectronics\lab4\scheme9.13.1\scheme9_13.rpt
+scheme9_13
 
-** FILE HIERARCHY **
-
-
-
-|74395:1|
-
-
-Device-Specific Information:c:\labs\microelectronics\lab4\scheme9_15\scheme9_15.rpt
-scheme9_15
-
-***** Logic for device 'scheme9_15' compiled without errors.
+***** Logic for device 'scheme9_13' compiled without errors.
 
 
 
@@ -76,21 +68,21 @@ Device Options:
     Turbo Bit                                    = ON
     Security Bit                                 = OFF
 
-                                               
-                                               
-                                               
-                                               
-              l                                
-              o  s     V  G        G  G        
-              a  e     C  N        N  N  q  q  
-              d  r  c  C  D  r  o  D  D  3  1  
+              R                                
+              E                                
+              S                                
+              E                                
+              R                                
+              V        V  G     G     G        
+              E     C  C  N     N  C  N  Q  Q  
+              D  D  2  C  D  R  D  1  D  0  1  
             -----------------------------------_ 
           /   6  5  4  3  2  1 44 43 42 41 40   | 
-      d4 |  7                                39 | q2 
-      d3 |  8                                38 | q4 
-      d1 |  9                                37 | s 
+RESERVED |  7                                39 | RESERVED 
+RESERVED |  8                                38 | RESERVED 
+RESERVED |  9                                37 | RESERVED 
      GND | 10                                36 | RESERVED 
-      d2 | 11                                35 | VCC 
+RESERVED | 11                                35 | VCC 
 RESERVED | 12         EPM7032LC44-6          34 | RESERVED 
 RESERVED | 13                                33 | RESERVED 
 RESERVED | 14                                32 | RESERVED 
@@ -116,33 +108,33 @@ RESERVED = Unused I/O pin, which MUST be left unconnected.
 
 
 
-Device-Specific Information:c:\labs\microelectronics\lab4\scheme9_15\scheme9_15.rpt
-scheme9_15
+Device-Specific Information:c:\labs\microelectronics\lab4\scheme9.13.1\scheme9_13.rpt
+scheme9_13
 
 ** RESOURCE USAGE **
 
                                                 Shareable     External
 Logic Array Block     Logic Cells   I/O Pins    Expanders   Interconnect
 
-A:     LC1 - LC16     0/16(  0%)   7/16( 43%)   0/16(  0%)   0/36(  0%) 
-B:    LC17 - LC32     5/16( 31%)   5/16( 31%)   0/16(  0%)  10/36( 27%) 
+A:     LC1 - LC16     0/16(  0%)   2/16( 12%)   0/16(  0%)   0/36(  0%) 
+B:    LC17 - LC32     4/16( 25%)   2/16( 12%)   0/16(  0%)   5/36( 13%) 
 
 
 Total dedicated input pins used:                 2/4      ( 50%)
-Total I/O pins used:                            12/32     ( 37%)
-Total logic cells used:                          5/32     ( 15%)
+Total I/O pins used:                             4/32     ( 12%)
+Total logic cells used:                          4/32     ( 12%)
 Total shareable expanders used:                  0/32     (  0%)
-Total Turbo logic cells used:                    5/32     ( 15%)
+Total Turbo logic cells used:                    4/32     ( 12%)
 Total shareable expanders not available (n/a):   0/32     (  0%)
-Average fan-in:                                  5.80
-Total fan-in:                                    29
+Average fan-in:                                  2.50
+Total fan-in:                                    10
 
-Total input pins required:                       9
-Total output pins required:                      5
-Total bidirectional pins required:               0
-Total logic cells required:                      5
-Total flipflops required:                        5
-Total product terms required:                   15
+Total input pins required:                       4
+Total output pins required:                      1
+Total bidirectional pins required:               1
+Total logic cells required:                      4
+Total flipflops required:                        4
+Total product terms required:                    6
 Total logic cells lending parallel expanders:    0
 Total shareable expanders in database:           0
 
@@ -150,23 +142,19 @@ Synthesized logic cells:                         0/  32   (  0%)
 
 
 
-Device-Specific Information:c:\labs\microelectronics\lab4\scheme9_15\scheme9_15.rpt
-scheme9_15
+Device-Specific Information:c:\labs\microelectronics\lab4\scheme9.13.1\scheme9_13.rpt
+scheme9_13
 
 ** INPUTS **
 
                                          Shareable
                                          Expanders     Fan-In    Fan-Out
  Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
-   4    (1)  (A)      INPUT               0      0   0    0    0    5    0  c
-   9    (6)  (A)      INPUT               0      0   0    0    0    1    0  d1
-  11    (7)  (A)      INPUT               0      0   0    0    0    1    0  d2
-   8    (5)  (A)      INPUT               0      0   0    0    0    1    0  d3
-   7    (4)  (A)      INPUT               0      0   0    0    0    2    0  d4
-   6    (3)  (A)      INPUT               0      0   0    0    0    5    0  load
-  44      -   -       INPUT  G            0      0   0    0    0    0    0  o
-   1      -   -       INPUT  G            0      0   0    0    0    0    0  r
-   5    (2)  (A)      INPUT               0      0   0    0    0    1    0  ser
+  43      -   -       INPUT  G            0      0   0    0    0    0    0  C1
+   4    (1)  (A)      INPUT               0      0   0    0    0    2    0  C2
+   5    (2)  (A)      INPUT               0      0   0    0    0    0    1  D
+  41     17    B      BIDIR               0      0   0    1    1    0    1  Q0
+   1      -   -       INPUT  G            0      0   0    0    0    0    0  R
 
 
 Code:
@@ -183,19 +171,16 @@ Sections of this Report File for information on which signals' fan-outs are used
 Clock, Clear, Preset, Output Enable, and synchronous Load signals.
 
 
-Device-Specific Information:c:\labs\microelectronics\lab4\scheme9_15\scheme9_15.rpt
-scheme9_15
+Device-Specific Information:c:\labs\microelectronics\lab4\scheme9.13.1\scheme9_13.rpt
+scheme9_13
 
 ** OUTPUTS **
 
                                          Shareable
                                          Expanders     Fan-In    Fan-Out
  Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
-  40     18    B     TRI/FF      t        0      0   0    4    0    1    0  q1
-  39     19    B     TRI/FF      t        0      0   0    3    1    1    0  q2
-  41     17    B     TRI/FF      t        0      0   0    3    1    2    0  q3
-  38     20    B     TRI/FF      t        0      0   0    3    1    0    0  q4 (|74395:1|:20)
-  37     21    B         FF      t        0      0   0    3    1    0    0  s (|74395:1|~20~1)
+  41     17    B     TRI/FF      t        0      0   0    1    1    0    1  Q0
+  40     18    B         FF      t        0      0   0    1    1    0    0  Q1
 
 
 Code:
@@ -207,89 +192,84 @@ t = Turbo logic cell
 r = Fitter-inserted logic cell
 
 
-Device-Specific Information:c:\labs\microelectronics\lab4\scheme9_15\scheme9_15.rpt
-scheme9_15
+Device-Specific Information:c:\labs\microelectronics\lab4\scheme9.13.1\scheme9_13.rpt
+scheme9_13
+
+** BURIED LOGIC **
+
+                                         Shareable
+                                         Expanders     Fan-In    Fan-Out
+ Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
+ (39)    19    B       DFFE   +  t        0      0   0    1    0    1    0  p0 (:9)
+ (38)    20    B       DFFE   +  t        0      0   0    0    1    1    0  p1 (:10)
+
+
+Code:
+
+s = Synthesized pin or logic cell
+t = Turbo logic cell
++ = Synchronous flipflop
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+
+
+Device-Specific Information:c:\labs\microelectronics\lab4\scheme9.13.1\scheme9_13.rpt
+scheme9_13
 
 ** LOGIC CELL INTERCONNECTIONS **
 
 Logic Array Block 'B':
 
-                   Logic cells placed in LAB 'B'
-        +--------- LC18 q1
-        | +------- LC19 q2
-        | | +----- LC17 q3
-        | | | +--- LC20 q4
-        | | | | +- LC21 s
-        | | | | | 
-        | | | | |   Other LABs fed by signals
-        | | | | |   that feed LAB 'B'
-LC      | | | | | | A B |     Logic cells that feed LAB 'B':
-LC18 -> - * - - - | - * | <-- q1
-LC19 -> - - * - - | - * | <-- q2
-LC17 -> - - - * * | - * | <-- q3
+                 Logic cells placed in LAB 'B'
+        +------- LC17 Q0
+        | +----- LC18 Q1
+        | | +--- LC19 p0
+        | | | +- LC20 p1
+        | | | | 
+        | | | |   Other LABs fed by signals
+        | | | |   that feed LAB 'B'
+LC      | | | | | A B |     Logic cells that feed LAB 'B':
+LC17 -> - - - * | - * | <-- Q0
+LC19 -> * - - - | - * | <-- p0
+LC20 -> - * - - | - * | <-- p1
 
 Pin
-4    -> * * * * * | - * | <-- c
-9    -> * - - - - | - * | <-- d1
-11   -> - * - - - | - * | <-- d2
-8    -> - - * - - | - * | <-- d3
-7    -> - - - * * | - * | <-- d4
-6    -> * * * * * | - * | <-- load
-44   -> - - - - - | - - | <-- o
-1    -> - - - - - | - - | <-- r
-5    -> * - - - - | - * | <-- ser
+43   -> - - - - | - - | <-- C1
+4    -> * * - - | - * | <-- C2
+5    -> - - * - | - * | <-- D
+1    -> - - - - | - - | <-- R
 
 
 * = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
 - = The logic cell or pin is not an input to the logic cell (or LAB).
 
 
-Device-Specific Information:c:\labs\microelectronics\lab4\scheme9_15\scheme9_15.rpt
-scheme9_15
+Device-Specific Information:c:\labs\microelectronics\lab4\scheme9.13.1\scheme9_13.rpt
+scheme9_13
 
 ** EQUATIONS **
 
-c        : INPUT;
-d1       : INPUT;
-d2       : INPUT;
-d3       : INPUT;
-d4       : INPUT;
-load     : INPUT;
-o        : INPUT;
-r        : INPUT;
-ser      : INPUT;
+C1       : INPUT;
+C2       : INPUT;
+D        : INPUT;
+R        : INPUT;
 
--- Node name is 'q1' = '|74395:1|:7' 
--- Equation name is 'q1', type is output 
-q1       = TRI(_LC018, GLOBAL(!o));
-_LC018   = DFFE( _EQ001 $  GND, !c, GLOBAL( r),  VCC,  VCC);
-  _EQ001 =  d1 &  load
-         # !load &  ser;
+-- Node name is ':9' = 'p0' 
+-- Equation name is 'p0', location is LC019, type is buried.
+p0       = DFFE( D $  GND, GLOBAL( C1),  VCC,  VCC,  VCC);
 
--- Node name is 'q2' = '|74395:1|:10' 
--- Equation name is 'q2', type is output 
-q2       = TRI(_LC019, GLOBAL(!o));
-_LC019   = DFFE( _EQ002 $  GND, !c, GLOBAL( r),  VCC,  VCC);
-  _EQ002 =  d2 &  load
-         #  _LC018 & !load;
+-- Node name is ':10' = 'p1' 
+-- Equation name is 'p1', location is LC020, type is buried.
+p1       = DFFE( Q0 $  GND, GLOBAL( C1),  VCC,  VCC,  VCC);
 
--- Node name is 'q3' = '|74395:1|:15' 
--- Equation name is 'q3', type is output 
-q3       = TRI(_LC017, GLOBAL(!o));
-_LC017   = DFFE( _EQ003 $  GND, !c, GLOBAL( r),  VCC,  VCC);
-  _EQ003 =  d3 &  load
-         #  _LC019 & !load;
+-- Node name is 'Q0' = ':5' 
+-- Equation name is 'Q0', type is bidir 
+Q0       = TRI(_LC017,  VCC);
+_LC017   = DFFE( p0 $  GND,  C2, GLOBAL( R),  VCC,  VCC);
 
--- Node name is 'q4' = '|74395:1|Q4B' 
--- Equation name is 'q4', type is output 
-q4       = TRI(_LC020, GLOBAL(!o));
-_LC020   = DFFE( _EQ004 $  GND, !c, GLOBAL( r),  VCC,  VCC);
-  _EQ004 =  d4 &  load
-         #  _LC017 & !load;
-
--- Node name is 's' = '|74395:1|Q4B~1' 
--- Equation name is 's', type is output 
- s       = DFFE( _EQ004 $  GND, !c, GLOBAL( r),  VCC,  VCC);
+-- Node name is 'Q1' = ':7' 
+-- Equation name is 'Q1', type is output 
+ Q1      = DFFE( p1 $  GND,  C2, GLOBAL( R),  VCC,  VCC);
 
 
 
@@ -299,7 +279,7 @@ _LC020   = DFFE( _EQ004 $  GND, !c, GLOBAL( r),  VCC,  VCC);
 
 
 
-Project Information    c:\labs\microelectronics\lab4\scheme9_15\scheme9_15.rpt
+Project Information  c:\labs\microelectronics\lab4\scheme9.13.1\scheme9_13.rpt
 
 ** COMPILATION SETTINGS & TIMES **
 
@@ -388,4 +368,4 @@ Compilation Times
 Memory Allocated
 -----------------
 
-Peak memory allocated during compilation  = 3,240K
+Peak memory allocated during compilation  = 3,554K

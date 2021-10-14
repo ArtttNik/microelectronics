@@ -16,7 +16,7 @@ InsOrder BitField SymTableIndex NextSyn SynParent Loc ChainType NextChain ChainP
 $	Ky&|	!	1	*	d2	u
 %	Ky&|	!	1	+	d3	o
 &	Ky&|	!	2	,	.	d4	p
-'	Ky&|	!	5	)	*	+	,	.	lead	v
+'	Ky&|	!	5	)	*	+	,	.	load	v
 (	(@>U^	!	4	+	,	*	)	o	w
 )	Ky&}	!	1	*	q1	|
 *	Ky&}	!	1	+	q2	{
