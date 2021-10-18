@@ -24,9 +24,16 @@ HIF003
 --
 FILES
 {
-	scheme9_11.vhd
+	7493.gdf
 	{
-		scheme9_11 [] [U1147235.DLS,U7449008.DLS]
+		7493 [] []
+		{
+			1 [] [];
+		}
+	}
+	scheme10_19.gdf
+	{
+		scheme10_19 [] []
 		{
 			0 [] [];
 		}
@@ -34,5 +41,8 @@ FILES
 }
 TREE
 {
-	scheme9_11::(0,0):(0): scheme9_11.vhd;
+	scheme10_19::(0,0):(0): scheme10_19.gdf
+	{
+		7493::(0,0):(1): 7493.gdf;
+	}
 }
