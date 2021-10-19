@@ -1,0 +1,89 @@
+-- Copyright (C) 1991-2005 Altera Corporation
+-- Your use of Altera Corporation's design tools, logic functions 
+-- and other software and tools, and its AMPP partner logic 
+-- functions, and any output files any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Altera Program License 
+-- Subscription Agreement, Altera MegaCore Function License 
+-- Agreement, or other applicable license agreement, including, 
+-- without limitation, that your use is for the sole purpose of 
+-- programming logic devices manufactured by Altera and sold by 
+-- Altera or its authorized distributors.  Please refer to the 
+-- applicable agreement for further details.
+--cnt[0] is cnt[0]
+--operation mode is normal
+
+cnt[0]_lut_out = !cnt[0];
+cnt[0] = DFFEAS(cnt[0]_lut_out, clk, !rst, , , , , , );
+
+
+--cnt[1] is cnt[1]
+--operation mode is normal
+
+cnt[1]_lut_out = !cnt[1];
+cnt[1] = DFFEAS(cnt[1]_lut_out, clk, !rst, , cnt[0], , , , );
+
+
+--cnt[2] is cnt[2]
+--operation mode is normal
+
+cnt[2]_lut_out = !cnt[2];
+cnt[2] = DFFEAS(cnt[2]_lut_out, clk, !rst, , A1L1, , , , );
+
+
+--cnt[3] is cnt[3]
+--operation mode is normal
+
+cnt[3]_lut_out = !cnt[3];
+cnt[3] = DFFEAS(cnt[3]_lut_out, clk, !rst, , A1L2, , , , );
+
+
+--A1L1 is add~77
+--operation mode is normal
+
+A1L1 = cnt[0] & cnt[1];
+
+
+--A1L2 is add~78
+--operation mode is normal
+
+A1L2 = cnt[0] & cnt[1] & cnt[2];
+
+
+--clk is clk
+--operation mode is input
+
+clk = INPUT();
+
+
+--rst is rst
+--operation mode is input
+
+rst = INPUT();
+
+
+--q[0] is q[0]
+--operation mode is output
+
+q[0] = OUTPUT(cnt[0]);
+
+
+--q[1] is q[1]
+--operation mode is output
+
+q[1] = OUTPUT(cnt[1]);
+
+
+--q[2] is q[2]
+--operation mode is output
+
+q[2] = OUTPUT(cnt[2]);
+
+
+--q[3] is q[3]
+--operation mode is output
+
+q[3] = OUTPUT(cnt[3]);
+
+
