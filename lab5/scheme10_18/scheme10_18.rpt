@@ -2,7 +2,7 @@ Project Information  c:\labs\microelectronics\lab5\scheme10_18\scheme10_18.rpt
 
 MAX+plus II Compiler Report File
 Version 9.01 07/30/98
-Compiled: 10/16/25 00:05:26
+Compiled: 10/21/21 23:04:16
 
 Copyright (C) 1988-1998 Altera Corporation
 Any megafunction design, and related net list (encrypted or decrypted),
@@ -343,4 +343,4 @@ Compilation Times
 Memory Allocated
 -----------------
 
-Peak memory allocated during compilation  = 2,600K
+Peak memory allocated during compilation  = 2,932K

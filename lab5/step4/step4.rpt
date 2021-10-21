@@ -2,7 +2,7 @@ Project Information              c:\labs\microelectronics\lab5\step4\step4.rpt
 
 MAX+plus II Compiler Report File
 Version 9.01 07/30/98
-Compiled: 10/16/25 00:06:08
+Compiled: 10/21/21 23:34:22
 
 Copyright (C) 1988-1998 Altera Corporation
 Any megafunction design, and related net list (encrypted or decrypted),
@@ -36,9 +36,9 @@ needed under any third party's intellectual property, are provided herein.
 Chip/                     Input   Output   Bidir         Shareable
 POF       Device          Pins    Pins     Pins     LCs  Expanders  % Utilized
 
-step4     EPM7032LC44-6    4        1        0      1       0           3  %
+step4     EPM7032LC44-6    5        1        0      1       0           3  %
 
-User Pins:                 4        1        0  
+User Pins:                 5        1        0  
 
 
 
@@ -48,8 +48,8 @@ Project Information              c:\labs\microelectronics\lab5\step4\step4.rpt
 
 
 
-INFO: Signal 'trig' chosen for auto global Clock
-INFO: Signal 'R' chosen for auto global Clear
+INFO: Signal 'c' chosen for auto global Clock
+INFO: Signal 'r' chosen for auto global Clear
 
 
 Device-Specific Information:     c:\labs\microelectronics\lab5\step4\step4.rpt
@@ -66,14 +66,14 @@ Device Options:
     Turbo Bit                                    = ON
     Security Bit                                 = OFF
 
-              R                             R  
-              E                             E  
-              S                             S  
-              E                             E  
-              R                    t        R  
-              V        V  G     G  r  G     V  
-              E        C  N     N  i  N     E  
-              D  K  J  C  D  R  D  g  D  Q  D  
+                                            R  
+                                            E  
+                                            S  
+                                            E  
+                                            R  
+                       V  G     G     G     V  
+                       C  N     N     N     E  
+              p  K  J  C  D  r  D  c  D  Q  D  
             -----------------------------------_ 
           /   6  5  4  3  2  1 44 43 42 41 40   | 
 RESERVED |  7                                39 | RESERVED 
@@ -114,25 +114,25 @@ step4
                                                 Shareable     External
 Logic Array Block     Logic Cells   I/O Pins    Expanders   Interconnect
 
-A:     LC1 - LC16     0/16(  0%)   2/16( 12%)   0/16(  0%)   0/36(  0%) 
-B:    LC17 - LC32     1/16(  6%)   1/16(  6%)   0/16(  0%)   3/36(  8%) 
+A:     LC1 - LC16     0/16(  0%)   3/16( 18%)   0/16(  0%)   0/36(  0%) 
+B:    LC17 - LC32     1/16(  6%)   1/16(  6%)   0/16(  0%)   4/36( 11%) 
 
 
 Total dedicated input pins used:                 2/4      ( 50%)
-Total I/O pins used:                             3/32     (  9%)
+Total I/O pins used:                             4/32     ( 12%)
 Total logic cells used:                          1/32     (  3%)
 Total shareable expanders used:                  0/32     (  0%)
 Total Turbo logic cells used:                    1/32     (  3%)
 Total shareable expanders not available (n/a):   0/32     (  0%)
-Average fan-in:                                  5.00
-Total fan-in:                                     5
+Average fan-in:                                  6.00
+Total fan-in:                                     6
 
-Total input pins required:                       4
+Total input pins required:                       5
 Total output pins required:                      1
 Total bidirectional pins required:               0
 Total logic cells required:                      1
 Total flipflops required:                        1
-Total product terms required:                    2
+Total product terms required:                    3
 Total logic cells lending parallel expanders:    0
 Total shareable expanders in database:           0
 
@@ -148,10 +148,11 @@ step4
                                          Shareable
                                          Expanders     Fan-In    Fan-Out
  Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
+  43      -   -       INPUT  G            0      0   0    0    0    0    0  c
    4    (1)  (A)      INPUT               0      0   0    0    0    1    0  J
    5    (2)  (A)      INPUT               0      0   0    0    0    1    0  K
-   1      -   -       INPUT  G            0      0   0    0    0    0    0  R
-  43      -   -       INPUT  G            0      0   0    0    0    0    0  trig
+   6    (3)  (A)      INPUT               0      0   0    0    0    1    0  p
+   1      -   -       INPUT  G            0      0   0    0    0    0    0  r
 
 
 Code:
@@ -176,7 +177,7 @@ step4
                                          Shareable
                                          Expanders     Fan-In    Fan-Out
  Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
-  41     17    B         FF   +  t        0      0   0    2    1    1    0  Q
+  41     17    B         FF   +  t        0      0   0    3    1    1    0  Q
 
 
 Code:
@@ -204,10 +205,11 @@ LC      | | A B |     Logic cells that feed LAB 'B':
 LC17 -> * | - * | <-- Q
 
 Pin
+43   -> - | - - | <-- c
 4    -> * | - * | <-- J
 5    -> * | - * | <-- K
-1    -> - | - - | <-- R
-43   -> - | - - | <-- trig
+6    -> * | - * | <-- p
+1    -> - | - - | <-- r
 
 
 * = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
@@ -219,14 +221,15 @@ step4
 
 ** EQUATIONS **
 
+c        : INPUT;
 J        : INPUT;
 K        : INPUT;
-R        : INPUT;
-trig     : INPUT;
+p        : INPUT;
+r        : INPUT;
 
 -- Node name is 'Q' = ':1' 
 -- Equation name is 'Q', type is output 
- Q       = TFFE( _EQ001, GLOBAL( trig), GLOBAL( R),  VCC,  VCC);
+ Q       = TFFE( _EQ001, GLOBAL( c), GLOBAL( r),  p,  VCC);
   _EQ001 =  K &  Q
          #  J & !Q;
 
@@ -327,4 +330,4 @@ Compilation Times
 Memory Allocated
 -----------------
 
-Peak memory allocated during compilation  = 2,564K
+Peak memory allocated during compilation  = 3,351K

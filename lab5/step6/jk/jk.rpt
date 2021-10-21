@@ -2,7 +2,7 @@ Project Information              c:\labs\microelectronics\lab5\step6\jk\jk.rpt
 
 MAX+plus II Compiler Report File
 Version 9.01 07/30/98
-Compiled: 10/19/21 00:18:11
+Compiled: 10/22/21 00:12:10
 
 Copyright (C) 1988-1998 Altera Corporation
 Any megafunction design, and related net list (encrypted or decrypted),
@@ -37,19 +37,10 @@ JK
 Chip/                     Input   Output   Bidir         Shareable
 POF       Device          Pins    Pins     Pins     LCs  Expanders  % Utilized
 
-jk        EPM7032LC44-6    3        0        2      2       0           6  %
+jk        EPM7032LC44-6    4        2        0      3       0           9  %
 
-User Pins:                 3        0        2  
+User Pins:                 4        2        0  
 
-
-
-Project Information              c:\labs\microelectronics\lab5\step6\jk\jk.rpt
-
-** AUTO GLOBAL SIGNALS **
-
-
-
-INFO: Signal 'CLK' chosen for auto global Clock
 
 
 Device-Specific Information:     c:\labs\microelectronics\lab5\step6\jk\jk.rpt
@@ -66,17 +57,17 @@ Device Options:
     Turbo Bit                                    = ON
     Security Bit                                 = OFF
 
-              R                                
-              E                                
-              S                                
-              E                                
-              R                                
-              V        V  G  G  G  C  G        
-              E        C  N  N  N  L  N     Q  
-              D  K  J  C  D  D  D  K  D  Q  N  
+                                               
+                                               
+                                               
+                                               
+                                               
+                       V  G  G  G  G  G        
+                       C  N  N  N  N  N  Q     
+              R  K  J  C  D  D  D  D  D  n  Q  
             -----------------------------------_ 
           /   6  5  4  3  2  1 44 43 42 41 40   | 
-RESERVED |  7                                39 | RESERVED 
+       S |  7                                39 | RESERVED 
 RESERVED |  8                                38 | RESERVED 
 RESERVED |  9                                37 | RESERVED 
      GND | 10                                36 | RESERVED 
@@ -114,29 +105,29 @@ jk
                                                 Shareable     External
 Logic Array Block     Logic Cells   I/O Pins    Expanders   Interconnect
 
-A:     LC1 - LC16     0/16(  0%)   2/16( 12%)   0/16(  0%)   0/36(  0%) 
-B:    LC17 - LC32     2/16( 12%)   2/16( 12%)   0/16(  0%)   4/36( 11%) 
+A:     LC1 - LC16     0/16(  0%)   4/16( 25%)   0/16(  0%)   0/36(  0%) 
+B:    LC17 - LC32     3/16( 18%)   2/16( 12%)   0/16(  0%)   6/36( 16%) 
 
 
-Total dedicated input pins used:                 1/4      ( 25%)
-Total I/O pins used:                             4/32     ( 12%)
-Total logic cells used:                          2/32     (  6%)
+Total dedicated input pins used:                 0/4      (  0%)
+Total I/O pins used:                             6/32     ( 18%)
+Total logic cells used:                          3/32     (  9%)
 Total shareable expanders used:                  0/32     (  0%)
-Total Turbo logic cells used:                    2/32     (  6%)
+Total Turbo logic cells used:                    3/32     (  9%)
 Total shareable expanders not available (n/a):   0/32     (  0%)
-Average fan-in:                                  4.00
+Average fan-in:                                  2.66
 Total fan-in:                                     8
 
-Total input pins required:                       3
-Total output pins required:                      0
-Total bidirectional pins required:               2
-Total logic cells required:                      2
-Total flipflops required:                        2
+Total input pins required:                       4
+Total output pins required:                      2
+Total bidirectional pins required:               0
+Total logic cells required:                      3
+Total flipflops required:                        0
 Total product terms required:                    4
 Total logic cells lending parallel expanders:    0
 Total shareable expanders in database:           0
 
-Synthesized logic cells:                         0/  32   (  0%)
+Synthesized logic cells:                         2/  32   (  6%)
 
 
 
@@ -148,11 +139,10 @@ jk
                                          Shareable
                                          Expanders     Fan-In    Fan-Out
  Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
-  43      -   -       INPUT  G            0      0   0    0    0    0    0  CLK
-   4    (1)  (A)      INPUT               0      0   0    0    0    2    0  J
-   5    (2)  (A)      INPUT               0      0   0    0    0    2    0  K
-  41     17    B      BIDIR               0      0   0    2    1    1    0  Q
-  40     18    B      BIDIR               0      0   0    2    1    1    0  QN
+   4    (1)  (A)      INPUT               0      0   0    0    0    0    1  J
+   5    (2)  (A)      INPUT               0      0   0    0    0    0    1  K
+   6    (3)  (A)      INPUT               0      0   0    0    0    2    0  R
+   7    (4)  (A)      INPUT               0      0   0    0    0    0    1  S
 
 
 Code:
@@ -162,11 +152,6 @@ t = Turbo logic cell
 + = Synchronous flipflop
 ! = NOT gate push-back
 r = Fitter-inserted logic cell
-G = Global Source. Fan-out destinations counted here do not include destinations
-that are driven using global routing resources. Refer to the Auto Global Signals,
-Clock Signals, Clear Signals, Synchronous Load Signals, and Synchronous Clear Signals
-Sections of this Report File for information on which signals' fan-outs are used as
-Clock, Clear, Preset, Output Enable, and synchronous Load signals.
 
 
 Device-Specific Information:     c:\labs\microelectronics\lab5\step6\jk\jk.rpt
@@ -177,8 +162,28 @@ jk
                                          Shareable
                                          Expanders     Fan-In    Fan-Out
  Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
-  41     17    B     TRI/FF   +  t        0      0   0    2    1    1    0  Q
-  40     18    B     TRI/FF   +  t        0      0   0    2    1    1    0  QN
+  40     18    B     OUTPUT      t        0      0   0    1    1    0    0  Q
+  41     17    B     OUTPUT    s t !      0      0   0    1    1    0    1  Qn
+
+
+Code:
+
+s = Synthesized pin or logic cell
+t = Turbo logic cell
++ = Synchronous flipflop
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+
+
+Device-Specific Information:     c:\labs\microelectronics\lab5\step6\jk\jk.rpt
+jk
+
+** BURIED LOGIC **
+
+                                         Shareable
+                                         Expanders     Fan-In    Fan-Out
+ Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
+ (39)    19    B       SOFT    s t        0      0   0    3    1    2    0  ~93~1
 
 
 Code:
@@ -197,20 +202,22 @@ jk
 
 Logic Array Block 'B':
 
-             Logic cells placed in LAB 'B'
-        +--- LC17 Q
-        | +- LC18 QN
-        | | 
-        | |   Other LABs fed by signals
-        | |   that feed LAB 'B'
-LC      | | | A B |     Logic cells that feed LAB 'B':
-LC17 -> * - | - * | <-- Q
-LC18 -> - * | - * | <-- QN
+               Logic cells placed in LAB 'B'
+        +----- LC18 Q
+        | +--- LC17 Qn
+        | | +- LC19 ~93~1
+        | | | 
+        | | |   Other LABs fed by signals
+        | | |   that feed LAB 'B'
+LC      | | | | A B |     Logic cells that feed LAB 'B':
+LC17 -> - - * | - * | <-- Qn
+LC19 -> * * - | - * | <-- ~93~1
 
 Pin
-43   -> - - | - - | <-- CLK
-4    -> * * | - * | <-- J
-5    -> * * | - * | <-- K
+4    -> - - * | - * | <-- J
+5    -> - - * | - * | <-- K
+6    -> * * - | - * | <-- R
+7    -> - - * | - * | <-- S
 
 
 * = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
@@ -222,23 +229,28 @@ jk
 
 ** EQUATIONS **
 
-CLK      : INPUT;
 J        : INPUT;
 K        : INPUT;
+R        : INPUT;
+S        : INPUT;
 
--- Node name is 'Q' = ':4' 
--- Equation name is 'Q', type is bidir 
-Q        = TRI(_LC017,  VCC);
-_LC017   = DFFE( _EQ001 $  VCC, GLOBAL( CLK),  VCC,  VCC,  VCC);
-  _EQ001 =  K &  Q
-         # !J & !Q;
+-- Node name is 'Q' 
+-- Equation name is 'Q', location is LC018, type is output.
+ Q       = LCELL( _EQ001 $  GND);
+  _EQ001 =  _LC019 & !R;
 
--- Node name is 'QN' = ':6' 
--- Equation name is 'QN', type is bidir 
-QN       = TRI(_LC018,  VCC);
-_LC018   = DFFE( _EQ002 $  VCC, GLOBAL( CLK),  VCC,  VCC,  VCC);
-  _EQ002 =  J &  QN
-         # !K & !QN;
+-- Node name is 'Qn' = '~99~1' 
+-- Equation name is 'Qn', location is LC017, type is output.
+Qn       = _LC017~NOT;
+_LC017~NOT = LCELL( _EQ002 $  VCC);
+  _EQ002 =  _LC019 & !R;
+
+-- Node name is '~93~1' 
+-- Equation name is '~93~1', location is LC019, type is buried.
+-- synthesized logic cell 
+_LC019   = LCELL( _EQ003 $  VCC);
+  _EQ003 =  K & !Qn & !S
+         # !J &  Qn & !S;
 
 
 
@@ -337,4 +349,4 @@ Compilation Times
 Memory Allocated
 -----------------
 
-Peak memory allocated during compilation  = 3,098K
+Peak memory allocated during compilation  = 3,882K

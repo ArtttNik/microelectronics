@@ -1,32 +1,40 @@
-LIBRARY ieee;
-USE ieee.std_logic_1164.ALL;
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
 
-ENTITY jk IS
-  PORT
-  (
-    J : IN std_logic;
-    K : IN std_logic;
-    CLK : IN std_logic;
-    Q : INOUT std_logic;
-    QN : INOUT std_logic
-  );
-END jk;
+entity jk is
+    Port ( 
+        J : in STD_LOGIC;
+        K : in STD_LOGIC;  
+        R : in STD_LOGIC;
+        S : in STD_LOGIC;
+        Q : out STD_LOGIC;
+        Qn : out STD_LOGIC
+    );
+end jk;
 
-ARCHITECTURE behav OF jk IS
-  BEGIN
-    PROCESS(CLK)
-    BEGIN
-      IF RISING_EDGE(CLK) THEN
-        IF ((J = '1') AND (K = '0')) THEN
-          Q <= '1';
-          QN <= '0';
-        ELSIF ((J = '0') AND (K = '1')) THEN
-          Q <= '0';
-          QN <= '1';
-        ELSIF ((J = '1') AND (K = '1')) THEN
-          Q <= NOT Q;
-          QN <= NOT QN;
-        END IF;
-      END IF;
-    END PROCESS;
-  END behav;
+architecture behavioral of jk is
+    signal q_temp : STD_LOGIC := '0';
+begin
+    process(J, K, R, S)
+    begin
+        -- ?????????: R ? S ????? ?????? ?????????
+        if R = '1' then
+            q_temp <= '0';
+        elsif S = '1' then
+            q_temp <= '1';
+        else
+            -- JK ??????
+            if J = '1' and K = '0' then
+                q_temp <= '1';
+            elsif J = '0' and K = '1' then
+                q_temp <= '0';
+            elsif J = '1' and K = '1' then
+                q_temp <= not q_temp;
+            end if;
+            -- ??? J=0,K=0 - ??????????? ????????? (?? ????? ??????)
+        end if;
+    end process;
+    
+    Q <= q_temp;
+    Qn <= not q_temp;
+end behavioral;

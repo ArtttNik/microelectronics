@@ -31,8 +31,8 @@ CHIP "t" ASSIGNED TO AN EPM7032LC44-6
 GND                              : 1
 GND                              : 2
 VCC                              : 3
-t                                : 4
-RESERVED                         : 5
+R                                : 4
+S                                : 5
 RESERVED                         : 6
 RESERVED                         : 7
 RESERVED                         : 8
@@ -67,8 +67,8 @@ RESERVED                         : 36
 RESERVED                         : 37
 RESERVED                         : 38
 RESERVED                         : 39
-q_n                              : 40
-q                                : 41
+Qn                               : 40
+Q                                : 41
 GND                              : 42
-clk                              : 43
+T                                : 43
 GND                              : 44

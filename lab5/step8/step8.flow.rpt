@@ -1,5 +1,5 @@
 Flow report for step8
-Tue Oct 19 00:30:14 2021
+Thu Oct 21 23:46:46 2021
 Version 5.0 Build 148 04/26/2005 SJ Full Version
 
 
@@ -36,14 +36,14 @@ applicable agreement for further details.
 +---------------------------------------------------------------------+
 ; Flow Summary                                                        ;
 +--------------------------+------------------------------------------+
-; Flow Status              ; Successful - Tue Oct 19 00:30:14 2021    ;
+; Flow Status              ; Successful - Thu Oct 21 23:46:46 2021    ;
 ; Quartus II Version       ; 5.0 Build 148 04/26/2005 SJ Full Version ;
 ; Revision Name            ; step8                                    ;
 ; Top-level Entity Name    ; step8                                    ;
 ; Family                   ; Stratix                                  ;
 ; Met timing requirements  ; Yes                                      ;
-; Total logic elements     ; 6 / 10,570 ( < 1 % )                     ;
-; Total pins               ; 6 / 336 ( 1 % )                          ;
+; Total logic elements     ; 7 / 10,570 ( < 1 % )                     ;
+; Total pins               ; 7 / 336 ( 2 % )                          ;
 ; Total virtual pins       ; 0                                        ;
 ; Total memory bits        ; 0 / 920,448 ( 0 % )                      ;
 ; DSP block 9-bit elements ; 0 / 48 ( 0 % )                           ;
@@ -59,7 +59,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/19/2021 00:30:07 ;
+; Start date & time ; 10/21/2021 23:46:40 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; step8               ;
 +-------------------+---------------------+
@@ -71,10 +71,10 @@ applicable agreement for further details.
 ; Module Name          ; Elapsed Time ;
 +----------------------+--------------+
 ; Analysis & Synthesis ; 00:00:01     ;
-; Fitter               ; 00:00:03     ;
-; Assembler            ; 00:00:02     ;
+; Fitter               ; 00:00:02     ;
+; Assembler            ; 00:00:01     ;
 ; Timing Analyzer      ; 00:00:00     ;
-; Total                ; 00:00:06     ;
+; Total                ; 00:00:04     ;
 +----------------------+--------------+
 
 

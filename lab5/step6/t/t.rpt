@@ -2,7 +2,7 @@ Project Information                c:\labs\microelectronics\lab5\step6\t\t.rpt
 
 MAX+plus II Compiler Report File
 Version 9.01 07/30/98
-Compiled: 10/19/21 00:19:55
+Compiled: 10/22/21 00:02:38
 
 Copyright (C) 1988-1998 Altera Corporation
 Any megafunction design, and related net list (encrypted or decrypted),
@@ -37,9 +37,9 @@ T
 Chip/                     Input   Output   Bidir         Shareable
 POF       Device          Pins    Pins     Pins     LCs  Expanders  % Utilized
 
-t         EPM7032LC44-6    2        0        2      2       0           6  %
+t         EPM7032LC44-6    3        2        0      2       0           6  %
 
-User Pins:                 2        0        2  
+User Pins:                 3        2        0  
 
 
 
@@ -49,7 +49,7 @@ Project Information                c:\labs\microelectronics\lab5\step6\t\t.rpt
 
 
 
-INFO: Signal 'clk' chosen for auto global Clock
+INFO: Signal 'T' chosen for auto global Clock
 
 
 Device-Specific Information:       c:\labs\microelectronics\lab5\step6\t\t.rpt
@@ -66,14 +66,14 @@ Device Options:
     Turbo Bit                                    = ON
     Security Bit                                 = OFF
 
-              R  R                             
-              E  E                             
-              S  S                             
-              E  E                             
-              R  R                             
-              V  V     V  G  G  G  c  G     q  
-              E  E     C  N  N  N  l  N     _  
-              D  D  t  C  D  D  D  k  D  q  n  
+              R                                
+              E                                
+              S                                
+              E                                
+              R                                
+              V        V  G  G  G     G        
+              E        C  N  N  N     N     Q  
+              D  S  R  C  D  D  D  T  D  Q  n  
             -----------------------------------_ 
           /   6  5  4  3  2  1 44 43 42 41 40   | 
 RESERVED |  7                                39 | RESERVED 
@@ -114,25 +114,25 @@ t
                                                 Shareable     External
 Logic Array Block     Logic Cells   I/O Pins    Expanders   Interconnect
 
-A:     LC1 - LC16     0/16(  0%)   1/16(  6%)   0/16(  0%)   0/36(  0%) 
+A:     LC1 - LC16     0/16(  0%)   2/16( 12%)   0/16(  0%)   0/36(  0%) 
 B:    LC17 - LC32     2/16( 12%)   2/16( 12%)   0/16(  0%)   3/36(  8%) 
 
 
 Total dedicated input pins used:                 1/4      ( 25%)
-Total I/O pins used:                             3/32     (  9%)
+Total I/O pins used:                             4/32     ( 12%)
 Total logic cells used:                          2/32     (  6%)
 Total shareable expanders used:                  0/32     (  0%)
 Total Turbo logic cells used:                    2/32     (  6%)
 Total shareable expanders not available (n/a):   0/32     (  0%)
-Average fan-in:                                  3.50
-Total fan-in:                                     7
+Average fan-in:                                  4.00
+Total fan-in:                                     8
 
-Total input pins required:                       2
-Total output pins required:                      0
-Total bidirectional pins required:               2
+Total input pins required:                       3
+Total output pins required:                      2
+Total bidirectional pins required:               0
 Total logic cells required:                      2
 Total flipflops required:                        2
-Total product terms required:                    4
+Total product terms required:                    6
 Total logic cells lending parallel expanders:    0
 Total shareable expanders in database:           0
 
@@ -148,10 +148,9 @@ t
                                          Shareable
                                          Expanders     Fan-In    Fan-Out
  Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
-  43      -   -       INPUT  G            0      0   0    0    0    0    0  clk
-  41     17    B      BIDIR               0      0   0    1    1    2    0  q
-  40     18    B      BIDIR               0      0   0    1    2    1    0  q_n
-   4    (1)  (A)      INPUT               0      0   0    0    0    2    0  t
+   4    (1)  (A)      INPUT               0      0   0    0    0    2    0  R
+   5    (2)  (A)      INPUT               0      0   0    0    0    2    0  S
+  43      -   -       INPUT  G            0      0   0    0    0    0    0  T
 
 
 Code:
@@ -176,8 +175,8 @@ t
                                          Shareable
                                          Expanders     Fan-In    Fan-Out
  Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
-  41     17    B     TRI/FF   +  t        0      0   0    1    1    2    0  q
-  40     18    B     TRI/FF   +  t        0      0   0    1    2    1    0  q_n
+  41     17    B         FF   +  t        0      0   0    2    0    1    0  Q (:10)
+  40     18    B         FF   +  t !      0      0   0    2    1    0    0  Qn (~10~1)
 
 
 Code:
@@ -197,18 +196,18 @@ t
 Logic Array Block 'B':
 
              Logic cells placed in LAB 'B'
-        +--- LC17 q
-        | +- LC18 q_n
+        +--- LC17 Q
+        | +- LC18 Qn
         | | 
         | |   Other LABs fed by signals
         | |   that feed LAB 'B'
 LC      | | | A B |     Logic cells that feed LAB 'B':
-LC17 -> * * | - * | <-- q
-LC18 -> - * | - * | <-- q_n
+LC17 -> * * | - * | <-- Q
 
 Pin
-43   -> - - | - - | <-- clk
-4    -> * * | - * | <-- t
+4    -> * * | - * | <-- R
+5    -> * * | - * | <-- S
+43   -> - - | - - | <-- T
 
 
 * = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
@@ -220,20 +219,18 @@ t
 
 ** EQUATIONS **
 
-clk      : INPUT;
-t        : INPUT;
+R        : INPUT;
+S        : INPUT;
+T        : INPUT;
 
--- Node name is 'q' = ':3' 
--- Equation name is 'q', type is bidir 
-q        = TRI(_LC017,  VCC);
-_LC017   = DFFE( t $  q, GLOBAL( clk),  VCC,  VCC,  VCC);
+-- Node name is 'Q' = 'state' 
+-- Equation name is 'Q', location is LC017, type is output.
+ Q       = TFFE( VCC, GLOBAL( T), !R, !S,  VCC);
 
--- Node name is 'q_n' = ':5' 
--- Equation name is 'q_n', type is bidir 
-q_n      = TRI(_LC018,  VCC);
-_LC018   = DFFE( _EQ001 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
-  _EQ001 =  q &  t
-         #  q_n & !t;
+-- Node name is 'Qn' = 'state~1' 
+-- Equation name is 'Qn', location is LC018, type is output.
+Qn       = _LC018~NOT;
+_LC018~NOT = DFFE(!Q $  VCC, GLOBAL( T), !S, !R,  VCC);
 
 
 
@@ -332,4 +329,4 @@ Compilation Times
 Memory Allocated
 -----------------
 
-Peak memory allocated during compilation  = 3,109K
+Peak memory allocated during compilation  = 3,695K

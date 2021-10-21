@@ -28,12 +28,12 @@ RESERVED = Unused I/O pin, which MUST be left unconnected.
 ----------------------------------------------------------------------------
 
 CHIP "step4" ASSIGNED TO AN EPM7032LC44-6
-R                                : 1
+r                                : 1
 GND                              : 2
 VCC                              : 3
 J                                : 4
 K                                : 5
-RESERVED                         : 6
+p                                : 6
 RESERVED                         : 7
 RESERVED                         : 8
 RESERVED                         : 9
@@ -70,5 +70,5 @@ RESERVED                         : 39
 RESERVED                         : 40
 Q                                : 41
 GND                              : 42
-trig                             : 43
+c                                : 43
 GND                              : 44

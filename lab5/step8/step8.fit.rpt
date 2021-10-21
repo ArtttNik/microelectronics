@@ -1,5 +1,5 @@
 Fitter report for step8
-Tue Oct 19 00:30:11 2021
+Thu Oct 21 23:46:43 2021
 Version 5.0 Build 148 04/26/2005 SJ Full Version
 
 
@@ -56,15 +56,15 @@ applicable agreement for further details.
 +---------------------------------------------------------------------+
 ; Fitter Summary                                                      ;
 +--------------------------+------------------------------------------+
-; Fitter Status            ; Successful - Tue Oct 19 00:30:11 2021    ;
+; Fitter Status            ; Successful - Thu Oct 21 23:46:43 2021    ;
 ; Quartus II Version       ; 5.0 Build 148 04/26/2005 SJ Full Version ;
 ; Revision Name            ; step8                                    ;
 ; Top-level Entity Name    ; step8                                    ;
 ; Family                   ; Stratix                                  ;
 ; Device                   ; EP1S10F484C5                             ;
 ; Timing Models            ; Final                                    ;
-; Total logic elements     ; 6 / 10,570 ( < 1 % )                     ;
-; Total pins               ; 6 / 336 ( 1 % )                          ;
+; Total logic elements     ; 7 / 10,570 ( < 1 % )                     ;
+; Total pins               ; 7 / 336 ( 2 % )                          ;
 ; Total virtual pins       ; 0                                        ;
 ; Total memory bits        ; 0 / 920,448 ( 0 % )                      ;
 ; DSP block 9-bit elements ; 0 / 48 ( 0 % )                           ;
@@ -143,31 +143,31 @@ The pin-out file can be found in C:/labs/microelectronics/lab5/step8/step8.pin.
 +---------------------------------------------+----------------------+
 ; Resource                                    ; Usage                ;
 +---------------------------------------------+----------------------+
-; Total logic elements                        ; 6 / 10,570 ( < 1 % ) ;
-;     -- Combinational with no register       ; 2                    ;
+; Total logic elements                        ; 7 / 10,570 ( < 1 % ) ;
+;     -- Combinational with no register       ; 3                    ;
 ;     -- Register only                        ; 0                    ;
 ;     -- Combinational with a register        ; 4                    ;
 ;                                             ;                      ;
 ; Logic element usage by number of LUT inputs ;                      ;
-;     -- 4 input functions                    ; 0                    ;
+;     -- 4 input functions                    ; 1                    ;
 ;     -- 3 input functions                    ; 1                    ;
 ;     -- 2 input functions                    ; 1                    ;
 ;     -- 1 input functions                    ; 4                    ;
 ;     -- 0 input functions                    ; 0                    ;
 ;                                             ;                      ;
 ; Logic elements by mode                      ;                      ;
-;     -- normal mode                          ; 6                    ;
+;     -- normal mode                          ; 7                    ;
 ;     -- arithmetic mode                      ; 0                    ;
 ;     -- qfbk mode                            ; 0                    ;
 ;     -- register cascade mode                ; 0                    ;
 ;     -- synchronous clear/load mode          ; 0                    ;
 ;     -- asynchronous clear/load mode         ; 4                    ;
 ;                                             ;                      ;
-; Total LABs                                  ; 2 / 1,057 ( < 1 % )  ;
+; Total LABs                                  ; 3 / 1,057 ( < 1 % )  ;
 ; Logic elements in carry chains              ; 0                    ;
 ; User inserted logic elements                ; 0                    ;
 ; Virtual pins                                ; 0                    ;
-; I/O pins                                    ; 6 / 336 ( 1 % )      ;
+; I/O pins                                    ; 7 / 336 ( 2 % )      ;
 ;     -- Clock pins                           ; 2 / 16 ( 12 % )      ;
 ; Global signals                              ; 2                    ;
 ; M512s                                       ; 0 / 94 ( 0 % )       ;
@@ -181,10 +181,10 @@ The pin-out file can be found in C:/labs/microelectronics/lab5/step8/step8.pin.
 ; Fast regional clocks                        ; 0 / 8 ( 0 % )        ;
 ; SERDES transmitters                         ; 0 / 44 ( 0 % )       ;
 ; SERDES receivers                            ; 0 / 44 ( 0 % )       ;
-; Maximum fan-out node                        ; cnt[0]               ;
+; Maximum fan-out node                        ; t1                   ;
 ; Maximum fan-out                             ; 5                    ;
-; Total fan-out                               ; 24                   ;
-; Average fan-out                             ; 1.85                 ;
+; Total fan-out                               ; 29                   ;
+; Average fan-out                             ; 1.93                 ;
 +---------------------------------------------+----------------------+
 
 
@@ -193,8 +193,9 @@ The pin-out file can be found in C:/labs/microelectronics/lab5/step8/step8.pin.
 +------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
 ; Name ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination ; Location assigned by ;
 +------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
-; clk  ; L2    ; 5        ; 53           ; 19           ; 3           ; 4                     ; 0                  ; yes    ; no             ; no            ; no              ; no       ; Off          ; LVTTL        ; Off         ; Fitter               ;
-; rst  ; L3    ; 5        ; 53           ; 19           ; 1           ; 4                     ; 0                  ; yes    ; no             ; no            ; no              ; no       ; Off          ; LVTTL        ; Off         ; Fitter               ;
+; c    ; L2    ; 5        ; 53           ; 19           ; 3           ; 4                     ; 0                  ; yes    ; no             ; no            ; no              ; no       ; Off          ; LVTTL        ; Off         ; Fitter               ;
+; jk   ; E22   ; 2        ; 0            ; 29           ; 3           ; 4                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; LVTTL        ; Off         ; Fitter               ;
+; r    ; L3    ; 5        ; 53           ; 19           ; 1           ; 4                     ; 0                  ; yes    ; no             ; no            ; no              ; no       ; Off          ; LVTTL        ; Off         ; Fitter               ;
 +------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
 
 
@@ -203,10 +204,10 @@ The pin-out file can be found in C:/labs/microelectronics/lab5/step8/step8.pin.
 +------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+----------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+-------------+
 ; Name ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Output Register ; Output Enable Register ; Power Up High ; Slow Slew Rate ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination ; Location assigned by ; Load        ;
 +------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+----------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+-------------+
-; q[0] ; W21   ; 1        ; 0            ; 2            ; 2           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; LVTTL        ; 24mA             ; Off         ; Fitter               ; Unspecified ;
-; q[1] ; W22   ; 1        ; 0            ; 2            ; 3           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; LVTTL        ; 24mA             ; Off         ; Fitter               ; Unspecified ;
-; q[2] ; U19   ; 1        ; 0            ; 1            ; 1           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; LVTTL        ; 24mA             ; Off         ; Fitter               ; Unspecified ;
-; q[3] ; T18   ; 1        ; 0            ; 2            ; 1           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; LVTTL        ; 24mA             ; Off         ; Fitter               ; Unspecified ;
+; q1   ; C21   ; 3        ; 3            ; 31           ; 1           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; LVTTL        ; 24mA             ; Off         ; Fitter               ; Unspecified ;
+; q2   ; E21   ; 2        ; 0            ; 29           ; 2           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; LVTTL        ; 24mA             ; Off         ; Fitter               ; Unspecified ;
+; q3   ; F18   ; 2        ; 0            ; 29           ; 1           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; LVTTL        ; 24mA             ; Off         ; Fitter               ; Unspecified ;
+; q4   ; A19   ; 3        ; 3            ; 31           ; 2           ; no              ; no                     ; no            ; no             ; no              ; no         ; no            ; no       ; Off          ; LVTTL        ; 24mA             ; Off         ; Fitter               ; Unspecified ;
 +------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+----------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+-------------+
 
 
@@ -215,9 +216,9 @@ The pin-out file can be found in C:/labs/microelectronics/lab5/step8/step8.pin.
 +----------+-----------------+---------------+--------------+
 ; I/O Bank ; Usage           ; VCCIO Voltage ; VREF Voltage ;
 +----------+-----------------+---------------+--------------+
-; 1        ; 4 / 29 ( 13 % ) ; 3.3V          ; --           ;
-; 2        ; 0 / 30 ( 0 % )  ; 3.3V          ; --           ;
-; 3        ; 0 / 51 ( 0 % )  ; 3.3V          ; --           ;
+; 1        ; 0 / 29 ( 0 % )  ; 3.3V          ; --           ;
+; 2        ; 3 / 30 ( 10 % ) ; 3.3V          ; --           ;
+; 3        ; 2 / 51 ( 3 % )  ; 3.3V          ; --           ;
 ; 4        ; 1 / 52 ( 1 % )  ; 3.3V          ; --           ;
 ; 5        ; 2 / 29 ( 6 % )  ; 3.3V          ; --           ;
 ; 6        ; 0 / 29 ( 0 % )  ; 3.3V          ; --           ;
@@ -251,7 +252,7 @@ The pin-out file can be found in C:/labs/microelectronics/lab5/step8/step8.pin.
 ; A16      ; 429        ; 3        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ;
 ; A17      ; 436        ; 3        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ;
 ; A18      ; 444        ; 3        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ;
-; A19      ; 450        ; 3        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ;
+; A19      ; 450        ; 3        ; q4                        ; output ; LVTTL        ;         ; Column I/O ; Off         ; N               ;
 ; A20      ;            ; 3        ; VCCIO3                    ; power  ;              ; 3.3V    ; --         ; --          ;                 ;
 ; A21      ;            ;          ; GND                       ; gnd    ;              ;         ; --         ; --          ;                 ;
 ; A22      ;            ;          ; VCCINT                    ; power  ;              ; 1.5V    ; --         ; --          ;                 ;
@@ -341,7 +342,7 @@ The pin-out file can be found in C:/labs/microelectronics/lab5/step8/step8.pin.
 ; C18      ; 441        ; 3        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ;
 ; C19      ; 452        ; 3        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ;
 ; C20      ; 457        ; 3        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ;
-; C21      ; 453        ; 3        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ;
+; C21      ; 453        ; 3        ; q1                        ; output ; LVTTL        ;         ; Column I/O ; Off         ; N               ;
 ; C22      ;            ; 2        ; VCCIO2                    ; power  ;              ; 3.3V    ; --         ; --          ;                 ;
 ; D1       ; 329        ; 5        ; GND*                      ;        ;              ;         ; Row I/O    ; --          ;                 ;
 ; D2       ; 328        ; 5        ; GND*                      ;        ;              ;         ; Row I/O    ; --          ;                 ;
@@ -385,8 +386,8 @@ The pin-out file can be found in C:/labs/microelectronics/lab5/step8/step8.pin.
 ; E18      ; 443        ; 3        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ;
 ; E19      ; 2          ; 2        ; GND*                      ;        ;              ;         ; Row I/O    ; --          ;                 ;
 ; E20      ; 3          ; 2        ; GND*                      ;        ;              ;         ; Row I/O    ; --          ;                 ;
-; E21      ; 4          ; 2        ; GND*                      ;        ;              ;         ; Row I/O    ; --          ;                 ;
-; E22      ; 5          ; 2        ; GND*                      ;        ;              ;         ; Row I/O    ; --          ;                 ;
+; E21      ; 4          ; 2        ; q2                        ; output ; LVTTL        ;         ; Row I/O    ; Off         ; N               ;
+; E22      ; 5          ; 2        ; jk                        ; input  ; LVTTL        ;         ; Row I/O    ; Off         ; N               ;
 ; F1       ; 299        ; 5        ; GND*                      ;        ;              ;         ; Row I/O    ; --          ;                 ;
 ; F2       ; 300        ; 5        ; GND*                      ;        ;              ;         ; Row I/O    ; --          ;                 ;
 ; F3       ; 326        ; 5        ; GND*                      ;        ;              ;         ; Row I/O    ; --          ;                 ;
@@ -404,7 +405,7 @@ The pin-out file can be found in C:/labs/microelectronics/lab5/step8/step8.pin.
 ; F15      ; 427        ; 3        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ;
 ; F16      ; 435        ; 3        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ;
 ; F17      ; 439        ; 3        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ;
-; F18      ; 7          ; 2        ; GND*                      ;        ;              ;         ; Row I/O    ; --          ;                 ;
+; F18      ; 7          ; 2        ; q3                        ; output ; LVTTL        ;         ; Row I/O    ; Off         ; N               ;
 ; F19      ;            ;          ; NC                        ;        ;              ;         ; --         ; --          ;                 ;
 ; F20      ;            ;          ; NC                        ;        ;              ;         ; --         ; --          ;                 ;
 ; F21      ; 29         ; 2        ; GND*                      ;        ;              ;         ; Row I/O    ; --          ;                 ;
@@ -498,8 +499,8 @@ The pin-out file can be found in C:/labs/microelectronics/lab5/step8/step8.pin.
 ; K21      ; 45         ; 2        ; GND*                      ;        ;              ;         ; Row I/O    ; --          ;                 ;
 ; K22      ;            ; 2        ; VCCIO2                    ; power  ;              ; 3.3V    ; --         ; --          ;                 ;
 ; L1       ; 283        ; 5        ; GND+                      ;        ;              ;         ; Row I/O    ; --          ;                 ;
-; L2       ; 282        ; 5        ; clk                       ; input  ; LVTTL        ;         ; Row I/O    ; Off         ; N               ;
-; L3       ; 280        ; 5        ; rst                       ; input  ; LVTTL        ;         ; Row I/O    ; Off         ; N               ;
+; L2       ; 282        ; 5        ; c                         ; input  ; LVTTL        ;         ; Row I/O    ; Off         ; N               ;
+; L3       ; 280        ; 5        ; r                         ; input  ; LVTTL        ;         ; Row I/O    ; Off         ; N               ;
 ; L4       ;            ;          ; GNDA_PLL4                 ; gnd    ;              ;         ; --         ; --          ;                 ;
 ; L5       ;            ;          ; GNDG_PLL4                 ; gnd    ;              ;         ; --         ; --          ;                 ;
 ; L6       ; 293        ; 5        ; GND*                      ;        ;              ;         ; Row I/O    ; --          ;                 ;
@@ -624,7 +625,7 @@ The pin-out file can be found in C:/labs/microelectronics/lab5/step8/step8.pin.
 ; T15      ; 136        ; 8        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ;
 ; T16      ; 119        ; 8        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ;
 ; T17      ;            ;          ; GND                       ; gnd    ;              ;         ; --         ; --          ;                 ;
-; T18      ; 95         ; 1        ; q[3]                      ; output ; LVTTL        ;         ; Row I/O    ; Off         ; N               ;
+; T18      ; 95         ; 1        ; GND*                      ;        ;              ;         ; Row I/O    ; --          ;                 ;
 ; T19      ; 78         ; 1        ; GND*                      ;        ;              ;         ; Row I/O    ; --          ;                 ;
 ; T20      ; 77         ; 1        ; GND*                      ;        ;              ;         ; Row I/O    ; --          ;                 ;
 ; T21      ; 64         ; 1        ; GND*                      ;        ;              ;         ; Row I/O    ; --          ;                 ;
@@ -647,7 +648,7 @@ The pin-out file can be found in C:/labs/microelectronics/lab5/step8/step8.pin.
 ; U16      ; 121        ; 8        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ;
 ; U17      ; 120        ; 8        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ;
 ; U18      ; 91         ; 1        ; GND*                      ;        ;              ;         ; Row I/O    ; --          ;                 ;
-; U19      ; 99         ; 1        ; q[2]                      ; output ; LVTTL        ;         ; Row I/O    ; Off         ; N               ;
+; U19      ; 99         ; 1        ; GND*                      ;        ;              ;         ; Row I/O    ; --          ;                 ;
 ; U20      ; 98         ; 1        ; GND*                      ;        ;              ;         ; Row I/O    ; --          ;                 ;
 ; U21      ; 67         ; 1        ; GND*                      ;        ;              ;         ; Row I/O    ; --          ;                 ;
 ; U22      ; 68         ; 1        ; GND*                      ;        ;              ;         ; Row I/O    ; --          ;                 ;
@@ -693,8 +694,8 @@ The pin-out file can be found in C:/labs/microelectronics/lab5/step8/step8.pin.
 ; W18      ; 107        ; 8        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ;
 ; W19      ; 101        ; 8        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ;
 ; W20      ; 100        ; 8        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ;
-; W21      ; 92         ; 1        ; q[0]                      ; output ; LVTTL        ;         ; Row I/O    ; Off         ; N               ;
-; W22      ; 93         ; 1        ; q[1]                      ; output ; LVTTL        ;         ; Row I/O    ; Off         ; N               ;
+; W21      ; 92         ; 1        ; GND*                      ;        ;              ;         ; Row I/O    ; --          ;                 ;
+; W22      ; 93         ; 1        ; GND*                      ;        ;              ;         ; Row I/O    ; --          ;                 ;
 ; Y1       ;            ; 6        ; VCCIO6                    ; power  ;              ; 3.3V    ; --         ; --          ;                 ;
 ; Y2       ; 222        ; 7        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ;
 ; Y3       ; 228        ; 7        ; GND*                      ;        ;              ;         ; Column I/O ; --          ;                 ;
@@ -766,7 +767,7 @@ Note: User assignments will override these defaults. The user specified values a
 +----------------------------+-------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+--------------+-------------------+------------------+-----------------+---------------------+
 ; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Full Hierarchy Name ;
 +----------------------------+-------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+--------------+-------------------+------------------+-----------------+---------------------+
-; |step8                     ; 6 (6)       ; 4            ; 0           ; 0            ; 0       ; 0         ; 0         ; 6    ; 0            ; 2 (2)        ; 4 (4)             ; 0 (0)            ; 0 (0)           ; |step8              ;
+; |step8                     ; 7 (7)       ; 4            ; 0           ; 0            ; 0       ; 0         ; 0         ; 7    ; 0            ; 3 (3)        ; 4 (4)             ; 0 (0)            ; 0 (0)           ; |step8              ;
 +----------------------------+-------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+--------------+-------------------+------------------+-----------------+---------------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -776,12 +777,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------+----------+---------------+---------------+-----------------------+-------------------------+----------------------------------------+---------------------------------+--------------------------------+-----+------+----------------------------+
 ; Name ; Pin Type ; Pad to Core 0 ; Pad to Core 1 ; Pad to Input Register ; Core to Output Register ; Clock Enable to Output Enable Register ; Clock Enable to Output Register ; Clock Enable to Input Register ; TCO ; TCOE ; Falling Edge Output Enable ;
 +------+----------+---------------+---------------+-----------------------+-------------------------+----------------------------------------+---------------------------------+--------------------------------+-----+------+----------------------------+
-; clk  ; Input    ; OFF           ; OFF           ; --                    ; --                      ; --                                     ; --                              ; --                             ; --  ; --   ; --                         ;
-; rst  ; Input    ; OFF           ; OFF           ; --                    ; --                      ; --                                     ; --                              ; --                             ; --  ; --   ; --                         ;
-; q[0] ; Output   ; --            ; --            ; --                    ; --                      ; --                                     ; --                              ; --                             ; --  ; OFF  ; OFF                        ;
-; q[1] ; Output   ; --            ; --            ; --                    ; --                      ; --                                     ; --                              ; --                             ; --  ; OFF  ; OFF                        ;
-; q[2] ; Output   ; --            ; --            ; --                    ; --                      ; --                                     ; --                              ; --                             ; --  ; OFF  ; OFF                        ;
-; q[3] ; Output   ; --            ; --            ; --                    ; --                      ; --                                     ; --                              ; --                             ; --  ; OFF  ; OFF                        ;
+; c    ; Input    ; OFF           ; OFF           ; --                    ; --                      ; --                                     ; --                              ; --                             ; --  ; --   ; --                         ;
+; r    ; Input    ; OFF           ; OFF           ; --                    ; --                      ; --                                     ; --                              ; --                             ; --  ; --   ; --                         ;
+; jk   ; Input    ; ON            ; ON            ; --                    ; --                      ; --                                     ; --                              ; --                             ; --  ; --   ; --                         ;
+; q1   ; Output   ; --            ; --            ; --                    ; --                      ; --                                     ; --                              ; --                             ; --  ; OFF  ; OFF                        ;
+; q2   ; Output   ; --            ; --            ; --                    ; --                      ; --                                     ; --                              ; --                             ; --  ; OFF  ; OFF                        ;
+; q3   ; Output   ; --            ; --            ; --                    ; --                      ; --                                     ; --                              ; --                             ; --  ; OFF  ; OFF                        ;
+; q4   ; Output   ; --            ; --            ; --                    ; --                      ; --                                     ; --                              ; --                             ; --  ; OFF  ; OFF                        ;
 +------+----------+---------------+---------------+-----------------------+-------------------------+----------------------------------------+---------------------------------+--------------------------------+-----+------+----------------------------+
 
 
@@ -790,22 +792,28 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------+-------------------+---------+
 ; Source Pin / Fanout ; Pad To Core Index ; Setting ;
 +---------------------+-------------------+---------+
-; clk                 ;                   ;         ;
-; rst                 ;                   ;         ;
+; c                   ;                   ;         ;
+; r                   ;                   ;         ;
+; jk                  ;                   ;         ;
+;      - t1           ; 1                 ; ON      ;
+;      - t2~12        ; 1                 ; ON      ;
+;      - t4~12        ; 1                 ; ON      ;
+;      - t4~0         ; 1                 ; ON      ;
 +---------------------+-------------------+---------+
 
 
 +--------------------------------------------------------------------------------------------------+
 ; Control Signals                                                                                  ;
-+--------+-------------+---------+--------------+--------+----------------------+------------------+
-; Name   ; Location    ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ;
-+--------+-------------+---------+--------------+--------+----------------------+------------------+
-; add~77 ; LC_X1_Y2_N2 ; 1       ; Clock enable ; no     ; --                   ; --               ;
-; add~78 ; LC_X1_Y2_N6 ; 1       ; Clock enable ; no     ; --                   ; --               ;
-; clk    ; PIN_L2      ; 4       ; Clock        ; yes    ; Global clock         ; GCLK11           ;
-; cnt[0] ; LC_X2_Y2_N4 ; 5       ; Clock enable ; no     ; --                   ; --               ;
-; rst    ; PIN_L3      ; 4       ; Async. clear ; yes    ; Global clock         ; GCLK10           ;
-+--------+-------------+---------+--------------+--------+----------------------+------------------+
++-------+--------------+---------+--------------+--------+----------------------+------------------+
+; Name  ; Location     ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ;
++-------+--------------+---------+--------------+--------+----------------------+------------------+
+; c     ; PIN_L2       ; 4       ; Clock        ; yes    ; Global clock         ; GCLK11           ;
+; jk    ; PIN_E22      ; 4       ; Clock enable ; no     ; --                   ; --               ;
+; r     ; PIN_L3       ; 4       ; Async. clear ; yes    ; Global clock         ; GCLK10           ;
+; t2~12 ; LC_X2_Y29_N6 ; 1       ; Clock enable ; no     ; --                   ; --               ;
+; t4~0  ; LC_X2_Y29_N4 ; 1       ; Clock enable ; no     ; --                   ; --               ;
+; t4~12 ; LC_X2_Y29_N5 ; 1       ; Clock enable ; no     ; --                   ; --               ;
++-------+--------------+---------+--------------+--------+----------------------+------------------+
 
 
 +---------------------------------------------------------------------+
@@ -813,23 +821,25 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------+----------+---------+----------------------+------------------+
 ; Name ; Location ; Fan-Out ; Global Resource Used ; Global Line Name ;
 +------+----------+---------+----------------------+------------------+
-; clk  ; PIN_L2   ; 4       ; Global clock         ; GCLK11           ;
-; rst  ; PIN_L3   ; 4       ; Global clock         ; GCLK10           ;
+; c    ; PIN_L2   ; 4       ; Global clock         ; GCLK11           ;
+; r    ; PIN_L3   ; 4       ; Global clock         ; GCLK10           ;
 +------+----------+---------+----------------------+------------------+
 
 
 +---------------------------------+
 ; Non-Global High Fan-Out Signals ;
-+--------+------------------------+
-; Name   ; Fan-Out                ;
-+--------+------------------------+
-; cnt[0] ; 5                      ;
-; cnt[1] ; 4                      ;
-; cnt[2] ; 3                      ;
-; cnt[3] ; 2                      ;
-; add~78 ; 1                      ;
-; add~77 ; 1                      ;
-+--------+------------------------+
++-------+-------------------------+
+; Name  ; Fan-Out                 ;
++-------+-------------------------+
+; t1    ; 5                       ;
+; jk    ; 4                       ;
+; t2    ; 4                       ;
+; t3    ; 3                       ;
+; t4    ; 2                       ;
+; t4~0  ; 1                       ;
+; t4~12 ; 1                       ;
+; t2~12 ; 1                       ;
++-------+-------------------------+
 
 
 +----------------------------------------------------+
@@ -838,7 +848,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Interconnect Resource Type  ; Usage                ;
 +-----------------------------+----------------------+
 ; C16 interconnects           ; 0 / 2,286 ( 0 % )    ;
-; C4 interconnects            ; 1 / 31,320 ( < 1 % ) ;
+; C4 interconnects            ; 2 / 31,320 ( < 1 % ) ;
 ; C8 interconnects            ; 0 / 7,272 ( 0 % )    ;
 ; DIFFIOCLKs                  ; 0 / 16 ( 0 % )       ;
 ; DQS bus muxes               ; 0 / 56 ( 0 % )       ;
@@ -849,9 +859,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Global clocks               ; 2 / 16 ( 12 % )      ;
 ; I/O buses                   ; 0 / 208 ( 0 % )      ;
 ; LUT chains                  ; 0 / 9,513 ( 0 % )    ;
-; Local routing interconnects ; 6 / 10,570 ( < 1 % ) ;
+; Local routing interconnects ; 5 / 10,570 ( < 1 % ) ;
 ; R24 interconnects           ; 0 / 2,280 ( 0 % )    ;
-; R4 interconnects            ; 2 / 62,520 ( < 1 % ) ;
+; R4 interconnects            ; 3 / 62,520 ( < 1 % ) ;
 ; R8 interconnects            ; 0 / 10,410 ( 0 % )   ;
 ; Regional clocks             ; 0 / 16 ( 0 % )       ;
 +-----------------------------+----------------------+
@@ -860,13 +870,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------------------------------------------------------------+
 ; LAB Logic Elements                                                       ;
 +--------------------------------------------+-----------------------------+
-; Number of Logic Elements  (Average = 3.00) ; Number of LABs  (Total = 2) ;
+; Number of Logic Elements  (Average = 2.33) ; Number of LABs  (Total = 3) ;
 +--------------------------------------------+-----------------------------+
-; 1                                          ; 0                           ;
-; 2                                          ; 1                           ;
+; 1                                          ; 2                           ;
+; 2                                          ; 0                           ;
 ; 3                                          ; 0                           ;
-; 4                                          ; 1                           ;
-; 5                                          ; 0                           ;
+; 4                                          ; 0                           ;
+; 5                                          ; 1                           ;
 ; 6                                          ; 0                           ;
 ; 7                                          ; 0                           ;
 ; 8                                          ; 0                           ;
@@ -878,46 +888,50 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------------------------------------------+
 ; LAB-wide Signals                                                 ;
 +------------------------------------+-----------------------------+
-; LAB-wide Signals  (Average = 2.00) ; Number of LABs  (Total = 2) ;
+; LAB-wide Signals  (Average = 3.00) ; Number of LABs  (Total = 3) ;
 +------------------------------------+-----------------------------+
-; 1 Async. clear                     ; 2                           ;
-; 1 Clock                            ; 2                           ;
+; 1 Async. clear                     ; 3                           ;
+; 1 Clock                            ; 3                           ;
+; 1 Clock enable                     ; 3                           ;
 +------------------------------------+-----------------------------+
 
 
 +---------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                       ;
 +---------------------------------------------+-----------------------------+
-; Number of Signals Sourced  (Average = 3.00) ; Number of LABs  (Total = 2) ;
+; Number of Signals Sourced  (Average = 2.33) ; Number of LABs  (Total = 3) ;
 +---------------------------------------------+-----------------------------+
 ; 0                                           ; 0                           ;
-; 1                                           ; 0                           ;
-; 2                                           ; 1                           ;
+; 1                                           ; 2                           ;
+; 2                                           ; 0                           ;
 ; 3                                           ; 0                           ;
-; 4                                           ; 1                           ;
+; 4                                           ; 0                           ;
+; 5                                           ; 1                           ;
 +---------------------------------------------+-----------------------------+
 
 
 +-------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                       ;
 +-------------------------------------------------+-----------------------------+
-; Number of Signals Sourced Out  (Average = 2.00) ; Number of LABs  (Total = 2) ;
+; Number of Signals Sourced Out  (Average = 2.00) ; Number of LABs  (Total = 3) ;
 +-------------------------------------------------+-----------------------------+
 ; 0                                               ; 0                           ;
-; 1                                               ; 0                           ;
-; 2                                               ; 2                           ;
+; 1                                               ; 2                           ;
+; 2                                               ; 0                           ;
+; 3                                               ; 0                           ;
+; 4                                               ; 1                           ;
 +-------------------------------------------------+-----------------------------+
 
 
 +---------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                       ;
 +---------------------------------------------+-----------------------------+
-; Number of Distinct Inputs  (Average = 3.00) ; Number of LABs  (Total = 2) ;
+; Number of Distinct Inputs  (Average = 3.33) ; Number of LABs  (Total = 3) ;
 +---------------------------------------------+-----------------------------+
 ; 0                                           ; 0                           ;
 ; 1                                           ; 0                           ;
-; 2                                           ; 1                           ;
-; 3                                           ; 0                           ;
+; 2                                           ; 0                           ;
+; 3                                           ; 2                           ;
 ; 4                                           ; 1                           ;
 +---------------------------------------------+-----------------------------+
 
@@ -928,7 +942,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II Fitter
     Info: Version 5.0 Build 148 04/26/2005 SJ Full Version
-    Info: Processing started: Tue Oct 19 00:30:08 2021
+    Info: Processing started: Thu Oct 21 23:46:41 2021
 Info: Command: quartus_fit --read_settings_files=off --write_settings_files=off step8 -c step8
 Info: Auto device selection -- successful I/O standard check for EP1S10F484C5
 Info: Auto device selection -- successful PCI I/O clamp diode check for EP1S10F484C5
@@ -936,13 +950,14 @@ Info: Automatically selected device EP1S10F484C5 for design step8
 Info: Fitter is performing an Auto Fit compilation, which may decrease Fitter effort to reduce compilation time
 Info: Device migration not selected. If you intend to use device migration later, you may need to change the pin assignments as they may be incompatible with other devices. 
     Info: Device EP1S20F484C5 is compatible
-Info: No exact pin location assignment(s) for 6 pins of 6 total pins
-    Info: Pin q[0] not assigned to an exact location on the device
-    Info: Pin q[1] not assigned to an exact location on the device
-    Info: Pin q[2] not assigned to an exact location on the device
-    Info: Pin q[3] not assigned to an exact location on the device
-    Info: Pin clk not assigned to an exact location on the device
-    Info: Pin rst not assigned to an exact location on the device
+Info: No exact pin location assignment(s) for 7 pins of 7 total pins
+    Info: Pin q1 not assigned to an exact location on the device
+    Info: Pin q2 not assigned to an exact location on the device
+    Info: Pin q3 not assigned to an exact location on the device
+    Info: Pin q4 not assigned to an exact location on the device
+    Info: Pin c not assigned to an exact location on the device
+    Info: Pin r not assigned to an exact location on the device
+    Info: Pin jk not assigned to an exact location on the device
 Info: Timing requirements not specified -- optimizing circuit to achieve the following default global requirements
     Info: Assuming a global fmax requirement of 1 MHz
     Info: Not setting a global tsu requirement
@@ -951,8 +966,8 @@ Info: Timing requirements not specified -- optimizing circuit to achieve the fol
 Info: Performing register packing on registers with non-logic cell location assignments
 Info: Completed register packing on registers with non-logic cell location assignments
 Info: Completed User Assigned Global Signals Promotion Operation
-Info: Automatically promoted signal "clk" to use Global clock in PIN L2
-Info: Automatically promoted signal "rst" to use Global clock in PIN L3
+Info: Automatically promoted signal "c" to use Global clock in PIN L2
+Info: Automatically promoted signal "r" to use Global clock in PIN L3
 Info: Completed Auto Global Promotion Operation
 Info: Starting register packing
 Info: Started Fast Input/Output/OE register processing
@@ -964,7 +979,7 @@ Info: Moving registers into I/O cells, LUTs, RAM blocks, and DSP blocks to impro
 Info: Finished moving registers into LUTs, I/O cells, DSP blocks, and RAM blocks
 Info: Finished register packing
 Info: Statistics of I/O pins that need to be placed that use the same VCCIO and VREF, before I/O pin placement
-    Info: Number of I/O pins in group: 4 (unused VREF, 3.30 VCCIO, 0 input, 4 output, 0 bidirectional)
+    Info: Number of I/O pins in group: 5 (unused VREF, 3.30 VCCIO, 1 input, 4 output, 0 bidirectional)
         Info: I/O standards used: LVTTL.
 Info: I/O bank details before I/O pin placement
     Info: Statistics of I/O banks
@@ -984,12 +999,12 @@ Info: Fitter placement preparation operations beginning
 Info: Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info: Fitter placement operations beginning
 Info: Fitter placement was successful
-Info: Estimated most critical path is register to register delay of 1.708 ns
-    Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LAB_X2_Y2; Fanout = 5; REG Node = 'cnt[0]'
-    Info: 2: + IC(0.319 ns) + CELL(0.366 ns) = 0.685 ns; Loc. = LAB_X1_Y2; Fanout = 1; COMB Node = 'add~77'
-    Info: 3: + IC(0.318 ns) + CELL(0.705 ns) = 1.708 ns; Loc. = LAB_X1_Y2; Fanout = 3; REG Node = 'cnt[2]'
-    Info: Total cell delay = 1.071 ns ( 62.70 % )
-    Info: Total interconnect delay = 0.637 ns ( 37.30 % )
+Info: Estimated most critical path is register to register delay of 1.870 ns
+    Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LAB_X1_Y29; Fanout = 3; REG Node = 't3'
+    Info: 2: + IC(0.505 ns) + CELL(0.183 ns) = 0.688 ns; Loc. = LAB_X2_Y29; Fanout = 1; COMB Node = 't4~0'
+    Info: 3: + IC(0.477 ns) + CELL(0.705 ns) = 1.870 ns; Loc. = LAB_X3_Y29; Fanout = 2; REG Node = 't4'
+    Info: Total cell delay = 0.888 ns ( 47.49 % )
+    Info: Total interconnect delay = 0.982 ns ( 52.51 % )
 Info: Fitter placement operations ending: elapsed time is 00:00:00
 Info: Fitter routing operations beginning
 Info: Fitter routing operations ending: elapsed time is 00:00:00
@@ -999,7 +1014,7 @@ Info: Started post-fitting delay annotation
 Info: Delay annotation completed successfully
 Info: Completed Auto Delay Chain Operation
 Info: Quartus II Fitter was successful. 0 errors, 0 warnings
-    Info: Processing ended: Tue Oct 19 00:30:11 2021
-    Info: Elapsed time: 00:00:03
+    Info: Processing ended: Thu Oct 21 23:46:43 2021
+    Info: Elapsed time: 00:00:02
 
 

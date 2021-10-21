@@ -1,24 +1,30 @@
-library ieee;
-use ieee.std_logic_1164.all;
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
 
 entity t is
-    port (
-        clk : in std_logic;
-        t   : in std_logic;
-        q   : inout std_logic;
-        q_n : inout std_logic
+    Port ( 
+        T : in STD_LOGIC;
+        R : in STD_LOGIC;
+        S : in STD_LOGIC;
+        Q : out STD_LOGIC;
+        Qn : out STD_LOGIC
     );
 end t;
 
 architecture behav of t is
 begin
-    process (clk)
+    process(T, R, S)
+        variable state : STD_LOGIC := '0';
     begin
-        if rising_edge(clk) then
-            if (t = '1') then
-				q_n <= q;
-                q <= not q;
-            end if;
+        if R = '1' then
+            state := '0';
+        elsif S = '1' then
+            state := '1';
+        elsif rising_edge(T) then
+            state := not state;
         end if;
+        
+        Q <= state;
+        Qn <= not state;
     end process;
 end behav;

@@ -33,8 +33,8 @@ GND                              : 2
 VCC                              : 3
 J                                : 4
 K                                : 5
-RESERVED                         : 6
-RESERVED                         : 7
+R                                : 6
+S                                : 7
 RESERVED                         : 8
 RESERVED                         : 9
 GND                              : 10
@@ -67,8 +67,8 @@ RESERVED                         : 36
 RESERVED                         : 37
 RESERVED                         : 38
 RESERVED                         : 39
-QN                               : 40
-Q                                : 41
+Q                                : 40
+Qn                               : 41
 GND                              : 42
-CLK                              : 43
+GND                              : 43
 GND                              : 44

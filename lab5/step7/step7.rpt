@@ -2,7 +2,7 @@ Project Information              c:\labs\microelectronics\lab5\step7\step7.rpt
 
 MAX+plus II Compiler Report File
 Version 9.01 07/30/98
-Compiled: 10/19/21 00:23:49
+Compiled: 10/21/21 23:01:02
 
 Copyright (C) 1988-1998 Altera Corporation
 Any megafunction design, and related net list (encrypted or decrypted),
@@ -37,9 +37,9 @@ STEP7
 Chip/                     Input   Output   Bidir         Shareable
 POF       Device          Pins    Pins     Pins     LCs  Expanders  % Utilized
 
-step7     EPM7032LC44-6    2        0        4      4       0           12 %
+step7     EPM7032LC44-6    3        4        0      4       0           12 %
 
-User Pins:                 2        0        4  
+User Pins:                 3        4        0  
 
 
 
@@ -49,7 +49,8 @@ Project Information              c:\labs\microelectronics\lab5\step7\step7.rpt
 
 
 
-INFO: Signal 'clk' chosen for auto global Clock
+INFO: Signal 'c' chosen for auto global Clock
+INFO: Signal 'r' chosen for auto global Clear
 
 
 Device-Specific Information:     c:\labs\microelectronics\lab5\step7\step7.rpt
@@ -68,16 +69,16 @@ Device Options:
 
               R  R                             
               E  E                             
-              S  S                       c  c  
-              E  E                       o  o  
-              R  R                       u  u  
-              V  V  r  V  G  G  G  c  G  n  n  
-              E  E  s  C  N  N  N  l  N  t  t  
-              D  D  t  C  D  D  D  k  D  1  2  
+              S  S                             
+              E  E                             
+              R  R                             
+              V  V     V  G     G     G        
+              E  E  j  C  N     N     N  q  q  
+              D  D  k  C  D  r  D  c  D  1  2  
             -----------------------------------_ 
           /   6  5  4  3  2  1 44 43 42 41 40   | 
-RESERVED |  7                                39 | count3 
-RESERVED |  8                                38 | count0 
+RESERVED |  7                                39 | q3 
+RESERVED |  8                                38 | q4 
 RESERVED |  9                                37 | RESERVED 
      GND | 10                                36 | RESERVED 
 RESERVED | 11                                35 | VCC 
@@ -118,21 +119,21 @@ A:     LC1 - LC16     0/16(  0%)   1/16(  6%)   0/16(  0%)   0/36(  0%)
 B:    LC17 - LC32     4/16( 25%)   4/16( 25%)   0/16(  0%)   4/36( 11%) 
 
 
-Total dedicated input pins used:                 1/4      ( 25%)
+Total dedicated input pins used:                 2/4      ( 50%)
 Total I/O pins used:                             5/32     ( 15%)
 Total logic cells used:                          4/32     ( 12%)
 Total shareable expanders used:                  0/32     (  0%)
 Total Turbo logic cells used:                    4/32     ( 12%)
 Total shareable expanders not available (n/a):   0/32     (  0%)
-Average fan-in:                                  2.75
-Total fan-in:                                    11
+Average fan-in:                                  5.50
+Total fan-in:                                    22
 
-Total input pins required:                       2
-Total output pins required:                      0
-Total bidirectional pins required:               4
+Total input pins required:                       3
+Total output pins required:                      4
+Total bidirectional pins required:               0
 Total logic cells required:                      4
 Total flipflops required:                        4
-Total product terms required:                    8
+Total product terms required:                    4
 Total logic cells lending parallel expanders:    0
 Total shareable expanders in database:           0
 
@@ -148,12 +149,9 @@ step7
                                          Shareable
                                          Expanders     Fan-In    Fan-Out
  Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
-  43      -   -       INPUT  G            0      0   0    0    0    0    0  clk
-  38     20    B      BIDIR               0      0   0    1    0    0    0  count0
-  41     17    B      BIDIR               0      0   0    1    1    1    0  count1
-  40     18    B      BIDIR               0      0   0    1    1    1    0  count2
-  39     19    B      BIDIR               0      0   0    1    1    1    0  count3
-   4    (1)  (A)      INPUT               0      0   0    0    0    4    0  rst
+  43      -   -       INPUT  G            0      0   0    0    0    0    0  c
+   4    (1)  (A)      INPUT               0      0   0    0    0    4    0  jk
+   1      -   -       INPUT  G            0      0   0    0    0    0    0  r
 
 
 Code:
@@ -178,10 +176,10 @@ step7
                                          Shareable
                                          Expanders     Fan-In    Fan-Out
  Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
-  38     20    B     TRI/FF   +  t        0      0   0    1    0    0    0  count0
-  41     17    B     TRI/FF   +  t        0      0   0    1    1    1    0  count1
-  40     18    B     TRI/FF   +  t        0      0   0    1    1    1    0  count2
-  39     19    B     TRI/FF   +  t        0      0   0    1    1    1    0  count3
+  41     17    B         FF   +  t        0      0   0    1    0    3    0  q1 (:8)
+  40     18    B         FF   +  t        0      0   0    1    1    2    0  q2 (:9)
+  39     19    B         FF   +  t        0      0   0    1    2    1    0  q3 (:10)
+  38     20    B         FF   +  t        0      0   0    1    3    0    0  q4 (:11)
 
 
 Code:
@@ -201,21 +199,22 @@ step7
 Logic Array Block 'B':
 
                  Logic cells placed in LAB 'B'
-        +------- LC20 count0
-        | +----- LC17 count1
-        | | +--- LC18 count2
-        | | | +- LC19 count3
+        +------- LC17 q1
+        | +----- LC18 q2
+        | | +--- LC19 q3
+        | | | +- LC20 q4
         | | | | 
         | | | |   Other LABs fed by signals
         | | | |   that feed LAB 'B'
 LC      | | | | | A B |     Logic cells that feed LAB 'B':
-LC17 -> - * - - | - * | <-- count1
-LC18 -> - - * - | - * | <-- count2
-LC19 -> - - - * | - * | <-- count3
+LC17 -> * * * * | - * | <-- q1
+LC18 -> - * * * | - * | <-- q2
+LC19 -> - - * * | - * | <-- q3
 
 Pin
-43   -> - - - - | - - | <-- clk
-4    -> * * * * | - * | <-- rst
+43   -> - - - - | - - | <-- c
+4    -> * * * * | - * | <-- jk
+1    -> - - - - | - - | <-- r
 
 
 * = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
@@ -227,28 +226,28 @@ step7
 
 ** EQUATIONS **
 
-clk      : INPUT;
-rst      : INPUT;
+c        : INPUT;
+jk       : INPUT;
+r        : INPUT;
 
--- Node name is 'count0' = ':9' 
--- Equation name is 'count0', type is bidir 
-count0   = TRI(_LC020,  VCC);
-_LC020   = DFFE( GND $  VCC, GLOBAL( clk), !rst,  VCC,  VCC);
+-- Node name is 'q1' = 't1' 
+-- Equation name is 'q1', location is LC017, type is output.
+ q1      = TFFE( jk, GLOBAL( c), GLOBAL( r),  VCC,  VCC);
 
--- Node name is 'count1' = ':7' 
--- Equation name is 'count1', type is bidir 
-count1   = TRI(_LC017,  VCC);
-_LC017   = DFFE( count1 $  GND, GLOBAL( clk), !rst,  VCC,  VCC);
+-- Node name is 'q2' = 't2' 
+-- Equation name is 'q2', location is LC018, type is output.
+ q2      = TFFE( _EQ001, GLOBAL( c), GLOBAL( r),  VCC,  VCC);
+  _EQ001 =  jk &  q1;
 
--- Node name is 'count2' = ':5' 
--- Equation name is 'count2', type is bidir 
-count2   = TRI(_LC018,  VCC);
-_LC018   = DFFE( count2 $  GND, GLOBAL( clk), !rst,  VCC,  VCC);
+-- Node name is 'q3' = 't3' 
+-- Equation name is 'q3', location is LC019, type is output.
+ q3      = TFFE( _EQ002, GLOBAL( c), GLOBAL( r),  VCC,  VCC);
+  _EQ002 =  jk &  q1 &  q2;
 
--- Node name is 'count3' = ':3' 
--- Equation name is 'count3', type is bidir 
-count3   = TRI(_LC019,  VCC);
-_LC019   = DFFE( count3 $  GND, GLOBAL( clk), !rst,  VCC,  VCC);
+-- Node name is 'q4' = 't4' 
+-- Equation name is 'q4', location is LC020, type is output.
+ q4      = TFFE( _EQ003, GLOBAL( c), GLOBAL( r),  VCC,  VCC);
+  _EQ003 =  jk &  q1 &  q2 &  q3;
 
 
 
@@ -347,4 +346,4 @@ Compilation Times
 Memory Allocated
 -----------------
 
-Peak memory allocated during compilation  = 3,149K
+Peak memory allocated during compilation  = 3,457K

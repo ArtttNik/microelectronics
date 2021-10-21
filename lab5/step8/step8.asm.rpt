@@ -1,5 +1,5 @@
 Assembler report for step8
-Tue Oct 19 00:30:14 2021
+Thu Oct 21 23:46:45 2021
 Version 5.0 Build 148 04/26/2005 SJ Full Version
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Tue Oct 19 00:30:14 2021 ;
+; Assembler Status      ; Successful - Thu Oct 21 23:46:45 2021 ;
 ; Revision Name         ; step8                                 ;
 ; Top-level Entity Name ; step8                                 ;
 ; Family                ; Stratix                               ;
@@ -95,7 +95,7 @@ applicable agreement for further details.
 +----------------+--------------------------------------------------------+
 ; Device         ; EP1S10F484C5                                           ;
 ; JTAG usercode  ; 0xFFFFFFFF                                             ;
-; Checksum       ; 0x001343A8                                             ;
+; Checksum       ; 0x001345EE                                             ;
 +----------------+--------------------------------------------------------+
 
 
@@ -106,7 +106,7 @@ applicable agreement for further details.
 +----------------+--------------------------------------------------------+
 ; Device         ; EPC4                                                   ;
 ; JTAG usercode  ; 0x00000000                                             ;
-; Checksum       ; 0x063277DE                                             ;
+; Checksum       ; 0x0631FA8B                                             ;
 +----------------+--------------------------------------------------------+
 
 
@@ -116,10 +116,10 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II Assembler
     Info: Version 5.0 Build 148 04/26/2005 SJ Full Version
-    Info: Processing started: Tue Oct 19 00:30:12 2021
+    Info: Processing started: Thu Oct 21 23:46:44 2021
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off step8 -c step8
 Info: Quartus II Assembler was successful. 0 errors, 0 warnings
-    Info: Processing ended: Tue Oct 19 00:30:14 2021
-    Info: Elapsed time: 00:00:02
+    Info: Processing ended: Thu Oct 21 23:46:45 2021
+    Info: Elapsed time: 00:00:01
 
 
