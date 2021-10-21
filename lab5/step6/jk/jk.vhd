@@ -17,21 +17,18 @@ architecture behavioral of jk is
 begin
     process(J, K, R, S)
     begin
-        -- ?????????: R ? S ????? ?????? ?????????
         if R = '1' then
             q_temp <= '0';
         elsif S = '1' then
             q_temp <= '1';
+        elsif J = '0' and K = '0' then
+            q_temp <= q_temp;
+        elsif J = '1' and K = '0' then
+            q_temp <= '1';
+        elsif J = '0' and K = '1' then
+            q_temp <= '0';
         else
-            -- JK ??????
-            if J = '1' and K = '0' then
-                q_temp <= '1';
-            elsif J = '0' and K = '1' then
-                q_temp <= '0';
-            elsif J = '1' and K = '1' then
-                q_temp <= not q_temp;
-            end if;
-            -- ??? J=0,K=0 - ??????????? ????????? (?? ????? ??????)
+            q_temp <= not q_temp;
         end if;
     end process;
     
