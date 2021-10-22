@@ -1,5 +1,5 @@
 Flow report for step8
-Thu Oct 21 23:46:46 2021
+Fri Oct 22 14:24:43 2021
 Version 5.0 Build 148 04/26/2005 SJ Full Version
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------+
 ; Flow Summary                                                        ;
 +--------------------------+------------------------------------------+
-; Flow Status              ; Successful - Thu Oct 21 23:46:46 2021    ;
+; Flow Status              ; Successful - Fri Oct 22 14:24:43 2021    ;
 ; Quartus II Version       ; 5.0 Build 148 04/26/2005 SJ Full Version ;
 ; Revision Name            ; step8                                    ;
 ; Top-level Entity Name    ; step8                                    ;
@@ -59,7 +59,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/21/2021 23:46:40 ;
+; Start date & time ; 10/22/2021 14:24:36 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; step8               ;
 +-------------------+---------------------+
@@ -71,10 +71,10 @@ applicable agreement for further details.
 ; Module Name          ; Elapsed Time ;
 +----------------------+--------------+
 ; Analysis & Synthesis ; 00:00:01     ;
-; Fitter               ; 00:00:02     ;
-; Assembler            ; 00:00:01     ;
-; Timing Analyzer      ; 00:00:00     ;
-; Total                ; 00:00:04     ;
+; Fitter               ; 00:00:03     ;
+; Assembler            ; 00:00:02     ;
+; Timing Analyzer      ; 00:00:01     ;
+; Total                ; 00:00:07     ;
 +----------------------+--------------+
 
 

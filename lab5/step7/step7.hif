@@ -26,7 +26,7 @@ FILES
 {
 	step7.vhd
 	{
-		step7 [] [U1147235.DLS,U7449008.DLS]
+		step7 [] [U7449008.DLS,U1147235.DLS]
 		{
 			0 [] [];
 		}
