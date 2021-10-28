@@ -24,18 +24,18 @@ HIF003
 --
 FILES
 {
-	step1_mod.gdf
-	{
-		step1_mod [] []
-		{
-			2 [] [];
-		}
-	}
 	punkt1_dc8.gdf
 	{
 		punkt1_dc8 [] []
 		{
 			1 [] [];
+		}
+	}
+	step1_mod.gdf
+	{
+		step1_mod [] []
+		{
+			2 [] [];
 		}
 	}
 	step2.gdf
@@ -50,14 +50,14 @@ TREE
 {
 	step2::(0,0):(0): step2.gdf
 	{
-		step1_mod::(0,0):(158): step1_mod.gdf;
-		step1_mod::(0,0):(157): step1_mod.gdf;
-		step1_mod::(0,0):(156): step1_mod.gdf;
-		step1_mod::(0,0):(155): step1_mod.gdf;
-		step1_mod::(0,0):(154): step1_mod.gdf;
-		step1_mod::(0,0):(152): step1_mod.gdf;
-		step1_mod::(0,0):(151): step1_mod.gdf;
-		step1_mod::(0,0):(150): step1_mod.gdf;
 		step1_mod::(0,0):(149): step1_mod.gdf;
+		step1_mod::(0,0):(150): step1_mod.gdf;
+		step1_mod::(0,0):(151): step1_mod.gdf;
+		step1_mod::(0,0):(152): step1_mod.gdf;
+		step1_mod::(0,0):(154): step1_mod.gdf;
+		step1_mod::(0,0):(155): step1_mod.gdf;
+		step1_mod::(0,0):(156): step1_mod.gdf;
+		step1_mod::(0,0):(157): step1_mod.gdf;
+		step1_mod::(0,0):(158): step1_mod.gdf;
 	}
 }

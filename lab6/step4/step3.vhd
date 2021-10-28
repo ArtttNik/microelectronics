@@ -22,7 +22,7 @@ begin
         q6 <= '0';
         q7 <= '0';
         
-        if r = '1' then
+        if r = '0' then
         else
             if (a2 = '1') then
                 if (a1 = '1') then

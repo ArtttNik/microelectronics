@@ -2,7 +2,7 @@ Project Information              c:\labs\microelectronics\lab6\step4\step4.rpt
 
 MAX+plus II Compiler Report File
 Version 9.01 07/30/98
-Compiled: 10/26/21 21:59:40
+Compiled: 10/29/21 01:21:53
 
 Copyright (C) 1988-1998 Altera Corporation
 Any megafunction design, and related net list (encrypted or decrypted),
@@ -175,7 +175,7 @@ Total output pins required:                     64
 Total bidirectional pins required:               0
 Total logic cells required:                     64
 Total flipflops required:                        0
-Total product terms required:                  256
+Total product terms required:                   64
 Total logic cells lending parallel expanders:    0
 Total shareable expanders in database:           0
 
@@ -533,451 +533,323 @@ r        : INPUT;
 
 -- Node name is 'o0' 
 -- Equation name is 'o0', location is LC096, type is output.
- o0      = LCELL( _EQ001 $ !i2);
-  _EQ001 = !i2 & !i3 & !i4 & !i5 & !r
-         #  i0 & !i2
-         #  i1 & !i2;
+ o0      = LCELL( _EQ001 $  GND);
+  _EQ001 = !i0 & !i1 & !i2 & !i3 & !i4 & !i5 &  r;
 
 -- Node name is 'o1' 
 -- Equation name is 'o1', location is LC094, type is output.
- o1      = LCELL( _EQ002 $ !i2);
-  _EQ002 = !i2 & !i3 & !i4 & !i5 & !r
-         #  i1 & !i2
-         # !i0 & !i2;
+ o1      = LCELL( _EQ002 $  GND);
+  _EQ002 =  i0 & !i1 & !i2 & !i3 & !i4 & !i5 &  r;
 
 -- Node name is 'o2' 
 -- Equation name is 'o2', location is LC084, type is output.
- o2      = LCELL( _EQ003 $ !i2);
-  _EQ003 = !i2 & !i3 & !i4 & !i5 & !r
-         #  i0 & !i2
-         # !i1 & !i2;
+ o2      = LCELL( _EQ003 $  GND);
+  _EQ003 = !i0 &  i1 & !i2 & !i3 & !i4 & !i5 &  r;
 
 -- Node name is 'o3' 
 -- Equation name is 'o3', location is LC088, type is output.
- o3      = LCELL( _EQ004 $ !i2);
-  _EQ004 = !i2 & !i3 & !i4 & !i5 & !r
-         # !i1 & !i2
-         # !i0 & !i2;
+ o3      = LCELL( _EQ004 $  GND);
+  _EQ004 =  i0 &  i1 & !i2 & !i3 & !i4 & !i5 &  r;
 
 -- Node name is 'o4' 
 -- Equation name is 'o4', location is LC091, type is output.
- o4      = LCELL( _EQ005 $ !i1);
-  _EQ005 = !i1 & !i3 & !i4 & !i5 & !r
-         #  i0 & !i1
-         # !i1 & !i2;
+ o4      = LCELL( _EQ005 $  GND);
+  _EQ005 = !i0 & !i1 &  i2 & !i3 & !i4 & !i5 &  r;
 
 -- Node name is 'o5' 
 -- Equation name is 'o5', location is LC093, type is output.
- o5      = LCELL( _EQ006 $ !i1);
-  _EQ006 = !i1 & !i3 & !i4 & !i5 & !r
-         # !i1 & !i2
-         # !i0 & !i1;
+ o5      = LCELL( _EQ006 $  GND);
+  _EQ006 =  i0 & !i1 &  i2 & !i3 & !i4 & !i5 &  r;
 
 -- Node name is 'o6' 
 -- Equation name is 'o6', location is LC092, type is output.
- o6      = LCELL( _EQ007 $ !i0);
-  _EQ007 = !i0 & !i3 & !i4 & !i5 & !r
-         # !i0 & !i2
-         # !i0 & !i1;
+ o6      = LCELL( _EQ007 $  GND);
+  _EQ007 = !i0 &  i1 &  i2 & !i3 & !i4 & !i5 &  r;
 
 -- Node name is 'o7' 
 -- Equation name is 'o7', location is LC089, type is output.
- o7      = LCELL( _EQ008 $  i0);
-  _EQ008 =  i0 & !i3 & !i4 & !i5 & !r
-         #  i0 & !i2
-         #  i0 & !i1;
+ o7      = LCELL( _EQ008 $  GND);
+  _EQ008 =  i0 &  i1 &  i2 & !i3 & !i4 & !i5 &  r;
 
 -- Node name is 'o8' 
 -- Equation name is 'o8', location is LC081, type is output.
- o8      = LCELL( _EQ009 $ !i2);
-  _EQ009 = !i2 &  i3 & !i4 & !i5 & !r
-         #  i0 & !i2
-         #  i1 & !i2;
+ o8      = LCELL( _EQ009 $  GND);
+  _EQ009 = !i0 & !i1 & !i2 &  i3 & !i4 & !i5 &  r;
 
 -- Node name is 'o9' 
 -- Equation name is 'o9', location is LC086, type is output.
- o9      = LCELL( _EQ010 $ !i2);
-  _EQ010 = !i2 &  i3 & !i4 & !i5 & !r
-         #  i1 & !i2
-         # !i0 & !i2;
+ o9      = LCELL( _EQ010 $  GND);
+  _EQ010 =  i0 & !i1 & !i2 &  i3 & !i4 & !i5 &  r;
 
 -- Node name is 'o10' 
 -- Equation name is 'o10', location is LC085, type is output.
- o10     = LCELL( _EQ011 $ !i2);
-  _EQ011 = !i2 &  i3 & !i4 & !i5 & !r
-         #  i0 & !i2
-         # !i1 & !i2;
+ o10     = LCELL( _EQ011 $  GND);
+  _EQ011 = !i0 &  i1 & !i2 &  i3 & !i4 & !i5 &  r;
 
 -- Node name is 'o11' 
 -- Equation name is 'o11', location is LC083, type is output.
- o11     = LCELL( _EQ012 $ !i2);
-  _EQ012 = !i2 &  i3 & !i4 & !i5 & !r
-         # !i1 & !i2
-         # !i0 & !i2;
+ o11     = LCELL( _EQ012 $  GND);
+  _EQ012 =  i0 &  i1 & !i2 &  i3 & !i4 & !i5 &  r;
 
 -- Node name is 'o12' 
 -- Equation name is 'o12', location is LC078, type is output.
- o12     = LCELL( _EQ013 $ !i1);
-  _EQ013 = !i1 &  i3 & !i4 & !i5 & !r
-         #  i0 & !i1
-         # !i1 & !i2;
+ o12     = LCELL( _EQ013 $  GND);
+  _EQ013 = !i0 & !i1 &  i2 &  i3 & !i4 & !i5 &  r;
 
 -- Node name is 'o13' 
 -- Equation name is 'o13', location is LC077, type is output.
- o13     = LCELL( _EQ014 $ !i1);
-  _EQ014 = !i1 &  i3 & !i4 & !i5 & !r
-         # !i1 & !i2
-         # !i0 & !i1;
+ o13     = LCELL( _EQ014 $  GND);
+  _EQ014 =  i0 & !i1 &  i2 &  i3 & !i4 & !i5 &  r;
 
 -- Node name is 'o14' 
 -- Equation name is 'o14', location is LC076, type is output.
- o14     = LCELL( _EQ015 $ !i0);
-  _EQ015 = !i0 &  i3 & !i4 & !i5 & !r
-         # !i0 & !i2
-         # !i0 & !i1;
+ o14     = LCELL( _EQ015 $  GND);
+  _EQ015 = !i0 &  i1 &  i2 &  i3 & !i4 & !i5 &  r;
 
 -- Node name is 'o15' 
 -- Equation name is 'o15', location is LC080, type is output.
- o15     = LCELL( _EQ016 $  i0);
-  _EQ016 =  i0 &  i3 & !i4 & !i5 & !r
-         #  i0 & !i2
-         #  i0 & !i1;
+ o15     = LCELL( _EQ016 $  GND);
+  _EQ016 =  i0 &  i1 &  i2 &  i3 & !i4 & !i5 &  r;
 
 -- Node name is 'o16' 
 -- Equation name is 'o16', location is LC075, type is output.
- o16     = LCELL( _EQ017 $ !i2);
-  _EQ017 = !i2 & !i3 &  i4 & !i5 & !r
-         #  i0 & !i2
-         #  i1 & !i2;
+ o16     = LCELL( _EQ017 $  GND);
+  _EQ017 = !i0 & !i1 & !i2 & !i3 &  i4 & !i5 &  r;
 
 -- Node name is 'o17' 
 -- Equation name is 'o17', location is LC069, type is output.
- o17     = LCELL( _EQ018 $ !i2);
-  _EQ018 = !i2 & !i3 &  i4 & !i5 & !r
-         #  i1 & !i2
-         # !i0 & !i2;
+ o17     = LCELL( _EQ018 $  GND);
+  _EQ018 =  i0 & !i1 & !i2 & !i3 &  i4 & !i5 &  r;
 
 -- Node name is 'o18' 
 -- Equation name is 'o18', location is LC070, type is output.
- o18     = LCELL( _EQ019 $ !i2);
-  _EQ019 = !i2 & !i3 &  i4 & !i5 & !r
-         #  i0 & !i2
-         # !i1 & !i2;
+ o18     = LCELL( _EQ019 $  GND);
+  _EQ019 = !i0 &  i1 & !i2 & !i3 &  i4 & !i5 &  r;
 
 -- Node name is 'o19' 
 -- Equation name is 'o19', location is LC073, type is output.
- o19     = LCELL( _EQ020 $ !i2);
-  _EQ020 = !i2 & !i3 &  i4 & !i5 & !r
-         # !i1 & !i2
-         # !i0 & !i2;
+ o19     = LCELL( _EQ020 $  GND);
+  _EQ020 =  i0 &  i1 & !i2 & !i3 &  i4 & !i5 &  r;
 
 -- Node name is 'o20' 
 -- Equation name is 'o20', location is LC072, type is output.
- o20     = LCELL( _EQ021 $ !i1);
-  _EQ021 = !i1 & !i3 &  i4 & !i5 & !r
-         #  i0 & !i1
-         # !i1 & !i2;
+ o20     = LCELL( _EQ021 $  GND);
+  _EQ021 = !i0 & !i1 &  i2 & !i3 &  i4 & !i5 &  r;
 
 -- Node name is 'o21' 
 -- Equation name is 'o21', location is LC068, type is output.
- o21     = LCELL( _EQ022 $ !i1);
-  _EQ022 = !i1 & !i3 &  i4 & !i5 & !r
-         # !i1 & !i2
-         # !i0 & !i1;
+ o21     = LCELL( _EQ022 $  GND);
+  _EQ022 =  i0 & !i1 &  i2 & !i3 &  i4 & !i5 &  r;
 
 -- Node name is 'o22' 
 -- Equation name is 'o22', location is LC067, type is output.
- o22     = LCELL( _EQ023 $ !i0);
-  _EQ023 = !i0 & !i3 &  i4 & !i5 & !r
-         # !i0 & !i2
-         # !i0 & !i1;
+ o22     = LCELL( _EQ023 $  GND);
+  _EQ023 = !i0 &  i1 &  i2 & !i3 &  i4 & !i5 &  r;
 
 -- Node name is 'o23' 
 -- Equation name is 'o23', location is LC065, type is output.
- o23     = LCELL( _EQ024 $  i0);
-  _EQ024 =  i0 & !i3 &  i4 & !i5 & !r
-         #  i0 & !i2
-         #  i0 & !i1;
+ o23     = LCELL( _EQ024 $  GND);
+  _EQ024 =  i0 &  i1 &  i2 & !i3 &  i4 & !i5 &  r;
 
 -- Node name is 'o24' 
 -- Equation name is 'o24', location is LC049, type is output.
- o24     = LCELL( _EQ025 $ !i2);
-  _EQ025 = !i2 &  i3 &  i4 & !i5 & !r
-         #  i0 & !i2
-         #  i1 & !i2;
+ o24     = LCELL( _EQ025 $  GND);
+  _EQ025 = !i0 & !i1 & !i2 &  i3 &  i4 & !i5 &  r;
 
 -- Node name is 'o25' 
 -- Equation name is 'o25', location is LC051, type is output.
- o25     = LCELL( _EQ026 $ !i2);
-  _EQ026 = !i2 &  i3 &  i4 & !i5 & !r
-         #  i1 & !i2
-         # !i0 & !i2;
+ o25     = LCELL( _EQ026 $  GND);
+  _EQ026 =  i0 & !i1 & !i2 &  i3 &  i4 & !i5 &  r;
 
 -- Node name is 'o26' 
 -- Equation name is 'o26', location is LC052, type is output.
- o26     = LCELL( _EQ027 $ !i2);
-  _EQ027 = !i2 &  i3 &  i4 & !i5 & !r
-         #  i0 & !i2
-         # !i1 & !i2;
+ o26     = LCELL( _EQ027 $  GND);
+  _EQ027 = !i0 &  i1 & !i2 &  i3 &  i4 & !i5 &  r;
 
 -- Node name is 'o27' 
 -- Equation name is 'o27', location is LC053, type is output.
- o27     = LCELL( _EQ028 $ !i2);
-  _EQ028 = !i2 &  i3 &  i4 & !i5 & !r
-         # !i1 & !i2
-         # !i0 & !i2;
+ o27     = LCELL( _EQ028 $  GND);
+  _EQ028 =  i0 &  i1 & !i2 &  i3 &  i4 & !i5 &  r;
 
 -- Node name is 'o28' 
 -- Equation name is 'o28', location is LC054, type is output.
- o28     = LCELL( _EQ029 $ !i1);
-  _EQ029 = !i1 &  i3 &  i4 & !i5 & !r
-         #  i0 & !i1
-         # !i1 & !i2;
+ o28     = LCELL( _EQ029 $  GND);
+  _EQ029 = !i0 & !i1 &  i2 &  i3 &  i4 & !i5 &  r;
 
 -- Node name is 'o29' 
 -- Equation name is 'o29', location is LC056, type is output.
- o29     = LCELL( _EQ030 $ !i1);
-  _EQ030 = !i1 &  i3 &  i4 & !i5 & !r
-         # !i1 & !i2
-         # !i0 & !i1;
+ o29     = LCELL( _EQ030 $  GND);
+  _EQ030 =  i0 & !i1 &  i2 &  i3 &  i4 & !i5 &  r;
 
 -- Node name is 'o30' 
 -- Equation name is 'o30', location is LC064, type is output.
- o30     = LCELL( _EQ031 $ !i0);
-  _EQ031 = !i0 &  i3 &  i4 & !i5 & !r
-         # !i0 & !i2
-         # !i0 & !i1;
+ o30     = LCELL( _EQ031 $  GND);
+  _EQ031 = !i0 &  i1 &  i2 &  i3 &  i4 & !i5 &  r;
 
 -- Node name is 'o31' 
 -- Equation name is 'o31', location is LC062, type is output.
- o31     = LCELL( _EQ032 $  i0);
-  _EQ032 =  i0 &  i3 &  i4 & !i5 & !r
-         #  i0 & !i2
-         #  i0 & !i1;
+ o31     = LCELL( _EQ032 $  GND);
+  _EQ032 =  i0 &  i1 &  i2 &  i3 &  i4 & !i5 &  r;
 
 -- Node name is 'o32' 
 -- Equation name is 'o32', location is LC061, type is output.
- o32     = LCELL( _EQ033 $ !i2);
-  _EQ033 = !i2 & !i3 & !i4 &  i5 & !r
-         #  i0 & !i2
-         #  i1 & !i2;
+ o32     = LCELL( _EQ033 $  GND);
+  _EQ033 = !i0 & !i1 & !i2 & !i3 & !i4 &  i5 &  r;
 
 -- Node name is 'o33' 
 -- Equation name is 'o33', location is LC060, type is output.
- o33     = LCELL( _EQ034 $ !i2);
-  _EQ034 = !i2 & !i3 & !i4 &  i5 & !r
-         #  i1 & !i2
-         # !i0 & !i2;
+ o33     = LCELL( _EQ034 $  GND);
+  _EQ034 =  i0 & !i1 & !i2 & !i3 & !i4 &  i5 &  r;
 
 -- Node name is 'o34' 
 -- Equation name is 'o34', location is LC059, type is output.
- o34     = LCELL( _EQ035 $ !i2);
-  _EQ035 = !i2 & !i3 & !i4 &  i5 & !r
-         #  i0 & !i2
-         # !i1 & !i2;
+ o34     = LCELL( _EQ035 $  GND);
+  _EQ035 = !i0 &  i1 & !i2 & !i3 & !i4 &  i5 &  r;
 
 -- Node name is 'o35' 
 -- Equation name is 'o35', location is LC057, type is output.
- o35     = LCELL( _EQ036 $ !i2);
-  _EQ036 = !i2 & !i3 & !i4 &  i5 & !r
-         # !i1 & !i2
-         # !i0 & !i2;
+ o35     = LCELL( _EQ036 $  GND);
+  _EQ036 =  i0 &  i1 & !i2 & !i3 & !i4 &  i5 &  r;
 
 -- Node name is 'o36' 
 -- Equation name is 'o36', location is LC046, type is output.
- o36     = LCELL( _EQ037 $ !i1);
-  _EQ037 = !i1 & !i3 & !i4 &  i5 & !r
-         #  i0 & !i1
-         # !i1 & !i2;
+ o36     = LCELL( _EQ037 $  GND);
+  _EQ037 = !i0 & !i1 &  i2 & !i3 & !i4 &  i5 &  r;
 
 -- Node name is 'o37' 
 -- Equation name is 'o37', location is LC044, type is output.
- o37     = LCELL( _EQ038 $ !i1);
-  _EQ038 = !i1 & !i3 & !i4 &  i5 & !r
-         # !i1 & !i2
-         # !i0 & !i1;
+ o37     = LCELL( _EQ038 $  GND);
+  _EQ038 =  i0 & !i1 &  i2 & !i3 & !i4 &  i5 &  r;
 
 -- Node name is 'o38' 
 -- Equation name is 'o38', location is LC043, type is output.
- o38     = LCELL( _EQ039 $ !i0);
-  _EQ039 = !i0 & !i3 & !i4 &  i5 & !r
-         # !i0 & !i2
-         # !i0 & !i1;
+ o38     = LCELL( _EQ039 $  GND);
+  _EQ039 = !i0 &  i1 &  i2 & !i3 & !i4 &  i5 &  r;
 
 -- Node name is 'o39' 
 -- Equation name is 'o39', location is LC040, type is output.
- o39     = LCELL( _EQ040 $  i0);
-  _EQ040 =  i0 & !i3 & !i4 &  i5 & !r
-         #  i0 & !i2
-         #  i0 & !i1;
+ o39     = LCELL( _EQ040 $  GND);
+  _EQ040 =  i0 &  i1 &  i2 & !i3 & !i4 &  i5 &  r;
 
 -- Node name is 'o40' 
 -- Equation name is 'o40', location is LC038, type is output.
- o40     = LCELL( _EQ041 $ !i2);
-  _EQ041 = !i2 &  i3 & !i4 &  i5 & !r
-         #  i0 & !i2
-         #  i1 & !i2;
+ o40     = LCELL( _EQ041 $  GND);
+  _EQ041 = !i0 & !i1 & !i2 &  i3 & !i4 &  i5 &  r;
 
 -- Node name is 'o41' 
 -- Equation name is 'o41', location is LC036, type is output.
- o41     = LCELL( _EQ042 $ !i2);
-  _EQ042 = !i2 &  i3 & !i4 &  i5 & !r
-         #  i1 & !i2
-         # !i0 & !i2;
+ o41     = LCELL( _EQ042 $  GND);
+  _EQ042 =  i0 & !i1 & !i2 &  i3 & !i4 &  i5 &  r;
 
 -- Node name is 'o42' 
 -- Equation name is 'o42', location is LC035, type is output.
- o42     = LCELL( _EQ043 $ !i2);
-  _EQ043 = !i2 &  i3 & !i4 &  i5 & !r
-         #  i0 & !i2
-         # !i1 & !i2;
+ o42     = LCELL( _EQ043 $  GND);
+  _EQ043 = !i0 &  i1 & !i2 &  i3 & !i4 &  i5 &  r;
 
 -- Node name is 'o43' 
 -- Equation name is 'o43', location is LC033, type is output.
- o43     = LCELL( _EQ044 $ !i2);
-  _EQ044 = !i2 &  i3 & !i4 &  i5 & !r
-         # !i1 & !i2
-         # !i0 & !i2;
+ o43     = LCELL( _EQ044 $  GND);
+  _EQ044 =  i0 &  i1 & !i2 &  i3 & !i4 &  i5 &  r;
 
 -- Node name is 'o44' 
 -- Equation name is 'o44', location is LC037, type is output.
- o44     = LCELL( _EQ045 $ !i1);
-  _EQ045 = !i1 &  i3 & !i4 &  i5 & !r
-         #  i0 & !i1
-         # !i1 & !i2;
+ o44     = LCELL( _EQ045 $  GND);
+  _EQ045 = !i0 & !i1 &  i2 &  i3 & !i4 &  i5 &  r;
 
 -- Node name is 'o45' 
 -- Equation name is 'o45', location is LC041, type is output.
- o45     = LCELL( _EQ046 $ !i1);
-  _EQ046 = !i1 &  i3 & !i4 &  i5 & !r
-         # !i1 & !i2
-         # !i0 & !i1;
+ o45     = LCELL( _EQ046 $  GND);
+  _EQ046 =  i0 & !i1 &  i2 &  i3 & !i4 &  i5 &  r;
 
 -- Node name is 'o46' 
 -- Equation name is 'o46', location is LC045, type is output.
- o46     = LCELL( _EQ047 $ !i0);
-  _EQ047 = !i0 &  i3 & !i4 &  i5 & !r
-         # !i0 & !i2
-         # !i0 & !i1;
+ o46     = LCELL( _EQ047 $  GND);
+  _EQ047 = !i0 &  i1 &  i2 &  i3 & !i4 &  i5 &  r;
 
 -- Node name is 'o47' 
 -- Equation name is 'o47', location is LC048, type is output.
- o47     = LCELL( _EQ048 $  i0);
-  _EQ048 =  i0 &  i3 & !i4 &  i5 & !r
-         #  i0 & !i2
-         #  i0 & !i1;
+ o47     = LCELL( _EQ048 $  GND);
+  _EQ048 =  i0 &  i1 &  i2 &  i3 & !i4 &  i5 &  r;
 
 -- Node name is 'o48' 
 -- Equation name is 'o48', location is LC025, type is output.
- o48     = LCELL( _EQ049 $ !i2);
-  _EQ049 = !i2 & !i3 &  i4 &  i5 & !r
-         #  i0 & !i2
-         #  i1 & !i2;
+ o48     = LCELL( _EQ049 $  GND);
+  _EQ049 = !i0 & !i1 & !i2 & !i3 &  i4 &  i5 &  r;
 
 -- Node name is 'o49' 
 -- Equation name is 'o49', location is LC024, type is output.
- o49     = LCELL( _EQ050 $ !i2);
-  _EQ050 = !i2 & !i3 &  i4 &  i5 & !r
-         #  i1 & !i2
-         # !i0 & !i2;
+ o49     = LCELL( _EQ050 $  GND);
+  _EQ050 =  i0 & !i1 & !i2 & !i3 &  i4 &  i5 &  r;
 
 -- Node name is 'o50' 
 -- Equation name is 'o50', location is LC019, type is output.
- o50     = LCELL( _EQ051 $ !i2);
-  _EQ051 = !i2 & !i3 &  i4 &  i5 & !r
-         #  i0 & !i2
-         # !i1 & !i2;
+ o50     = LCELL( _EQ051 $  GND);
+  _EQ051 = !i0 &  i1 & !i2 & !i3 &  i4 &  i5 &  r;
 
 -- Node name is 'o51' 
 -- Equation name is 'o51', location is LC017, type is output.
- o51     = LCELL( _EQ052 $ !i2);
-  _EQ052 = !i2 & !i3 &  i4 &  i5 & !r
-         # !i1 & !i2
-         # !i0 & !i2;
+ o51     = LCELL( _EQ052 $  GND);
+  _EQ052 =  i0 &  i1 & !i2 & !i3 &  i4 &  i5 &  r;
 
 -- Node name is 'o52' 
 -- Equation name is 'o52', location is LC020, type is output.
- o52     = LCELL( _EQ053 $ !i1);
-  _EQ053 = !i1 & !i3 &  i4 &  i5 & !r
-         #  i0 & !i1
-         # !i1 & !i2;
+ o52     = LCELL( _EQ053 $  GND);
+  _EQ053 = !i0 & !i1 &  i2 & !i3 &  i4 &  i5 &  r;
 
 -- Node name is 'o53' 
 -- Equation name is 'o53', location is LC021, type is output.
- o53     = LCELL( _EQ054 $ !i1);
-  _EQ054 = !i1 & !i3 &  i4 &  i5 & !r
-         # !i1 & !i2
-         # !i0 & !i1;
+ o53     = LCELL( _EQ054 $  GND);
+  _EQ054 =  i0 & !i1 &  i2 & !i3 &  i4 &  i5 &  r;
 
 -- Node name is 'o54' 
 -- Equation name is 'o54', location is LC027, type is output.
- o54     = LCELL( _EQ055 $ !i0);
-  _EQ055 = !i0 & !i3 &  i4 &  i5 & !r
-         # !i0 & !i2
-         # !i0 & !i1;
+ o54     = LCELL( _EQ055 $  GND);
+  _EQ055 = !i0 &  i1 &  i2 & !i3 &  i4 &  i5 &  r;
 
 -- Node name is 'o55' 
 -- Equation name is 'o55', location is LC022, type is output.
- o55     = LCELL( _EQ056 $  i0);
-  _EQ056 =  i0 & !i3 &  i4 &  i5 & !r
-         #  i0 & !i2
-         #  i0 & !i1;
+ o55     = LCELL( _EQ056 $  GND);
+  _EQ056 =  i0 &  i1 &  i2 & !i3 &  i4 &  i5 &  r;
 
 -- Node name is 'o56' 
 -- Equation name is 'o56', location is LC030, type is output.
- o56     = LCELL( _EQ057 $ !i2);
-  _EQ057 = !i2 &  i3 &  i4 &  i5 & !r
-         #  i0 & !i2
-         #  i1 & !i2;
+ o56     = LCELL( _EQ057 $  GND);
+  _EQ057 = !i0 & !i1 & !i2 &  i3 &  i4 &  i5 &  r;
 
 -- Node name is 'o57' 
 -- Equation name is 'o57', location is LC032, type is output.
- o57     = LCELL( _EQ058 $ !i2);
-  _EQ058 = !i2 &  i3 &  i4 &  i5 & !r
-         #  i1 & !i2
-         # !i0 & !i2;
+ o57     = LCELL( _EQ058 $  GND);
+  _EQ058 =  i0 & !i1 & !i2 &  i3 &  i4 &  i5 &  r;
 
 -- Node name is 'o58' 
 -- Equation name is 'o58', location is LC029, type is output.
- o58     = LCELL( _EQ059 $ !i2);
-  _EQ059 = !i2 &  i3 &  i4 &  i5 & !r
-         #  i0 & !i2
-         # !i1 & !i2;
+ o58     = LCELL( _EQ059 $  GND);
+  _EQ059 = !i0 &  i1 & !i2 &  i3 &  i4 &  i5 &  r;
 
 -- Node name is 'o59' 
 -- Equation name is 'o59', location is LC028, type is output.
- o59     = LCELL( _EQ060 $ !i2);
-  _EQ060 = !i2 &  i3 &  i4 &  i5 & !r
-         # !i1 & !i2
-         # !i0 & !i2;
+ o59     = LCELL( _EQ060 $  GND);
+  _EQ060 =  i0 &  i1 & !i2 &  i3 &  i4 &  i5 &  r;
 
 -- Node name is 'o60' 
 -- Equation name is 'o60', location is LC012, type is output.
- o60     = LCELL( _EQ061 $ !i1);
-  _EQ061 = !i1 &  i3 &  i4 &  i5 & !r
-         #  i0 & !i1
-         # !i1 & !i2;
+ o60     = LCELL( _EQ061 $  GND);
+  _EQ061 = !i0 & !i1 &  i2 &  i3 &  i4 &  i5 &  r;
 
 -- Node name is 'o61' 
 -- Equation name is 'o61', location is LC013, type is output.
- o61     = LCELL( _EQ062 $ !i1);
-  _EQ062 = !i1 &  i3 &  i4 &  i5 & !r
-         # !i1 & !i2
-         # !i0 & !i1;
+ o61     = LCELL( _EQ062 $  GND);
+  _EQ062 =  i0 & !i1 &  i2 &  i3 &  i4 &  i5 &  r;
 
 -- Node name is 'o62' 
 -- Equation name is 'o62', location is LC011, type is output.
- o62     = LCELL( _EQ063 $ !i0);
-  _EQ063 = !i0 &  i3 &  i4 &  i5 & !r
-         # !i0 & !i2
-         # !i0 & !i1;
+ o62     = LCELL( _EQ063 $  GND);
+  _EQ063 = !i0 &  i1 &  i2 &  i3 &  i4 &  i5 &  r;
 
 -- Node name is 'o63' 
 -- Equation name is 'o63', location is LC014, type is output.
- o63     = LCELL( _EQ064 $  i0);
-  _EQ064 =  i0 &  i3 &  i4 &  i5 & !r
-         #  i0 & !i2
-         #  i0 & !i1;
+ o63     = LCELL( _EQ064 $  GND);
+  _EQ064 =  i0 &  i1 &  i2 &  i3 &  i4 &  i5 &  r;
 
 
 
@@ -1063,17 +935,17 @@ Compilation Times
 -----------------
 
    Compiler Netlist Extractor             00:00:00
-   Database Builder                       00:00:01
+   Database Builder                       00:00:00
    Logic Synthesizer                      00:00:00
    Partitioner                            00:00:00
    Fitter                                 00:00:00
    Timing SNF Extractor                   00:00:00
    Assembler                              00:00:00
    --------------------------             --------
-   Total Time                             00:00:01
+   Total Time                             00:00:00
 
 
 Memory Allocated
 -----------------
 
-Peak memory allocated during compilation  = 4,792K
+Peak memory allocated during compilation  = 5,044K
