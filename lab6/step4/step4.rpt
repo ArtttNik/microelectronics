@@ -1,0 +1,951 @@
+Project Information              c:\labs\microelectronics\lab6\step4\step4.rpt
+
+MAX+plus II Compiler Report File
+Version 9.01 07/30/98
+Compiled: 10/29/21 01:21:53
+
+Copyright (C) 1988-1998 Altera Corporation
+Any megafunction design, and related net list (encrypted or decrypted),
+support information, device programming or simulation file, and any other
+associated documentation or information provided by Altera or a partner
+under Altera's Megafunction Partnership Program may be used only to
+program PLD devices (but not masked PLD devices) from Altera.  Any other
+use of such megafunction design, net list, support information, device
+programming or simulation file, or any other related documentation or
+information is prohibited for any other purpose, including, but not
+limited to modification, reverse engineering, de-compiling, or use with
+any other silicon devices, unless such use is explicitly licensed under
+a separate agreement with Altera or a megafunction partner.  Title to
+the intellectual property, including patents, copyrights, trademarks,
+trade secrets, or maskworks, embodied in any such megafunction design,
+net list, support information, device programming or simulation file, or
+any other related documentation or information provided by Altera or a
+megafunction partner, remains with Altera, the megafunction partner, or
+their respective licensors.  No other licenses, including any licenses
+needed under any third party's intellectual property, are provided herein.
+
+
+
+***** Project compilation was successful
+
+
+STEP4
+
+
+** DEVICE SUMMARY **
+
+Chip/                     Input   Output   Bidir         Shareable
+POF       Device          Pins    Pins     Pins     LCs  Expanders  % Utilized
+
+step4     EPM7096QC100-7   7        64       0      64      0           66 %
+
+User Pins:                 7        64       0  
+
+
+
+Project Information              c:\labs\microelectronics\lab6\step4\step4.rpt
+
+** FILE HIERARCHY **
+
+
+
+|step3:u0|
+|step3:u1|
+|step3:u2|
+|step3:u3|
+|step3:u4|
+|step3:u5|
+|step3:u6|
+|step3:u7|
+|step3:u8|
+
+
+Device-Specific Information:     c:\labs\microelectronics\lab6\step4\step4.rpt
+step4
+
+***** Logic for device 'step4' compiled without errors.
+
+
+
+
+Device: EPM7096QC100-7
+
+Device Options:
+    Turbo Bit                                    = ON
+    Security Bit                                 = OFF
+    MultiVolt I/O                              = OFF
+
+
+
+Device-Specific Information:     c:\labs\microelectronics\lab6\step4\step4.rpt
+step4
+
+** ERROR SUMMARY **
+
+Info: Chip 'step4' in device 'EPM7096QC100-7' has less than 20% of pins available for future logic changes -- if your project is likely to change, Altera recommends using a larger device
+                          R                            
+                          E                            
+                          S V                          
+                          E C                 V        
+                      N   R C               N C        
+              o o o G . o V I G G G G G     . C        
+              6 6 6 N C 6 E N N N N N N o o C I o o o  
+              2 0 1 D . 3 D T D D D D D 0 1 . O 5 6 4  
+            ------------------------------------------_ 
+           / 100  98  96  94  92  90  88  86  84  82   |_ 
+          /     99  97  95  93  91  89  87  85  83  81    | 
+      i1 |  1                                          80 | o7 
+      i2 |  2                                          79 | o3 
+      i3 |  3                                          78 | o9 
+      i4 |  4                                          77 | o10 
+   VCCIO |  5                                          76 | GND 
+      i5 |  6                                          75 | o2 
+       r |  7                                          74 | o11 
+      i0 |  8                                          73 | o8 
+    N.C. |  9                                          72 | N.C. 
+     o57 | 10                                          71 | o15 
+     o56 | 11                                          70 | o12 
+     o58 | 12                                          69 | o13 
+     GND | 13                                          68 | VCCIO 
+     o59 | 14                                          67 | o14 
+     o54 | 15                                          66 | o16 
+     o48 | 16             EPM7096QC100-7               65 | o19 
+     o49 | 17                                          64 | o20 
+     o55 | 18                                          63 | o18 
+     o53 | 19                                          62 | o17 
+   VCCIO | 20                                          61 | GND 
+     o52 | 21                                          60 | o21 
+     o50 | 22                                          59 | o22 
+     o51 | 23                                          58 | o23 
+    N.C. | 24                                          57 | N.C. 
+     o47 | 25                                          56 | o30 
+     o36 | 26                                          55 | o31 
+     o46 | 27                                          54 | o32 
+     GND | 28                                          53 | VCCIO 
+     o37 | 29                                          52 | o33 
+     o38 | 30                                          51 | o34 
+         |      32  34  36  38  40  42  44  46  48  50  _| 
+          \   31  33  35  37  39  41  43  45  47  49   | 
+           \------------------------------------------- 
+              o o o o o V N o o G V o o N G o o o o o  
+              4 3 4 4 4 C . 4 4 N C 2 2 . N 2 2 2 2 3  
+              5 9 0 4 1 C C 2 3 D C 4 5 C D 6 7 8 9 5  
+                        I .       I     .              
+                        O         N                    
+                                  T                    
+                                                       
+                                                       
+
+
+N.C. = Not Connected.
+VCCINT = Dedicated power pin, which MUST be connected to VCC (5.0 volts).
+VCCIO = Dedicated power pin, which MUST be connected to VCC (5.0 volts).
+GND = Dedicated ground pin or unused dedicated input, which MUST be connected to GND.
+RESERVED = Unused I/O pin, which MUST be left unconnected.
+
+
+
+Device-Specific Information:     c:\labs\microelectronics\lab6\step4\step4.rpt
+step4
+
+** RESOURCE USAGE **
+
+                                                Shareable     External
+Logic Array Block     Logic Cells   I/O Pins    Expanders   Interconnect
+
+A:     LC1 - LC16     4/16( 25%)  11/12( 91%)   0/16(  0%)   7/36( 19%) 
+B:    LC17 - LC32    12/16( 75%)  12/12(100%)   0/16(  0%)   7/36( 19%) 
+C:    LC33 - LC48    12/16( 75%)  12/12(100%)   0/16(  0%)   7/36( 19%) 
+D:    LC49 - LC64    12/16( 75%)  12/12(100%)   0/16(  0%)   7/36( 19%) 
+E:    LC65 - LC80    12/16( 75%)  12/12(100%)   0/16(  0%)   7/36( 19%) 
+F:    LC81 - LC96    12/16( 75%)  12/12(100%)   0/16(  0%)   7/36( 19%) 
+
+
+Total dedicated input pins used:                 0/4      (  0%)
+Total I/O pins used:                            71/72     ( 98%)
+Total logic cells used:                         64/96     ( 66%)
+Total shareable expanders used:                  0/96     (  0%)
+Total Turbo logic cells used:                   64/96     ( 66%)
+Total shareable expanders not available (n/a):   0/96     (  0%)
+Average fan-in:                                  7.00
+Total fan-in:                                   448
+
+Total input pins required:                       7
+Total output pins required:                     64
+Total bidirectional pins required:               0
+Total logic cells required:                     64
+Total flipflops required:                        0
+Total product terms required:                   64
+Total logic cells lending parallel expanders:    0
+Total shareable expanders in database:           0
+
+Synthesized logic cells:                         0/  96   (  0%)
+
+
+
+Device-Specific Information:     c:\labs\microelectronics\lab6\step4\step4.rpt
+step4
+
+** INPUTS **
+
+                                         Shareable
+                                         Expanders     Fan-In    Fan-Out
+ Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
+   8    (1)  (A)      INPUT               0      0   0    0    0   64    0  i0
+   1    (9)  (A)      INPUT               0      0   0    0    0   64    0  i1
+   2    (8)  (A)      INPUT               0      0   0    0    0   64    0  i2
+   3    (6)  (A)      INPUT               0      0   0    0    0   64    0  i3
+   4    (5)  (A)      INPUT               0      0   0    0    0   64    0  i4
+   6    (4)  (A)      INPUT               0      0   0    0    0   64    0  i5
+   7    (3)  (A)      INPUT               0      0   0    0    0   64    0  r
+
+
+Code:
+
+s = Synthesized pin or logic cell
+t = Turbo logic cell
++ = Synchronous flipflop
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+
+
+Device-Specific Information:     c:\labs\microelectronics\lab6\step4\step4.rpt
+step4
+
+** OUTPUTS **
+
+                                         Shareable
+                                         Expanders     Fan-In    Fan-Out
+ Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
+  87     96    F     OUTPUT      t        0      0   0    7    0    0    0  o0
+  86     94    F     OUTPUT      t        0      0   0    7    0    0    0  o1
+  75     84    F     OUTPUT      t        0      0   0    7    0    0    0  o2
+  79     88    F     OUTPUT      t        0      0   0    7    0    0    0  o3
+  81     91    F     OUTPUT      t        0      0   0    7    0    0    0  o4
+  83     93    F     OUTPUT      t        0      0   0    7    0    0    0  o5
+  82     92    F     OUTPUT      t        0      0   0    7    0    0    0  o6
+  80     89    F     OUTPUT      t        0      0   0    7    0    0    0  o7
+  73     81    F     OUTPUT      t        0      0   0    7    0    0    0  o8
+  78     86    F     OUTPUT      t        0      0   0    7    0    0    0  o9
+  77     85    F     OUTPUT      t        0      0   0    7    0    0    0  o10
+  74     83    F     OUTPUT      t        0      0   0    7    0    0    0  o11
+  70     78    E     OUTPUT      t        0      0   0    7    0    0    0  o12
+  69     77    E     OUTPUT      t        0      0   0    7    0    0    0  o13
+  67     76    E     OUTPUT      t        0      0   0    7    0    0    0  o14
+  71     80    E     OUTPUT      t        0      0   0    7    0    0    0  o15
+  66     75    E     OUTPUT      t        0      0   0    7    0    0    0  o16
+  62     69    E     OUTPUT      t        0      0   0    7    0    0    0  o17
+  63     70    E     OUTPUT      t        0      0   0    7    0    0    0  o18
+  65     73    E     OUTPUT      t        0      0   0    7    0    0    0  o19
+  64     72    E     OUTPUT      t        0      0   0    7    0    0    0  o20
+  60     68    E     OUTPUT      t        0      0   0    7    0    0    0  o21
+  59     67    E     OUTPUT      t        0      0   0    7    0    0    0  o22
+  58     65    E     OUTPUT      t        0      0   0    7    0    0    0  o23
+  42     49    D     OUTPUT      t        0      0   0    7    0    0    0  o24
+  43     51    D     OUTPUT      t        0      0   0    7    0    0    0  o25
+  46     52    D     OUTPUT      t        0      0   0    7    0    0    0  o26
+  47     53    D     OUTPUT      t        0      0   0    7    0    0    0  o27
+  48     54    D     OUTPUT      t        0      0   0    7    0    0    0  o28
+  49     56    D     OUTPUT      t        0      0   0    7    0    0    0  o29
+  56     64    D     OUTPUT      t        0      0   0    7    0    0    0  o30
+  55     62    D     OUTPUT      t        0      0   0    7    0    0    0  o31
+  54     61    D     OUTPUT      t        0      0   0    7    0    0    0  o32
+  52     60    D     OUTPUT      t        0      0   0    7    0    0    0  o33
+  51     59    D     OUTPUT      t        0      0   0    7    0    0    0  o34
+  50     57    D     OUTPUT      t        0      0   0    7    0    0    0  o35
+  26     46    C     OUTPUT      t        0      0   0    7    0    0    0  o36
+  29     44    C     OUTPUT      t        0      0   0    7    0    0    0  o37
+  30     43    C     OUTPUT      t        0      0   0    7    0    0    0  o38
+  32     40    C     OUTPUT      t        0      0   0    7    0    0    0  o39
+  33     38    C     OUTPUT      t        0      0   0    7    0    0    0  o40
+  35     36    C     OUTPUT      t        0      0   0    7    0    0    0  o41
+  38     35    C     OUTPUT      t        0      0   0    7    0    0    0  o42
+  39     33    C     OUTPUT      t        0      0   0    7    0    0    0  o43
+  34     37    C     OUTPUT      t        0      0   0    7    0    0    0  o44
+  31     41    C     OUTPUT      t        0      0   0    7    0    0    0  o45
+  27     45    C     OUTPUT      t        0      0   0    7    0    0    0  o46
+  25     48    C     OUTPUT      t        0      0   0    7    0    0    0  o47
+  16     25    B     OUTPUT      t        0      0   0    7    0    0    0  o48
+  17     24    B     OUTPUT      t        0      0   0    7    0    0    0  o49
+  22     19    B     OUTPUT      t        0      0   0    7    0    0    0  o50
+  23     17    B     OUTPUT      t        0      0   0    7    0    0    0  o51
+  21     20    B     OUTPUT      t        0      0   0    7    0    0    0  o52
+  19     21    B     OUTPUT      t        0      0   0    7    0    0    0  o53
+  15     27    B     OUTPUT      t        0      0   0    7    0    0    0  o54
+  18     22    B     OUTPUT      t        0      0   0    7    0    0    0  o55
+  11     30    B     OUTPUT      t        0      0   0    7    0    0    0  o56
+  10     32    B     OUTPUT      t        0      0   0    7    0    0    0  o57
+  12     29    B     OUTPUT      t        0      0   0    7    0    0    0  o58
+  14     28    B     OUTPUT      t        0      0   0    7    0    0    0  o59
+  99     12    A     OUTPUT      t        0      0   0    7    0    0    0  o60
+  98     13    A     OUTPUT      t        0      0   0    7    0    0    0  o61
+ 100     11    A     OUTPUT      t        0      0   0    7    0    0    0  o62
+  95     14    A     OUTPUT      t        0      0   0    7    0    0    0  o63
+
+
+Code:
+
+s = Synthesized pin or logic cell
+t = Turbo logic cell
++ = Synchronous flipflop
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+
+
+Device-Specific Information:     c:\labs\microelectronics\lab6\step4\step4.rpt
+step4
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'A':
+
+                 Logic cells placed in LAB 'A'
+        +------- LC12 o60
+        | +----- LC13 o61
+        | | +--- LC11 o62
+        | | | +- LC14 o63
+        | | | | 
+        | | | |   Other LABs fed by signals
+        | | | |   that feed LAB 'A'
+LC      | | | | | A B C D E F |     Logic cells that feed LAB 'A':
+
+Pin
+8    -> * * * * | * * * * * * | <-- i0
+1    -> * * * * | * * * * * * | <-- i1
+2    -> * * * * | * * * * * * | <-- i2
+3    -> * * * * | * * * * * * | <-- i3
+4    -> * * * * | * * * * * * | <-- i4
+6    -> * * * * | * * * * * * | <-- i5
+7    -> * * * * | * * * * * * | <-- r
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:     c:\labs\microelectronics\lab6\step4\step4.rpt
+step4
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'B':
+
+                                 Logic cells placed in LAB 'B'
+        +----------------------- LC25 o48
+        | +--------------------- LC24 o49
+        | | +------------------- LC19 o50
+        | | | +----------------- LC17 o51
+        | | | | +--------------- LC20 o52
+        | | | | | +------------- LC21 o53
+        | | | | | | +----------- LC27 o54
+        | | | | | | | +--------- LC22 o55
+        | | | | | | | | +------- LC30 o56
+        | | | | | | | | | +----- LC32 o57
+        | | | | | | | | | | +--- LC29 o58
+        | | | | | | | | | | | +- LC28 o59
+        | | | | | | | | | | | | 
+        | | | | | | | | | | | |   Other LABs fed by signals
+        | | | | | | | | | | | |   that feed LAB 'B'
+LC      | | | | | | | | | | | | | A B C D E F |     Logic cells that feed LAB 'B':
+
+Pin
+8    -> * * * * * * * * * * * * | * * * * * * | <-- i0
+1    -> * * * * * * * * * * * * | * * * * * * | <-- i1
+2    -> * * * * * * * * * * * * | * * * * * * | <-- i2
+3    -> * * * * * * * * * * * * | * * * * * * | <-- i3
+4    -> * * * * * * * * * * * * | * * * * * * | <-- i4
+6    -> * * * * * * * * * * * * | * * * * * * | <-- i5
+7    -> * * * * * * * * * * * * | * * * * * * | <-- r
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:     c:\labs\microelectronics\lab6\step4\step4.rpt
+step4
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'C':
+
+                                 Logic cells placed in LAB 'C'
+        +----------------------- LC46 o36
+        | +--------------------- LC44 o37
+        | | +------------------- LC43 o38
+        | | | +----------------- LC40 o39
+        | | | | +--------------- LC38 o40
+        | | | | | +------------- LC36 o41
+        | | | | | | +----------- LC35 o42
+        | | | | | | | +--------- LC33 o43
+        | | | | | | | | +------- LC37 o44
+        | | | | | | | | | +----- LC41 o45
+        | | | | | | | | | | +--- LC45 o46
+        | | | | | | | | | | | +- LC48 o47
+        | | | | | | | | | | | | 
+        | | | | | | | | | | | |   Other LABs fed by signals
+        | | | | | | | | | | | |   that feed LAB 'C'
+LC      | | | | | | | | | | | | | A B C D E F |     Logic cells that feed LAB 'C':
+
+Pin
+8    -> * * * * * * * * * * * * | * * * * * * | <-- i0
+1    -> * * * * * * * * * * * * | * * * * * * | <-- i1
+2    -> * * * * * * * * * * * * | * * * * * * | <-- i2
+3    -> * * * * * * * * * * * * | * * * * * * | <-- i3
+4    -> * * * * * * * * * * * * | * * * * * * | <-- i4
+6    -> * * * * * * * * * * * * | * * * * * * | <-- i5
+7    -> * * * * * * * * * * * * | * * * * * * | <-- r
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:     c:\labs\microelectronics\lab6\step4\step4.rpt
+step4
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'D':
+
+                                 Logic cells placed in LAB 'D'
+        +----------------------- LC49 o24
+        | +--------------------- LC51 o25
+        | | +------------------- LC52 o26
+        | | | +----------------- LC53 o27
+        | | | | +--------------- LC54 o28
+        | | | | | +------------- LC56 o29
+        | | | | | | +----------- LC64 o30
+        | | | | | | | +--------- LC62 o31
+        | | | | | | | | +------- LC61 o32
+        | | | | | | | | | +----- LC60 o33
+        | | | | | | | | | | +--- LC59 o34
+        | | | | | | | | | | | +- LC57 o35
+        | | | | | | | | | | | | 
+        | | | | | | | | | | | |   Other LABs fed by signals
+        | | | | | | | | | | | |   that feed LAB 'D'
+LC      | | | | | | | | | | | | | A B C D E F |     Logic cells that feed LAB 'D':
+
+Pin
+8    -> * * * * * * * * * * * * | * * * * * * | <-- i0
+1    -> * * * * * * * * * * * * | * * * * * * | <-- i1
+2    -> * * * * * * * * * * * * | * * * * * * | <-- i2
+3    -> * * * * * * * * * * * * | * * * * * * | <-- i3
+4    -> * * * * * * * * * * * * | * * * * * * | <-- i4
+6    -> * * * * * * * * * * * * | * * * * * * | <-- i5
+7    -> * * * * * * * * * * * * | * * * * * * | <-- r
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:     c:\labs\microelectronics\lab6\step4\step4.rpt
+step4
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'E':
+
+                                 Logic cells placed in LAB 'E'
+        +----------------------- LC78 o12
+        | +--------------------- LC77 o13
+        | | +------------------- LC76 o14
+        | | | +----------------- LC80 o15
+        | | | | +--------------- LC75 o16
+        | | | | | +------------- LC69 o17
+        | | | | | | +----------- LC70 o18
+        | | | | | | | +--------- LC73 o19
+        | | | | | | | | +------- LC72 o20
+        | | | | | | | | | +----- LC68 o21
+        | | | | | | | | | | +--- LC67 o22
+        | | | | | | | | | | | +- LC65 o23
+        | | | | | | | | | | | | 
+        | | | | | | | | | | | |   Other LABs fed by signals
+        | | | | | | | | | | | |   that feed LAB 'E'
+LC      | | | | | | | | | | | | | A B C D E F |     Logic cells that feed LAB 'E':
+
+Pin
+8    -> * * * * * * * * * * * * | * * * * * * | <-- i0
+1    -> * * * * * * * * * * * * | * * * * * * | <-- i1
+2    -> * * * * * * * * * * * * | * * * * * * | <-- i2
+3    -> * * * * * * * * * * * * | * * * * * * | <-- i3
+4    -> * * * * * * * * * * * * | * * * * * * | <-- i4
+6    -> * * * * * * * * * * * * | * * * * * * | <-- i5
+7    -> * * * * * * * * * * * * | * * * * * * | <-- r
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:     c:\labs\microelectronics\lab6\step4\step4.rpt
+step4
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'F':
+
+                                 Logic cells placed in LAB 'F'
+        +----------------------- LC96 o0
+        | +--------------------- LC94 o1
+        | | +------------------- LC84 o2
+        | | | +----------------- LC88 o3
+        | | | | +--------------- LC91 o4
+        | | | | | +------------- LC93 o5
+        | | | | | | +----------- LC92 o6
+        | | | | | | | +--------- LC89 o7
+        | | | | | | | | +------- LC81 o8
+        | | | | | | | | | +----- LC86 o9
+        | | | | | | | | | | +--- LC85 o10
+        | | | | | | | | | | | +- LC83 o11
+        | | | | | | | | | | | | 
+        | | | | | | | | | | | |   Other LABs fed by signals
+        | | | | | | | | | | | |   that feed LAB 'F'
+LC      | | | | | | | | | | | | | A B C D E F |     Logic cells that feed LAB 'F':
+
+Pin
+8    -> * * * * * * * * * * * * | * * * * * * | <-- i0
+1    -> * * * * * * * * * * * * | * * * * * * | <-- i1
+2    -> * * * * * * * * * * * * | * * * * * * | <-- i2
+3    -> * * * * * * * * * * * * | * * * * * * | <-- i3
+4    -> * * * * * * * * * * * * | * * * * * * | <-- i4
+6    -> * * * * * * * * * * * * | * * * * * * | <-- i5
+7    -> * * * * * * * * * * * * | * * * * * * | <-- r
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:     c:\labs\microelectronics\lab6\step4\step4.rpt
+step4
+
+** EQUATIONS **
+
+i0       : INPUT;
+i1       : INPUT;
+i2       : INPUT;
+i3       : INPUT;
+i4       : INPUT;
+i5       : INPUT;
+r        : INPUT;
+
+-- Node name is 'o0' 
+-- Equation name is 'o0', location is LC096, type is output.
+ o0      = LCELL( _EQ001 $  GND);
+  _EQ001 = !i0 & !i1 & !i2 & !i3 & !i4 & !i5 &  r;
+
+-- Node name is 'o1' 
+-- Equation name is 'o1', location is LC094, type is output.
+ o1      = LCELL( _EQ002 $  GND);
+  _EQ002 =  i0 & !i1 & !i2 & !i3 & !i4 & !i5 &  r;
+
+-- Node name is 'o2' 
+-- Equation name is 'o2', location is LC084, type is output.
+ o2      = LCELL( _EQ003 $  GND);
+  _EQ003 = !i0 &  i1 & !i2 & !i3 & !i4 & !i5 &  r;
+
+-- Node name is 'o3' 
+-- Equation name is 'o3', location is LC088, type is output.
+ o3      = LCELL( _EQ004 $  GND);
+  _EQ004 =  i0 &  i1 & !i2 & !i3 & !i4 & !i5 &  r;
+
+-- Node name is 'o4' 
+-- Equation name is 'o4', location is LC091, type is output.
+ o4      = LCELL( _EQ005 $  GND);
+  _EQ005 = !i0 & !i1 &  i2 & !i3 & !i4 & !i5 &  r;
+
+-- Node name is 'o5' 
+-- Equation name is 'o5', location is LC093, type is output.
+ o5      = LCELL( _EQ006 $  GND);
+  _EQ006 =  i0 & !i1 &  i2 & !i3 & !i4 & !i5 &  r;
+
+-- Node name is 'o6' 
+-- Equation name is 'o6', location is LC092, type is output.
+ o6      = LCELL( _EQ007 $  GND);
+  _EQ007 = !i0 &  i1 &  i2 & !i3 & !i4 & !i5 &  r;
+
+-- Node name is 'o7' 
+-- Equation name is 'o7', location is LC089, type is output.
+ o7      = LCELL( _EQ008 $  GND);
+  _EQ008 =  i0 &  i1 &  i2 & !i3 & !i4 & !i5 &  r;
+
+-- Node name is 'o8' 
+-- Equation name is 'o8', location is LC081, type is output.
+ o8      = LCELL( _EQ009 $  GND);
+  _EQ009 = !i0 & !i1 & !i2 &  i3 & !i4 & !i5 &  r;
+
+-- Node name is 'o9' 
+-- Equation name is 'o9', location is LC086, type is output.
+ o9      = LCELL( _EQ010 $  GND);
+  _EQ010 =  i0 & !i1 & !i2 &  i3 & !i4 & !i5 &  r;
+
+-- Node name is 'o10' 
+-- Equation name is 'o10', location is LC085, type is output.
+ o10     = LCELL( _EQ011 $  GND);
+  _EQ011 = !i0 &  i1 & !i2 &  i3 & !i4 & !i5 &  r;
+
+-- Node name is 'o11' 
+-- Equation name is 'o11', location is LC083, type is output.
+ o11     = LCELL( _EQ012 $  GND);
+  _EQ012 =  i0 &  i1 & !i2 &  i3 & !i4 & !i5 &  r;
+
+-- Node name is 'o12' 
+-- Equation name is 'o12', location is LC078, type is output.
+ o12     = LCELL( _EQ013 $  GND);
+  _EQ013 = !i0 & !i1 &  i2 &  i3 & !i4 & !i5 &  r;
+
+-- Node name is 'o13' 
+-- Equation name is 'o13', location is LC077, type is output.
+ o13     = LCELL( _EQ014 $  GND);
+  _EQ014 =  i0 & !i1 &  i2 &  i3 & !i4 & !i5 &  r;
+
+-- Node name is 'o14' 
+-- Equation name is 'o14', location is LC076, type is output.
+ o14     = LCELL( _EQ015 $  GND);
+  _EQ015 = !i0 &  i1 &  i2 &  i3 & !i4 & !i5 &  r;
+
+-- Node name is 'o15' 
+-- Equation name is 'o15', location is LC080, type is output.
+ o15     = LCELL( _EQ016 $  GND);
+  _EQ016 =  i0 &  i1 &  i2 &  i3 & !i4 & !i5 &  r;
+
+-- Node name is 'o16' 
+-- Equation name is 'o16', location is LC075, type is output.
+ o16     = LCELL( _EQ017 $  GND);
+  _EQ017 = !i0 & !i1 & !i2 & !i3 &  i4 & !i5 &  r;
+
+-- Node name is 'o17' 
+-- Equation name is 'o17', location is LC069, type is output.
+ o17     = LCELL( _EQ018 $  GND);
+  _EQ018 =  i0 & !i1 & !i2 & !i3 &  i4 & !i5 &  r;
+
+-- Node name is 'o18' 
+-- Equation name is 'o18', location is LC070, type is output.
+ o18     = LCELL( _EQ019 $  GND);
+  _EQ019 = !i0 &  i1 & !i2 & !i3 &  i4 & !i5 &  r;
+
+-- Node name is 'o19' 
+-- Equation name is 'o19', location is LC073, type is output.
+ o19     = LCELL( _EQ020 $  GND);
+  _EQ020 =  i0 &  i1 & !i2 & !i3 &  i4 & !i5 &  r;
+
+-- Node name is 'o20' 
+-- Equation name is 'o20', location is LC072, type is output.
+ o20     = LCELL( _EQ021 $  GND);
+  _EQ021 = !i0 & !i1 &  i2 & !i3 &  i4 & !i5 &  r;
+
+-- Node name is 'o21' 
+-- Equation name is 'o21', location is LC068, type is output.
+ o21     = LCELL( _EQ022 $  GND);
+  _EQ022 =  i0 & !i1 &  i2 & !i3 &  i4 & !i5 &  r;
+
+-- Node name is 'o22' 
+-- Equation name is 'o22', location is LC067, type is output.
+ o22     = LCELL( _EQ023 $  GND);
+  _EQ023 = !i0 &  i1 &  i2 & !i3 &  i4 & !i5 &  r;
+
+-- Node name is 'o23' 
+-- Equation name is 'o23', location is LC065, type is output.
+ o23     = LCELL( _EQ024 $  GND);
+  _EQ024 =  i0 &  i1 &  i2 & !i3 &  i4 & !i5 &  r;
+
+-- Node name is 'o24' 
+-- Equation name is 'o24', location is LC049, type is output.
+ o24     = LCELL( _EQ025 $  GND);
+  _EQ025 = !i0 & !i1 & !i2 &  i3 &  i4 & !i5 &  r;
+
+-- Node name is 'o25' 
+-- Equation name is 'o25', location is LC051, type is output.
+ o25     = LCELL( _EQ026 $  GND);
+  _EQ026 =  i0 & !i1 & !i2 &  i3 &  i4 & !i5 &  r;
+
+-- Node name is 'o26' 
+-- Equation name is 'o26', location is LC052, type is output.
+ o26     = LCELL( _EQ027 $  GND);
+  _EQ027 = !i0 &  i1 & !i2 &  i3 &  i4 & !i5 &  r;
+
+-- Node name is 'o27' 
+-- Equation name is 'o27', location is LC053, type is output.
+ o27     = LCELL( _EQ028 $  GND);
+  _EQ028 =  i0 &  i1 & !i2 &  i3 &  i4 & !i5 &  r;
+
+-- Node name is 'o28' 
+-- Equation name is 'o28', location is LC054, type is output.
+ o28     = LCELL( _EQ029 $  GND);
+  _EQ029 = !i0 & !i1 &  i2 &  i3 &  i4 & !i5 &  r;
+
+-- Node name is 'o29' 
+-- Equation name is 'o29', location is LC056, type is output.
+ o29     = LCELL( _EQ030 $  GND);
+  _EQ030 =  i0 & !i1 &  i2 &  i3 &  i4 & !i5 &  r;
+
+-- Node name is 'o30' 
+-- Equation name is 'o30', location is LC064, type is output.
+ o30     = LCELL( _EQ031 $  GND);
+  _EQ031 = !i0 &  i1 &  i2 &  i3 &  i4 & !i5 &  r;
+
+-- Node name is 'o31' 
+-- Equation name is 'o31', location is LC062, type is output.
+ o31     = LCELL( _EQ032 $  GND);
+  _EQ032 =  i0 &  i1 &  i2 &  i3 &  i4 & !i5 &  r;
+
+-- Node name is 'o32' 
+-- Equation name is 'o32', location is LC061, type is output.
+ o32     = LCELL( _EQ033 $  GND);
+  _EQ033 = !i0 & !i1 & !i2 & !i3 & !i4 &  i5 &  r;
+
+-- Node name is 'o33' 
+-- Equation name is 'o33', location is LC060, type is output.
+ o33     = LCELL( _EQ034 $  GND);
+  _EQ034 =  i0 & !i1 & !i2 & !i3 & !i4 &  i5 &  r;
+
+-- Node name is 'o34' 
+-- Equation name is 'o34', location is LC059, type is output.
+ o34     = LCELL( _EQ035 $  GND);
+  _EQ035 = !i0 &  i1 & !i2 & !i3 & !i4 &  i5 &  r;
+
+-- Node name is 'o35' 
+-- Equation name is 'o35', location is LC057, type is output.
+ o35     = LCELL( _EQ036 $  GND);
+  _EQ036 =  i0 &  i1 & !i2 & !i3 & !i4 &  i5 &  r;
+
+-- Node name is 'o36' 
+-- Equation name is 'o36', location is LC046, type is output.
+ o36     = LCELL( _EQ037 $  GND);
+  _EQ037 = !i0 & !i1 &  i2 & !i3 & !i4 &  i5 &  r;
+
+-- Node name is 'o37' 
+-- Equation name is 'o37', location is LC044, type is output.
+ o37     = LCELL( _EQ038 $  GND);
+  _EQ038 =  i0 & !i1 &  i2 & !i3 & !i4 &  i5 &  r;
+
+-- Node name is 'o38' 
+-- Equation name is 'o38', location is LC043, type is output.
+ o38     = LCELL( _EQ039 $  GND);
+  _EQ039 = !i0 &  i1 &  i2 & !i3 & !i4 &  i5 &  r;
+
+-- Node name is 'o39' 
+-- Equation name is 'o39', location is LC040, type is output.
+ o39     = LCELL( _EQ040 $  GND);
+  _EQ040 =  i0 &  i1 &  i2 & !i3 & !i4 &  i5 &  r;
+
+-- Node name is 'o40' 
+-- Equation name is 'o40', location is LC038, type is output.
+ o40     = LCELL( _EQ041 $  GND);
+  _EQ041 = !i0 & !i1 & !i2 &  i3 & !i4 &  i5 &  r;
+
+-- Node name is 'o41' 
+-- Equation name is 'o41', location is LC036, type is output.
+ o41     = LCELL( _EQ042 $  GND);
+  _EQ042 =  i0 & !i1 & !i2 &  i3 & !i4 &  i5 &  r;
+
+-- Node name is 'o42' 
+-- Equation name is 'o42', location is LC035, type is output.
+ o42     = LCELL( _EQ043 $  GND);
+  _EQ043 = !i0 &  i1 & !i2 &  i3 & !i4 &  i5 &  r;
+
+-- Node name is 'o43' 
+-- Equation name is 'o43', location is LC033, type is output.
+ o43     = LCELL( _EQ044 $  GND);
+  _EQ044 =  i0 &  i1 & !i2 &  i3 & !i4 &  i5 &  r;
+
+-- Node name is 'o44' 
+-- Equation name is 'o44', location is LC037, type is output.
+ o44     = LCELL( _EQ045 $  GND);
+  _EQ045 = !i0 & !i1 &  i2 &  i3 & !i4 &  i5 &  r;
+
+-- Node name is 'o45' 
+-- Equation name is 'o45', location is LC041, type is output.
+ o45     = LCELL( _EQ046 $  GND);
+  _EQ046 =  i0 & !i1 &  i2 &  i3 & !i4 &  i5 &  r;
+
+-- Node name is 'o46' 
+-- Equation name is 'o46', location is LC045, type is output.
+ o46     = LCELL( _EQ047 $  GND);
+  _EQ047 = !i0 &  i1 &  i2 &  i3 & !i4 &  i5 &  r;
+
+-- Node name is 'o47' 
+-- Equation name is 'o47', location is LC048, type is output.
+ o47     = LCELL( _EQ048 $  GND);
+  _EQ048 =  i0 &  i1 &  i2 &  i3 & !i4 &  i5 &  r;
+
+-- Node name is 'o48' 
+-- Equation name is 'o48', location is LC025, type is output.
+ o48     = LCELL( _EQ049 $  GND);
+  _EQ049 = !i0 & !i1 & !i2 & !i3 &  i4 &  i5 &  r;
+
+-- Node name is 'o49' 
+-- Equation name is 'o49', location is LC024, type is output.
+ o49     = LCELL( _EQ050 $  GND);
+  _EQ050 =  i0 & !i1 & !i2 & !i3 &  i4 &  i5 &  r;
+
+-- Node name is 'o50' 
+-- Equation name is 'o50', location is LC019, type is output.
+ o50     = LCELL( _EQ051 $  GND);
+  _EQ051 = !i0 &  i1 & !i2 & !i3 &  i4 &  i5 &  r;
+
+-- Node name is 'o51' 
+-- Equation name is 'o51', location is LC017, type is output.
+ o51     = LCELL( _EQ052 $  GND);
+  _EQ052 =  i0 &  i1 & !i2 & !i3 &  i4 &  i5 &  r;
+
+-- Node name is 'o52' 
+-- Equation name is 'o52', location is LC020, type is output.
+ o52     = LCELL( _EQ053 $  GND);
+  _EQ053 = !i0 & !i1 &  i2 & !i3 &  i4 &  i5 &  r;
+
+-- Node name is 'o53' 
+-- Equation name is 'o53', location is LC021, type is output.
+ o53     = LCELL( _EQ054 $  GND);
+  _EQ054 =  i0 & !i1 &  i2 & !i3 &  i4 &  i5 &  r;
+
+-- Node name is 'o54' 
+-- Equation name is 'o54', location is LC027, type is output.
+ o54     = LCELL( _EQ055 $  GND);
+  _EQ055 = !i0 &  i1 &  i2 & !i3 &  i4 &  i5 &  r;
+
+-- Node name is 'o55' 
+-- Equation name is 'o55', location is LC022, type is output.
+ o55     = LCELL( _EQ056 $  GND);
+  _EQ056 =  i0 &  i1 &  i2 & !i3 &  i4 &  i5 &  r;
+
+-- Node name is 'o56' 
+-- Equation name is 'o56', location is LC030, type is output.
+ o56     = LCELL( _EQ057 $  GND);
+  _EQ057 = !i0 & !i1 & !i2 &  i3 &  i4 &  i5 &  r;
+
+-- Node name is 'o57' 
+-- Equation name is 'o57', location is LC032, type is output.
+ o57     = LCELL( _EQ058 $  GND);
+  _EQ058 =  i0 & !i1 & !i2 &  i3 &  i4 &  i5 &  r;
+
+-- Node name is 'o58' 
+-- Equation name is 'o58', location is LC029, type is output.
+ o58     = LCELL( _EQ059 $  GND);
+  _EQ059 = !i0 &  i1 & !i2 &  i3 &  i4 &  i5 &  r;
+
+-- Node name is 'o59' 
+-- Equation name is 'o59', location is LC028, type is output.
+ o59     = LCELL( _EQ060 $  GND);
+  _EQ060 =  i0 &  i1 & !i2 &  i3 &  i4 &  i5 &  r;
+
+-- Node name is 'o60' 
+-- Equation name is 'o60', location is LC012, type is output.
+ o60     = LCELL( _EQ061 $  GND);
+  _EQ061 = !i0 & !i1 &  i2 &  i3 &  i4 &  i5 &  r;
+
+-- Node name is 'o61' 
+-- Equation name is 'o61', location is LC013, type is output.
+ o61     = LCELL( _EQ062 $  GND);
+  _EQ062 =  i0 & !i1 &  i2 &  i3 &  i4 &  i5 &  r;
+
+-- Node name is 'o62' 
+-- Equation name is 'o62', location is LC011, type is output.
+ o62     = LCELL( _EQ063 $  GND);
+  _EQ063 = !i0 &  i1 &  i2 &  i3 &  i4 &  i5 &  r;
+
+-- Node name is 'o63' 
+-- Equation name is 'o63', location is LC014, type is output.
+ o63     = LCELL( _EQ064 $  GND);
+  _EQ064 =  i0 &  i1 &  i2 &  i3 &  i4 &  i5 &  r;
+
+
+
+--     Shareable expanders that are duplicated in multiple LABs:
+--     (none)
+
+
+
+
+Project Information              c:\labs\microelectronics\lab6\step4\step4.rpt
+
+** COMPILATION SETTINGS & TIMES **
+
+Processing Menu Commands
+------------------------
+
+Design Doctor                             = off
+
+Logic Synthesis:
+
+   Synthesis Type Used                    = Standard
+
+   Default Synthesis Style                = NORMAL
+
+      Logic option settings in 'NORMAL' style for 'MAX7000' family
+
+      DECOMPOSE_GATES                     = on
+      DUPLICATE_LOGIC_EXTRACTION          = on
+      MINIMIZATION                        = full
+      MULTI_LEVEL_FACTORING               = on
+      NOT_GATE_PUSH_BACK                  = on
+      PARALLEL_EXPANDERS                  = off
+      REDUCE_LOGIC                        = on
+      REFACTORIZATION                     = on
+      REGISTER_OPTIMIZATION               = on
+      RESYNTHESIZE_NETWORK                = on
+      SLOW_SLEW_RATE                      = off
+      SOFT_BUFFER_INSERTION               = on
+      SUBFACTOR_EXTRACTION                = on
+      TURBO_BIT                           = on
+      XOR_SYNTHESIS                       = on
+      IGNORE_SOFT_BUFFERS                 = off
+      USE_LPM_FOR_AHDL_OPERATORS          = off
+
+   Other logic synthesis settings:
+
+      Automatic Global Clock              = on
+      Automatic Global Clear              = on
+      Automatic Global Preset             = on
+      Automatic Global Output Enable      = on
+      Automatic Fast I/O                  = off
+      Automatic Register Packing          = off
+      Automatic Open-Drain Pins           = on
+      Automatic Implement in EAB          = off
+      One-Hot State Machine Encoding      = off
+      Optimize                            = 5
+
+Default Timing Specifications: None
+
+Cut All Bidir Feedback Timing Paths       = on
+Cut All Clear & Preset Timing Paths       = on
+
+Ignore Timing Assignments                 = off
+
+Functional SNF Extractor                  = off
+
+Linked SNF Extractor                      = off
+Timing SNF Extractor                      = on
+Optimize Timing SNF                       = off
+Generate AHDL TDO File                    = off
+Fitter Settings                           = NORMAL
+Smart Recompile                           = off
+Total Recompile                           = off
+
+Interfaces Menu Commands
+------------------------
+
+EDIF Netlist Writer                       = off
+Verilog Netlist Writer                    = off
+VHDL Netlist Writer                       = off
+
+Compilation Times
+-----------------
+
+   Compiler Netlist Extractor             00:00:00
+   Database Builder                       00:00:00
+   Logic Synthesizer                      00:00:00
+   Partitioner                            00:00:00
+   Fitter                                 00:00:00
+   Timing SNF Extractor                   00:00:00
+   Assembler                              00:00:00
+   --------------------------             --------
+   Total Time                             00:00:00
+
+
+Memory Allocated
+-----------------
+
+Peak memory allocated during compilation  = 5,044K

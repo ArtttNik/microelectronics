@@ -1,0 +1,131 @@
+-- Copyright (C) 1988-1998 Altera Corporation
+-- Any megafunction design, and related net list (encrypted or decrypted),
+-- support information, device programming or simulation file, and any other
+-- associated documentation or information provided by Altera or a partner
+-- under Altera's Megafunction Partnership Program may be used only to
+-- program PLD devices (but not masked PLD devices) from Altera.  Any other
+-- use of such megafunction design, net list, support information, device
+-- programming or simulation file, or any other related documentation or
+-- information is prohibited for any other purpose, including, but not
+-- limited to modification, reverse engineering, de-compiling, or use with
+-- any other silicon devices, unless such use is explicitly licensed under
+-- a separate agreement with Altera or a megafunction partner.  Title to
+-- the intellectual property, including patents, copyrights, trademarks,
+-- trade secrets, or maskworks, embodied in any such megafunction design,
+-- net list, support information, device programming or simulation file, or
+-- any other related documentation or information provided by Altera or a
+-- megafunction partner, remains with Altera, the megafunction partner, or
+-- their respective licensors.  No other licenses, including any licenses
+-- needed under any third party's intellectual property, are provided herein.
+
+
+
+N.C. = Not Connected.
+VCCINT = Dedicated power pin, which MUST be connected to VCC (5.0 volts).
+VCCIO = Dedicated power pin, which MUST be connected to VCC (5.0 volts).
+GND = Dedicated ground pin or unused dedicated input, which MUST be connected to GND.
+RESERVED = Unused I/O pin, which MUST be left unconnected.
+
+----------------------------------------------------------------------------
+
+CHIP "step4" ASSIGNED TO AN EPM7096QC100-7
+i1                               : 1
+i2                               : 2
+i3                               : 3
+i4                               : 4
+VCCIO                            : 5
+i5                               : 6
+r                                : 7
+i0                               : 8
+N.C.                             : 9
+o57                              : 10
+o56                              : 11
+o58                              : 12
+GND                              : 13
+o59                              : 14
+o54                              : 15
+o48                              : 16
+o49                              : 17
+o55                              : 18
+o53                              : 19
+VCCIO                            : 20
+o52                              : 21
+o50                              : 22
+o51                              : 23
+N.C.                             : 24
+o47                              : 25
+o36                              : 26
+o46                              : 27
+GND                              : 28
+o37                              : 29
+o38                              : 30
+o45                              : 31
+o39                              : 32
+o40                              : 33
+o44                              : 34
+o41                              : 35
+VCCIO                            : 36
+N.C.                             : 37
+o42                              : 38
+o43                              : 39
+GND                              : 40
+VCCINT                           : 41
+o24                              : 42
+o25                              : 43
+N.C.                             : 44
+GND                              : 45
+o26                              : 46
+o27                              : 47
+o28                              : 48
+o29                              : 49
+o35                              : 50
+o34                              : 51
+o33                              : 52
+VCCIO                            : 53
+o32                              : 54
+o31                              : 55
+o30                              : 56
+N.C.                             : 57
+o23                              : 58
+o22                              : 59
+o21                              : 60
+GND                              : 61
+o17                              : 62
+o18                              : 63
+o20                              : 64
+o19                              : 65
+o16                              : 66
+o14                              : 67
+VCCIO                            : 68
+o13                              : 69
+o12                              : 70
+o15                              : 71
+N.C.                             : 72
+o8                               : 73
+o11                              : 74
+o2                               : 75
+GND                              : 76
+o10                              : 77
+o9                               : 78
+o3                               : 79
+o7                               : 80
+o4                               : 81
+o6                               : 82
+o5                               : 83
+VCCIO                            : 84
+N.C.                             : 85
+o1                               : 86
+o0                               : 87
+GND                              : 88
+GND                              : 89
+GND                              : 90
+GND                              : 91
+GND                              : 92
+VCCINT                           : 93
+RESERVED                         : 94
+o63                              : 95
+N.C.                             : 96
+GND                              : 97
+o61                              : 98
+o60                              : 99
+o62                              : 100
