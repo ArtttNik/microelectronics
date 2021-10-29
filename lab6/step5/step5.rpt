@@ -1,8 +1,8 @@
-Project Information              c:\labs\microelectronics\lab6\step3\step3.rpt
+Project Information              c:\labs\microelectronics\lab6\step5\step5.rpt
 
 MAX+plus II Compiler Report File
 Version 9.01 07/30/98
-Compiled: 10/29/21 14:20:03
+Compiled: 10/29/21 14:58:53
 
 Copyright (C) 1988-1998 Altera Corporation
 Any megafunction design, and related net list (encrypted or decrypted),
@@ -29,7 +29,6 @@ needed under any third party's intellectual property, are provided herein.
 ***** Project compilation was successful
 
 
-STEP3
 
 
 ** DEVICE SUMMARY **
@@ -37,16 +36,25 @@ STEP3
 Chip/                     Input   Output   Bidir         Shareable
 POF       Device          Pins    Pins     Pins     LCs  Expanders  % Utilized
 
-step3     EPM7032LC44-6    3        8        0      8       0           25 %
+step5     EPM7032LC44-6    3        8        0      8       0           25 %
 
 User Pins:                 3        8        0  
 
 
 
-Device-Specific Information:     c:\labs\microelectronics\lab6\step3\step3.rpt
-step3
+Project Information              c:\labs\microelectronics\lab6\step5\step5.rpt
 
-***** Logic for device 'step3' compiled without errors.
+** FILE HIERARCHY **
+
+
+
+|74138:1|
+
+
+Device-Specific Information:     c:\labs\microelectronics\lab6\step5\step5.rpt
+step5
+
+***** Logic for device 'step5' compiled without errors.
 
 
 
@@ -63,17 +71,17 @@ Device Options:
                                                
                                                
                        V  G  G  G  G  G        
-              a  a  a  C  N  N  N  N  N  q  q  
-              2  1  0  C  D  D  D  D  D  7  6  
+                       C  N  N  N  N  N  y  y  
+              c  b  a  C  D  D  D  D  D  7  6  
             -----------------------------------_ 
           /   6  5  4  3  2  1 44 43 42 41 40   | 
-RESERVED |  7                                39 | q5 
-RESERVED |  8                                38 | q4 
-RESERVED |  9                                37 | q3 
-     GND | 10                                36 | q1 
+RESERVED |  7                                39 | y5 
+RESERVED |  8                                38 | y4 
+RESERVED |  9                                37 | y3 
+     GND | 10                                36 | y1 
 RESERVED | 11                                35 | VCC 
-RESERVED | 12         EPM7032LC44-6          34 | q2 
-RESERVED | 13                                33 | q0 
+RESERVED | 12         EPM7032LC44-6          34 | y2 
+RESERVED | 13                                33 | y0 
 RESERVED | 14                                32 | RESERVED 
      VCC | 15                                31 | RESERVED 
 RESERVED | 16                                30 | GND 
@@ -97,8 +105,8 @@ RESERVED = Unused I/O pin, which MUST be left unconnected.
 
 
 
-Device-Specific Information:     c:\labs\microelectronics\lab6\step3\step3.rpt
-step3
+Device-Specific Information:     c:\labs\microelectronics\lab6\step5\step5.rpt
+step5
 
 ** RESOURCE USAGE **
 
@@ -131,17 +139,17 @@ Synthesized logic cells:                         0/  32   (  0%)
 
 
 
-Device-Specific Information:     c:\labs\microelectronics\lab6\step3\step3.rpt
-step3
+Device-Specific Information:     c:\labs\microelectronics\lab6\step5\step5.rpt
+step5
 
 ** INPUTS **
 
                                          Shareable
                                          Expanders     Fan-In    Fan-Out
  Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
-   4    (1)  (A)      INPUT               0      0   0    0    0    8    0  a0
-   5    (2)  (A)      INPUT               0      0   0    0    0    8    0  a1
-   6    (3)  (A)      INPUT               0      0   0    0    0    8    0  a2
+   4    (1)  (A)      INPUT               0      0   0    0    0    8    0  a
+   5    (2)  (A)      INPUT               0      0   0    0    0    8    0  b
+   6    (3)  (A)      INPUT               0      0   0    0    0    8    0  c
 
 
 Code:
@@ -153,22 +161,22 @@ t = Turbo logic cell
 r = Fitter-inserted logic cell
 
 
-Device-Specific Information:     c:\labs\microelectronics\lab6\step3\step3.rpt
-step3
+Device-Specific Information:     c:\labs\microelectronics\lab6\step5\step5.rpt
+step5
 
 ** OUTPUTS **
 
                                          Shareable
                                          Expanders     Fan-In    Fan-Out
  Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
-  33     24    B     OUTPUT      t        0      0   0    3    0    0    0  q0
-  36     22    B     OUTPUT      t        0      0   0    3    0    0    0  q1
-  34     23    B     OUTPUT      t        0      0   0    3    0    0    0  q2
-  37     21    B     OUTPUT      t        0      0   0    3    0    0    0  q3
-  38     20    B     OUTPUT      t        0      0   0    3    0    0    0  q4
-  39     19    B     OUTPUT      t        0      0   0    3    0    0    0  q5
-  40     18    B     OUTPUT      t        0      0   0    3    0    0    0  q6
-  41     17    B     OUTPUT      t        0      0   0    3    0    0    0  q7
+  33     24    B     OUTPUT      t        0      0   0    3    0    0    0  y0
+  36     22    B     OUTPUT      t        0      0   0    3    0    0    0  y1
+  34     23    B     OUTPUT      t        0      0   0    3    0    0    0  y2
+  37     21    B     OUTPUT      t        0      0   0    3    0    0    0  y3
+  38     20    B     OUTPUT      t        0      0   0    3    0    0    0  y4
+  39     19    B     OUTPUT      t        0      0   0    3    0    0    0  y5
+  40     18    B     OUTPUT      t        0      0   0    3    0    0    0  y6
+  41     17    B     OUTPUT      t        0      0   0    3    0    0    0  y7
 
 
 Code:
@@ -180,85 +188,85 @@ t = Turbo logic cell
 r = Fitter-inserted logic cell
 
 
-Device-Specific Information:     c:\labs\microelectronics\lab6\step3\step3.rpt
-step3
+Device-Specific Information:     c:\labs\microelectronics\lab6\step5\step5.rpt
+step5
 
 ** LOGIC CELL INTERCONNECTIONS **
 
 Logic Array Block 'B':
 
                          Logic cells placed in LAB 'B'
-        +--------------- LC24 q0
-        | +------------- LC22 q1
-        | | +----------- LC23 q2
-        | | | +--------- LC21 q3
-        | | | | +------- LC20 q4
-        | | | | | +----- LC19 q5
-        | | | | | | +--- LC18 q6
-        | | | | | | | +- LC17 q7
+        +--------------- LC24 y0
+        | +------------- LC22 y1
+        | | +----------- LC23 y2
+        | | | +--------- LC21 y3
+        | | | | +------- LC20 y4
+        | | | | | +----- LC19 y5
+        | | | | | | +--- LC18 y6
+        | | | | | | | +- LC17 y7
         | | | | | | | | 
         | | | | | | | |   Other LABs fed by signals
         | | | | | | | |   that feed LAB 'B'
 LC      | | | | | | | | | A B |     Logic cells that feed LAB 'B':
 
 Pin
-4    -> * * * * * * * * | - * | <-- a0
-5    -> * * * * * * * * | - * | <-- a1
-6    -> * * * * * * * * | - * | <-- a2
+4    -> * * * * * * * * | - * | <-- a
+5    -> * * * * * * * * | - * | <-- b
+6    -> * * * * * * * * | - * | <-- c
 
 
 * = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
 - = The logic cell or pin is not an input to the logic cell (or LAB).
 
 
-Device-Specific Information:     c:\labs\microelectronics\lab6\step3\step3.rpt
-step3
+Device-Specific Information:     c:\labs\microelectronics\lab6\step5\step5.rpt
+step5
 
 ** EQUATIONS **
 
-a0       : INPUT;
-a1       : INPUT;
-a2       : INPUT;
+a        : INPUT;
+b        : INPUT;
+c        : INPUT;
 
--- Node name is 'q0' 
--- Equation name is 'q0', location is LC024, type is output.
- q0      = LCELL( _EQ001 $  GND);
-  _EQ001 = !a0 & !a1 & !a2;
+-- Node name is 'y0' 
+-- Equation name is 'y0', location is LC024, type is output.
+ y0      = LCELL( _EQ001 $  VCC);
+  _EQ001 = !a & !b & !c;
 
--- Node name is 'q1' 
--- Equation name is 'q1', location is LC022, type is output.
- q1      = LCELL( _EQ002 $  GND);
-  _EQ002 =  a0 & !a1 & !a2;
+-- Node name is 'y1' 
+-- Equation name is 'y1', location is LC022, type is output.
+ y1      = LCELL( _EQ002 $  VCC);
+  _EQ002 =  a & !b & !c;
 
--- Node name is 'q2' 
--- Equation name is 'q2', location is LC023, type is output.
- q2      = LCELL( _EQ003 $  GND);
-  _EQ003 = !a0 &  a1 & !a2;
+-- Node name is 'y2' 
+-- Equation name is 'y2', location is LC023, type is output.
+ y2      = LCELL( _EQ003 $  VCC);
+  _EQ003 = !a &  b & !c;
 
--- Node name is 'q3' 
--- Equation name is 'q3', location is LC021, type is output.
- q3      = LCELL( _EQ004 $  GND);
-  _EQ004 =  a0 &  a1 & !a2;
+-- Node name is 'y3' 
+-- Equation name is 'y3', location is LC021, type is output.
+ y3      = LCELL( _EQ004 $  VCC);
+  _EQ004 =  a &  b & !c;
 
--- Node name is 'q4' 
--- Equation name is 'q4', location is LC020, type is output.
- q4      = LCELL( _EQ005 $  GND);
-  _EQ005 = !a0 & !a1 &  a2;
+-- Node name is 'y4' 
+-- Equation name is 'y4', location is LC020, type is output.
+ y4      = LCELL( _EQ005 $  VCC);
+  _EQ005 = !a & !b &  c;
 
--- Node name is 'q5' 
--- Equation name is 'q5', location is LC019, type is output.
- q5      = LCELL( _EQ006 $  GND);
-  _EQ006 =  a0 & !a1 &  a2;
+-- Node name is 'y5' 
+-- Equation name is 'y5', location is LC019, type is output.
+ y5      = LCELL( _EQ006 $  VCC);
+  _EQ006 =  a & !b &  c;
 
--- Node name is 'q6' 
--- Equation name is 'q6', location is LC018, type is output.
- q6      = LCELL( _EQ007 $  GND);
-  _EQ007 = !a0 &  a1 &  a2;
+-- Node name is 'y6' 
+-- Equation name is 'y6', location is LC018, type is output.
+ y6      = LCELL( _EQ007 $  VCC);
+  _EQ007 = !a &  b &  c;
 
--- Node name is 'q7' 
--- Equation name is 'q7', location is LC017, type is output.
- q7      = LCELL( _EQ008 $  GND);
-  _EQ008 =  a0 &  a1 &  a2;
+-- Node name is 'y7' 
+-- Equation name is 'y7', location is LC017, type is output.
+ y7      = LCELL( _EQ008 $  VCC);
+  _EQ008 =  a &  b &  c;
 
 
 
@@ -268,7 +276,7 @@ a2       : INPUT;
 
 
 
-Project Information              c:\labs\microelectronics\lab6\step3\step3.rpt
+Project Information              c:\labs\microelectronics\lab6\step5\step5.rpt
 
 ** COMPILATION SETTINGS & TIMES **
 
@@ -357,4 +365,4 @@ Compilation Times
 Memory Allocated
 -----------------
 
-Peak memory allocated during compilation  = 3,330K
+Peak memory allocated during compilation  = 3,095K
