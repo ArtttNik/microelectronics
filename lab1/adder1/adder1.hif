@@ -43,7 +43,7 @@ TREE
 {
 	adder1::(0,0):(0): adder1.gdf
 	{
-		half-adder-1::(0,0):(13): half-adder-1.gdf;
 		half-adder-1::(0,0):(12): half-adder-1.gdf;
+		half-adder-1::(0,0):(13): half-adder-1.gdf;
 	}
 }
