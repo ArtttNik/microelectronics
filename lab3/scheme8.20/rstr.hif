@@ -28,11 +28,22 @@ FILES
 	{
 		notand [] [U1147235.DLS,U7449008.DLS]
 		{
+			1 [] [];
+		}
+	}
+	rstr.vhd
+	{
+		rstr [] [U1147235.DLS,U7449008.DLS]
+		{
 			0 [] [];
 		}
 	}
 }
 TREE
 {
-	notand::(0,0):(0): notand.vhd;
+	rstr::(0,0):(0): rstr.vhd
+	{
+		notand:1:(35,9):(10,u2): notand.vhd;
+		notand:1:(28,9):(9,u1): notand.vhd;
+	}
 }
