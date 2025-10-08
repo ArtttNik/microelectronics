@@ -1,0 +1,16 @@
+|step8
+r => t2.ACLR
+r => t3.ACLR
+r => t4.ACLR
+r => t1.ACLR
+jk => t1.ENA
+c => t2.CLK
+c => t3.CLK
+c => t4.CLK
+c => t1.CLK
+q1 <= t1.DB_MAX_OUTPUT_PORT_TYPE
+q2 <= t2.DB_MAX_OUTPUT_PORT_TYPE
+q3 <= t3.DB_MAX_OUTPUT_PORT_TYPE
+q4 <= t4.DB_MAX_OUTPUT_PORT_TYPE
+
+
