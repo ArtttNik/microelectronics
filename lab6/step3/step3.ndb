@@ -1,0 +1,209 @@
+NDB006
+The number of symbol table entries is: 1
+The length of the symbol table is: 13
+
+Index Hierarchy Path
+----- --------------
+!	&null_hpath&
+
+The number of name info structs is : 197
+
+InsOrder BitField SymTableIndex NextSyn SynParent Loc ChainType NextChain ChainParent FanOut DirExp ParExp ShareExp NodeName
+-------- -------- ------------- ------- --------- --- --------- --------- ----------- ------ ------ ------ -------- --------
+"	IGdW	!	:100	"t
+#	IGdW	!	:101	"u
+$	IGdW	!	:102	"v
+%	IGdW	!	:103	"w
+&	IGdW	!	:104	"x
+'	IGdW	!	:105	"y
+(	IGdW	!	:106	"z
+)	IGdW	!	:107	"{
+*	IGdW	!	:108	"|
++	IGdW	!	:109	"}
+,	IGdW	!	:110	"~
+-	IGdW	!	:111	#!
+.	IGdW	!	:112	#"
+/	IGdW	!	:113	##
+0	IGdW	!	:114	#$
+1	IGdW	!	:115	#%
+2	IGdW	!	:116	#&
+3	IGdW	!	:117	#'
+4	IGdW	!	:118	#(
+5	IGdW	!	:119	#)
+6	IGdW	!	:120	#*
+7	IGdW	!	:121	#+
+8	IGdW	!	:122	#,
+9	IGdW	!	:123	#-
+:	IGdW	!	:124	#.
+;	IGdW	!	:125	#/
+<	IGdW	!	:140	#>
+=	IGdW	!	:141	#?
+>	IGdW	!	:142	#@
+?	IGdW	!	:143	#A
+@	IGdW	!	:144	#B
+A	IGdW	!	:145	#C
+B	IGdW	!	:146	#D
+C	IGdW	!	:147	#E
+D	IGdW	!	:148	#F
+E	IGdW	!	:149	#G
+F	IGdW	!	:150	#H
+G	IGdW	!	:151	#I
+H	IGdW	!	:152	#J
+I	IGdW	!	:153	#K
+J	IGdW	!	:154	#L
+K	IGdW	!	:155	#M
+L	IGdW	!	:156	#N
+M	IGdW	!	:157	#O
+N	IGdW	!	:167	#Y
+O	IGdW	!	:168	#Z
+P	IGdW	!	:169	#[
+Q	IGdW	!	:170	#\
+R	IGdW	!	:171	#]
+S	IGdW	!	:172	#^
+T	IGdW	!	:173	#_
+U	IGdW	!	:174	#`
+V	IGdW	!	:175	#a
+W	IGdW	!	:176	#b
+X	IGdW	!	:177	#c
+Y	IGdW	!	:178	#d
+Z	IGdW	!	:179	#e
+[	IGdW	!	:180	#f
+\	IGdW	!	:181	#g
+]	IGdW	!	:182	#h
+^	IGdW	!	:183	#i
+_	IGdW	!	:184	#j
+`	IGdW	!	:187	#m
+a	IGdW	!	:188	#n
+b	IGdW	!	:189	#o
+c	IGdW	!	:190	#p
+d	IGdW	!	:191	#q
+e	IGdW	!	:192	#r
+f	IGdW	!	:193	#s
+g	IGdW	!	:194	#t
+h	IGdW	!	:195	#u
+i	IGdW	!	:196	#v
+j	IGdW	!	:197	#w
+k	IGdW	!	:198	#x
+l	IGdW	!	:199	#y
+m	IGdW	!	:200	#z
+n	IGdW	!	:201	#{
+o	IGdW	!	:202	#|
+p	IGdW	!	:203	#}
+q	IGdW	!	:204	#~
+r	IGdW	!	:205	$!
+s	IGdW	!	:206	$"
+t	IGdW	!	:207	$#
+u	IGdW	!	:208	$$
+v	IGdW	!	:209	$%
+w	IGdW	!	:210	$&
+x	IGdW	!	:211	$'
+y	IGdW	!	:212	$(
+z	IGdW	!	:213	$)
+{	IGdW	!	:214	$*
+|	IGdW	!	:215	$+
+}	IGdW	!	:216	$,
+~	IGdW	!	:221	$1
+"!	IGdW	!	:222	$2
+""	IGdW	!	:223	$3
+"#	IGdW	!	:224	$4
+"$	IGdW	!	:225	$5
+"%	IGdW	!	:226	$6
+"&	IGdW	!	:227	$7
+"'	IGdW	!	:228	$8
+"(	IGdW	!	:229	$9
+")	IGdW	!	:230	$:
+"*	IGdW	!	:231	$;
+"+	IGdW	!	:232	$<
+",	IGdW	!	:233	$=
+"-	IGdW	!	:234	$>
+".	IGdW	!	:235	$?
+"/	IGdW	!	:236	$@
+"0	IGdW	!	:237	$A
+"1	IGdW	!	:238	$B
+"2	IGdW	!	:239	$C
+"3	IGdW	!	:240	$D
+"4	IGdW	!	:241	$E
+"5	IGdW	!	:242	$F
+"6	IGdW	!	:243	$G
+"7	IGdW	!	:244	$H
+"8	IGdW	!	:245	$I
+"9	IGdW	!	:246	$J
+":	IGdW	!	:247	$K
+";	IGdW	!	:248	$L
+"<	IGdW	!	:249	$M
+"=	IGdW	!	:250	$N
+">	IGdW	!	:251	$O
+"?	IGdW	!	:252	$P
+"@	IGdW	!	:253	$Q
+"A	IGdW	!	:254	$R
+"B	IGdW	!	:255	$S
+"C	IGdW	!	:256	$T
+"D	IGdW	!	:257	$U
+"E	IGdW	!	:258	$V
+"F	IGdW	!	:259	$W
+"G	IGdW	!	:260	$X
+"H	IGdW	!	:261	$Y
+"I	IGdW	!	:262	$Z
+"J	IGdW	!	:263	$[
+"K	IGdW	!	:264	$\
+"L	IGdW	!	:265	$]
+"M	IGdW	!	:266	$^
+"N	IGdW	!	:267	$_
+"O	IGdW	!	:268	$`
+"P	IGdW	!	:269	$a
+"Q	IGdW	!	:270	$b
+"R	IGdW	!	:271	$c
+"S	IGdW	!	:272	$d
+"T	IGdW	!	:273	$e
+"U	IGdW	!	:274	$f
+"V	IGdW	!	:49	"A
+"W	IGdW	!	:50	"B
+"X	IGdW	!	:51	"C
+"Y	IGdW	!	:52	"D
+"Z	IGdW	!	:53	"E
+"[	IGdW	!	:54	"F
+"\	IGdW	!	:55	"G
+"]	IGdW	!	:56	"H
+"^	IGdW	!	:57	"I
+"_	IGdW	!	:58	"J
+"`	IGdW	!	:59	"K
+"a	IGdW	!	:60	"L
+"b	IGdW	!	:61	"M
+"c	IGdW	!	:62	"N
+"d	IGdW	!	:63	"O
+"e	IGdW	!	:64	"P
+"f	IGdW	!	:65	"Q
+"g	IGdW	!	:66	"R
+"h	IGdW	!	:76	"\
+"i	IGdW	!	:77	"]
+"j	IGdW	!	:78	"^
+"k	IGdW	!	:79	"_
+"l	IGdW	!	:80	"`
+"m	IGdW	!	:81	"a
+"n	IGdW	!	:82	"b
+"o	IGdW	!	:83	"c
+"p	IGdW	!	:84	"d
+"q	IGdW	!	:85	"e
+"r	IGdW	!	:86	"f
+"s	IGdW	!	:87	"g
+"t	IGdW	!	:88	"h
+"u	IGdW	!	:89	"i
+"v	IGdW	!	:90	"j
+"w	IGdW	!	:91	"k
+"x	IGdW	!	:92	"l
+"y	IGdW	!	:93	"m
+"z	IGdW	!	:96	"p
+"{	IGdW	!	:97	"q
+"|	IGdW	!	:98	"r
+"}	IGdW	!	:99	"s
+"~	L8ef	!	6	5	8	##	#$	#%	#&	#'	#(	#)	#*	a0	o
+#!	L8ef	!	6	5	8	##	#$	#%	#&	#'	#(	#)	#*	a1	p
+#"	L8ef	!	6	5	8	##	#$	#%	#&	#'	#(	#)	#*	a2	q
+##	IeE[	!	7	5	q0	r
+#$	IeE[	!	7	5	q1	s
+#%	IeE[	!	7	5	q2	t
+#&	IeE[	!	7	5	q3	u
+#'	IeE[	!	7	5	q4	v
+#(	IeE[	!	7	5	q5	w
+#)	IeE[	!	7	5	q6	x
+#*	IeE[	!	7	5	q7	y
