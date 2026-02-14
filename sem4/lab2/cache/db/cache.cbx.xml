@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="cache">
+		<CBX_INST_ENTRY INSTANCE_NAME="|cache|LPM_COUNTER:inst30" CBX_FILE_NAME="cntr_lq5.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|cache|LPM_DECODE:inst33" CBX_FILE_NAME="decode_8ec.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|cache|lpm_mux:inst34" CBX_FILE_NAME="mux_vsd.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|cache|BUSMUX:inst35|lpm_mux:$00000" CBX_FILE_NAME="mux_cgc.tdf"/>
+	</PROJECT>
+</LOG_ROOT>
