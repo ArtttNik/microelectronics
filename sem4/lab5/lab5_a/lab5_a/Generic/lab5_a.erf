@@ -1,0 +1,7 @@
+MESSAGE "File: .\src\insertsort.vhd" 
+MESSAGE "Compile Package "types"" 
+MESSAGE "Package "types" has been skipped - no difference detected." 
+MESSAGE "Compile Package Body "types"" 
+MESSAGE "Compile Entity "insertSort"" 
+MESSAGE "Compile Architecture "behav" of Entity "insertSort"" 
+MESSAGE "Compile success 0 Errors 0 Warnings  Analysis time :  0.4 [s]" 
