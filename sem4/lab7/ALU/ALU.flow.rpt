@@ -1,5 +1,5 @@
 Flow report for ALU
-Wed Mar 16 11:53:23 2022
+Sun Mar 20 09:15:59 2022
 Version 5.0 Build 148 04/26/2005 SJ Full Version
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------+
 ; Flow Summary                                                        ;
 +--------------------------+------------------------------------------+
-; Flow Status              ; Successful - Wed Mar 16 11:53:23 2022    ;
+; Flow Status              ; Successful - Sun Mar 20 09:15:59 2022    ;
 ; Quartus II Version       ; 5.0 Build 148 04/26/2005 SJ Full Version ;
 ; Revision Name            ; ALU                                      ;
 ; Top-level Entity Name    ; ALU                                      ;
@@ -59,7 +59,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/16/2022 11:53:12 ;
+; Start date & time ; 03/20/2022 09:15:44 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; ALU                 ;
 +-------------------+---------------------+
@@ -70,11 +70,11 @@ applicable agreement for further details.
 +----------------------+--------------+
 ; Module Name          ; Elapsed Time ;
 +----------------------+--------------+
-; Analysis & Synthesis ; 00:00:04     ;
-; Fitter               ; 00:00:03     ;
-; Assembler            ; 00:00:01     ;
+; Analysis & Synthesis ; 00:00:03     ;
+; Fitter               ; 00:00:04     ;
+; Assembler            ; 00:00:02     ;
 ; Timing Analyzer      ; 00:00:01     ;
-; Total                ; 00:00:09     ;
+; Total                ; 00:00:10     ;
 +----------------------+--------------+
 
 

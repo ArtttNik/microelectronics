@@ -1,5 +1,5 @@
 Flow report for Filter
-Wed Mar 16 11:28:08 2022
+Fri Mar 18 22:03:38 2022
 Version 5.0 Build 148 04/26/2005 SJ Full Version
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------+
 ; Flow Summary                                                        ;
 +--------------------------+------------------------------------------+
-; Flow Status              ; Successful - Wed Mar 16 11:28:08 2022    ;
+; Flow Status              ; Successful - Fri Mar 18 22:03:38 2022    ;
 ; Quartus II Version       ; 5.0 Build 148 04/26/2005 SJ Full Version ;
 ; Revision Name            ; Filter                                   ;
 ; Top-level Entity Name    ; Filter                                   ;
@@ -59,7 +59,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/16/2022 11:27:58 ;
+; Start date & time ; 03/18/2022 22:03:33 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Filter              ;
 +-------------------+---------------------+
@@ -71,10 +71,10 @@ applicable agreement for further details.
 ; Module Name          ; Elapsed Time ;
 +----------------------+--------------+
 ; Analysis & Synthesis ; 00:00:01     ;
-; Fitter               ; 00:00:04     ;
-; Assembler            ; 00:00:02     ;
-; Timing Analyzer      ; 00:00:01     ;
-; Total                ; 00:00:08     ;
+; Fitter               ; 00:00:02     ;
+; Assembler            ; 00:00:01     ;
+; Timing Analyzer      ; 00:00:00     ;
+; Total                ; 00:00:04     ;
 +----------------------+--------------+
 
 

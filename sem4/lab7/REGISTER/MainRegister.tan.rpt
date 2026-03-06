@@ -1,5 +1,5 @@
 Timing Analyzer report for MainRegister
-Wed Mar 16 11:50:51 2022
+Sun Mar 20 09:36:52 2022
 Version 5.0 Build 148 04/26/2005 SJ Full Version
 
 
@@ -234,7 +234,7 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II Timing Analyzer
     Info: Version 5.0 Build 148 04/26/2005 SJ Full Version
-    Info: Processing started: Wed Mar 16 11:50:50 2022
+    Info: Processing started: Sun Mar 20 09:36:51 2022
 Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off MainRegister -c MainRegister --timing_analysis_only
 Warning: Found pins functioning as undefined clocks and/or memory enables
     Info: Assuming node "CLOCK" is an undefined clock
@@ -297,7 +297,7 @@ Info: th for register "DTrigger:Dtrig0|Buf" (data pin = "RESET", clock pin = "CL
         Info: Total cell delay = 1.533 ns ( 45.04 % )
         Info: Total interconnect delay = 1.871 ns ( 54.96 % )
 Info: Quartus II Timing Analyzer was successful. 0 errors, 1 warning
-    Info: Processing ended: Wed Mar 16 11:50:51 2022
+    Info: Processing ended: Sun Mar 20 09:36:52 2022
     Info: Elapsed time: 00:00:01
 
 

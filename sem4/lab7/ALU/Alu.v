@@ -10,8 +10,6 @@ parameter numbits=3;
    reg      [2*numbits+1:0] res;
    reg      z,o,n;
 
-//*********************************************
-// Task - задание - выход==вход
 task Disable;
   output [2*numbits+1:0] Disable;
   input  [numbits:0] x, y;
@@ -20,10 +18,7 @@ task Disable;
     Disable=x;
   end
 endtask
-//*********************************************
 
-//*********************************************
-// Task - задание - сумматор
 task Summator;
   output [2*numbits+1:0] Summator;
   input  [numbits:0] x, y;
@@ -51,10 +46,7 @@ task Summator;
          Summator[i]=0;
    end
 endtask
-//*********************************************
 
-//*********************************************
-// Task - задание - вычитание
 task Substance;
   output [2*numbits+1:0] Substance;
   input  [numbits:0] x, y;
@@ -65,10 +57,7 @@ task Substance;
        Substance=y-x;
   end
 endtask
-//*********************************************
 
-//*********************************************
-// Task - задание - умножение
 task Multiple;
   output [2*numbits+1:0] Multiple;
   input  [numbits:0] x, y;
@@ -79,10 +68,7 @@ task Multiple;
        Multiple=-x*y;
   end
 endtask
-//*********************************************
 
-//*********************************************
-// Task - задание - деление
 task Divide;
   output [2*numbits+1:0] Divide;
   input  [numbits:0] x, y;
@@ -98,10 +84,7 @@ task Divide;
       end
   end
 endtask 
-//*********************************************
 
-//*********************************************
-// Task - задание - побитовое И
 task Operation_and;
   output [2*numbits+1:0] Operation_and;
   input  [numbits:0] x, y;
@@ -113,10 +96,7 @@ task Operation_and;
         Operation_and[i]=0;
   end
 endtask
-//*********************************************
 
-//*********************************************
-// Task - задание - побитовое ИЛИ
 task Operation_or;
   output [2*numbits+1:0] Operation_or;
   input  [numbits:0] x, y;
@@ -128,10 +108,7 @@ task Operation_or;
         Operation_or[i]=0;
   end
 endtask
-//*********************************************
 
-//*********************************************
-// Task - задание - побитовое инвертирование
 task Operation_not;
   output [2*numbits+1:0] Operation_not;
   input  [numbits:0] x, y;
@@ -145,7 +122,6 @@ task Operation_not;
   end
 endtask
 //*********************************************
-
    always @(posedge clock) 
    begin
    case (command_code)
@@ -159,7 +135,7 @@ endtask
                    n=0;
                o=0;
             end
-// Сложение
+
          'b001:
             begin
                Summator(res,xdata,ydata,0);
@@ -170,7 +146,7 @@ endtask
                    n=0;
                o=0;
             end
-// Вычитание
+
          'b010:
             begin
                Substance(res,xdata,ydata);
@@ -181,7 +157,7 @@ endtask
                    n=0;
                o=0;
             end
-// Умножение
+
          'b011:
             begin
                Multiple(res,xdata,ydata);
@@ -196,7 +172,7 @@ endtask
                   n=0;
                o=0;
             end
-// Деление
+
          'b100:
             begin
                o=(ydata==0) ? 1 : 0;
@@ -207,7 +183,7 @@ endtask
                else 
                   n=0;
             end
-// Логическое  " И "
+
          'b101:
             begin
                Operation_and(res,xdata,ydata);
@@ -215,7 +191,7 @@ endtask
                n=0;
                o=0;
             end
-// Логическое " ИЛИ "
+
          'b110:
             begin
                Operation_or(res,xdata,ydata);
@@ -223,7 +199,7 @@ endtask
                n=0;
                o=0;
             end
-// Побитное инвертирование, логическое " НЕ "
+
          'b111:
             begin
                Operation_not(res,xdata,ydata);
@@ -231,13 +207,13 @@ endtask
                n=0;
                o=0;
             end
-          default: res='bx; // Необрабатываемые коды команды
+          default: res='bx;
    endcase
    end
-   assign result=res;  //  Результат
-   assign flagZ=z;     //  Флаг -  результат-нуль
-   assign flagN=n;     //  Флаг -  результат-отрицательный
-   assign flagO=o;     //  Флаг -  переполнение
+   assign result=res;
+   assign flagZ=z;
+   assign flagN=n;
+   assign flagO=o;
 endmodule
 
 
