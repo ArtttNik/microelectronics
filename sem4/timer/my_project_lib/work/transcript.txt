@@ -1,0 +1,36 @@
+# //  ModelSim SE 6.1c Nov 17 2005 
+# //
+# //  Copyright Mentor Graphics Corporation 2005
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+# vsim -L my_project_lib -l transcript.txt -i -multisource_delay latest -t ns +typdelays -foreign {hdsInit C:/FPGAdv72LS/Hds/resources/downstream/modelsim/ModelSim_32Bit.dll} -pli C:/FPGAdv72LS/Hds/resources/downstream/modelsim/ModelSim_32Bit.dll my_project_lib.mytimer_tb 
+# Loading C:/FPGAdv72LS/Hds/resources/downstream/modelsim/ModelSim_32Bit.dll
+# Loading Y:\sem4\timer_new2/my_project_lib/work.mytimer_tb
+# Loading Y:\sem4\timer_new2/my_project_lib/work.mytimer
+# Loading Y:\sem4\timer_new2/my_project_lib/work.Control
+# Loading Y:\sem4\timer_new2/my_project_lib/work.Counter
+# Loading Y:\sem4\timer_new2/my_project_lib/work.BCDCounter
+# Loading Y:\sem4\timer_new2/my_project_lib/work.mytimer_tester
+# ** Warning: (vsim-3015) Z:/4th_semestr/my_project/my_project_lib/hdl/counter_struct.v(75): [PCDPC] - Port size (4 or 4) does not match connection size (1) for port 'carry_in'.
+#         Region: /mytimer_tb/U_0/U_1/U_1
+vcom -reportprogress 300 -work work Y:/sem4/timer_new2/my_project_lib/work/mytimer/_primary.vhd
+# Model Technology ModelSim SE vcom 6.1c Compiler 2005.11 Nov 17 2005
+# -- Loading package standard
+# -- Loading package vl_types
+# -- Compiling entity mytimer
+add wave sim:/mytimer_tb/*
+# ** Warning: (vsim-WLF-5000) Log file vsim.wlf currently in use.
+# File in use by: User  Hostname: VBOX  ProcessID: 544
+#           Attempting to use alternate file "C:\DOCUME~1\User\LOCALS~1\Temp\wlft8".
+# ** Warning: (vsim-WLF-5001) Could not open log file vsim.wlf.  Using C:\DOCUME~1\User\LOCALS~1\Temp\wlft8 instead.
+run -all
+# Count suspended correctly
+# Alarm asserted correctly
+# Timer test completed
+# Break at Z:/4th_semestr/my_project/my_project_lib/hdl/mytimer_tester_flow.v line 124
+# Error opening Z:/4th_semestr/my_project/my_project_lib/hdl/mytimer_tester_flow.v
