@@ -4,21 +4,20 @@ void SegDisplayTest::generate_digits()
 {
     check.write(0);
 
-    wait(200, SC_NS);
+    wait(10, SC_NS);
 
     for (int i = 0; i < 16; i++)
     {
+        current_digit = i;
         digit.write(i);
 
-        current_digit = i;
-
-        wait(SC_ZERO_TIME);
+        wait(1, SC_NS);
 
         check.write(1);
-        wait(SC_ZERO_TIME);
+        wait(1, SC_NS);
         check.write(0);
 
-        wait(10, SC_NS);
+        wait(5, SC_NS);
     }
 
     sc_stop();
@@ -40,7 +39,7 @@ void SegDisplayTest::check_segments()
     case 7: expected = 0x70; break;
     case 8: expected = 0x7F; break;
     case 9: expected = 0x7B; break;
-    default: expected = 0x4F; break; // E
+    default: expected = 0x4F; break;
     }
 
     if (segments.read() != expected)

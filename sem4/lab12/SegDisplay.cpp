@@ -16,7 +16,7 @@ void SegDisplay::on_digit()
     case 7:  seg = 0x70; break; // 0b1110000
     case 8:  seg = 0x7F; break; // 0b1111111
     case 9:  seg = 0x7B; break; // 0b1111011
-    default: seg = 0x4F; break; // 0b1001111 - 'E' for error (10-15)
+    default: seg = 0x4F; break; // 0b1001111 E
     }
 
     segments.write(seg);
