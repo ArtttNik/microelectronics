@@ -6,7 +6,7 @@ entity scheme9_11 is
         d   : in  std_logic;
         c   : in  std_logic;
         r   : in  std_logic;
-        q1  : out std_logic;
+        q1  : inout std_logic;
         q2  : out std_logic
     );
 end scheme9_11;
@@ -21,12 +21,22 @@ begin
             q1a <= '0';
             q2a <= '0';
         elsif rising_edge(c) then
-            q1a <= d;
             q2a <= q1a;
+			q1a <= d;
         end if;
     end process;
 
-    q1 <= q1a;
-    q2 <= q2a;
-end behav;
+	process(c, r)
+    begin
+        if r = '0' then
+            q1a <= '0';
+            q2a <= '0';
+        elsif falling_edge(c) then
+            q1 <= q1a;
+			q2 <= q2a;
+        end if;
+    end process;
+
+
+    end behav;
 

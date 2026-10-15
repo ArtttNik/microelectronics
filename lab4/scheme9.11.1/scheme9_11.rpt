@@ -2,7 +2,7 @@ Project Information  c:\labs\microelectronics\lab4\scheme9.11.1\scheme9_11.rpt
 
 MAX+plus II Compiler Report File
 Version 9.01 07/30/98
-Compiled: 10/14/21 23:17:05
+Compiled: 10/15/26 14:43:57
 
 Copyright (C) 1988-1998 Altera Corporation
 Any megafunction design, and related net list (encrypted or decrypted),
@@ -38,10 +38,19 @@ Chip/                     Input   Output   Bidir         Shareable
 POF       Device          Pins    Pins     Pins     LCs  Expanders  % Utilized
 
 scheme9_11
-      EPM7032LC44-6        3        0        2      4       0           12 %
+      EPM7032LC44-6        3        1        1      4       0           12 %
 
-User Pins:                 3        0        2  
+User Pins:                 3        1        1  
 
+
+
+Project Information  c:\labs\microelectronics\lab4\scheme9.11.1\scheme9_11.rpt
+
+** AUTO GLOBAL SIGNALS **
+
+
+
+INFO: Signal 'r' chosen for auto global Clear
 
 
 Device-Specific Information:c:\labs\microelectronics\lab4\scheme9.11.1\scheme9_11.rpt
@@ -58,14 +67,14 @@ Device Options:
     Turbo Bit                                    = ON
     Security Bit                                 = OFF
 
-                                               
-                                               
-                                               
-                                               
-                                               
-                       V  G  G  G  G  G        
-                       C  N  N  N  N  N  q  q  
-              r  d  c  C  D  D  D  D  D  1  2  
+              R                                
+              E                                
+              S                                
+              E                                
+              R                                
+              V        V  G     G  G  G        
+              E        C  N     N  N  N  q  q  
+              D  d  c  C  D  r  D  D  D  1  2  
             -----------------------------------_ 
           /   6  5  4  3  2  1 44 43 42 41 40   | 
 RESERVED |  7                                39 | RESERVED 
@@ -106,29 +115,29 @@ scheme9_11
                                                 Shareable     External
 Logic Array Block     Logic Cells   I/O Pins    Expanders   Interconnect
 
-A:     LC1 - LC16     0/16(  0%)   3/16( 18%)   0/16(  0%)   0/36(  0%) 
-B:    LC17 - LC32     4/16( 25%)   2/16( 12%)   0/16(  0%)   7/36( 19%) 
+A:     LC1 - LC16     0/16(  0%)   2/16( 12%)   0/16(  0%)   0/36(  0%) 
+B:    LC17 - LC32     4/16( 25%)   2/16( 12%)   0/16(  0%)   4/36( 11%) 
 
 
-Total dedicated input pins used:                 0/4      (  0%)
-Total I/O pins used:                             5/32     ( 15%)
+Total dedicated input pins used:                 1/4      ( 25%)
+Total I/O pins used:                             4/32     ( 12%)
 Total logic cells used:                          4/32     ( 12%)
 Total shareable expanders used:                  0/32     (  0%)
 Total Turbo logic cells used:                    4/32     ( 12%)
 Total shareable expanders not available (n/a):   0/32     (  0%)
-Average fan-in:                                  4.00
-Total fan-in:                                    16
+Average fan-in:                                  2.50
+Total fan-in:                                    10
 
 Total input pins required:                       3
-Total output pins required:                      0
-Total bidirectional pins required:               2
+Total output pins required:                      1
+Total bidirectional pins required:               1
 Total logic cells required:                      4
-Total flipflops required:                        0
+Total flipflops required:                        4
 Total product terms required:                    8
 Total logic cells lending parallel expanders:    0
 Total shareable expanders in database:           0
 
-Synthesized logic cells:                         2/  32   (  6%)
+Synthesized logic cells:                         0/  32   (  0%)
 
 
 
@@ -142,9 +151,8 @@ scheme9_11
  Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
    4    (1)  (A)      INPUT               0      0   0    0    0    2    2  c
    5    (2)  (A)      INPUT               0      0   0    0    0    0    1  d
-  41     17    B      BIDIR               0      0   0    2    2    1    1  q1
-  40     18    B      BIDIR               0      0   0    2    2    1    0  q2
-   6    (3)  (A)      INPUT               0      0   0    0    0    2    2  r
+  41     17    B      BIDIR               0      0   0    1    1    0    0  q1
+   1      -   -       INPUT  G            0      0   0    0    0    0    0  r
 
 
 Code:
@@ -154,6 +162,11 @@ t = Turbo logic cell
 + = Synchronous flipflop
 ! = NOT gate push-back
 r = Fitter-inserted logic cell
+G = Global Source. Fan-out destinations counted here do not include destinations
+that are driven using global routing resources. Refer to the Auto Global Signals,
+Clock Signals, Clear Signals, Synchronous Load Signals, and Synchronous Clear Signals
+Sections of this Report File for information on which signals' fan-outs are used as
+Clock, Clear, Preset, Output Enable, and synchronous Load signals.
 
 
 Device-Specific Information:c:\labs\microelectronics\lab4\scheme9.11.1\scheme9_11.rpt
@@ -164,8 +177,8 @@ scheme9_11
                                          Shareable
                                          Expanders     Fan-In    Fan-Out
  Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
-  41     17    B        TRI      t        0      0   0    2    2    1    1  q1
-  40     18    B        TRI      t        0      0   0    2    2    1    0  q2
+  41     17    B     TRI/FF      t        0      0   0    1    1    0    0  q1
+  40     18    B         FF      t        0      0   0    1    1    0    0  q2
 
 
 Code:
@@ -185,8 +198,8 @@ scheme9_11
                                          Shareable
                                          Expanders     Fan-In    Fan-Out
  Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
- (39)    19    B      LCELL    s t        0      0   0    3    1    1    1  ~101~1
- (38)    20    B      LCELL    s t        0      0   0    2    2    1    1  ~107~1
+ (39)    19    B       DFFE      t        0      0   0    2    0    1    1  q1a (:8)
+ (38)    20    B       DFFE      t        0      0   0    1    1    1    0  q2a (:9)
 
 
 Code:
@@ -208,21 +221,19 @@ Logic Array Block 'B':
                  Logic cells placed in LAB 'B'
         +------- LC17 q1
         | +----- LC18 q2
-        | | +--- LC19 ~101~1
-        | | | +- LC20 ~107~1
+        | | +--- LC19 q1a
+        | | | +- LC20 q2a
         | | | | 
         | | | |   Other LABs fed by signals
         | | | |   that feed LAB 'B'
 LC      | | | | | A B |     Logic cells that feed LAB 'B':
-LC17 -> * - - * | - * | <-- q1
-LC18 -> - * - - | - * | <-- q2
-LC19 -> * - * - | - * | <-- ~101~1
-LC20 -> - * - * | - * | <-- ~107~1
+LC19 -> * - - * | - * | <-- q1a
+LC20 -> - * - - | - * | <-- q2a
 
 Pin
 4    -> * * * * | - * | <-- c
 5    -> - - * - | - * | <-- d
-6    -> * * * * | - * | <-- r
+1    -> - - - - | - - | <-- r
 
 
 * = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
@@ -238,33 +249,22 @@ c        : INPUT;
 d        : INPUT;
 r        : INPUT;
 
--- Node name is 'q1' 
--- Equation name is 'q1', location is LC017, type is bidir.
+-- Node name is 'q1' = ':4' 
+-- Equation name is 'q1', type is bidir 
 q1       = TRI(_LC017,  VCC);
-_LC017   = LCELL( _EQ001 $  GND);
-  _EQ001 =  c &  q1 &  r
-         # !c &  _LC019 &  r;
+_LC017   = DFFE( q1a $  GND, !c,  VCC,  VCC,  VCC);
 
--- Node name is 'q2' 
--- Equation name is 'q2', location is LC018, type is bidir.
-q2       = TRI(_LC018,  VCC);
-_LC018   = LCELL( _EQ002 $  GND);
-  _EQ002 =  c &  q2 &  r
-         # !c &  _LC020 &  r;
+-- Node name is ':8' = 'q1a' 
+-- Equation name is 'q1a', location is LC019, type is buried.
+q1a      = DFFE( d $  GND,  c, GLOBAL( r),  VCC,  VCC);
 
--- Node name is '~101~1' 
--- Equation name is '~101~1', location is LC019, type is buried.
--- synthesized logic cell 
-_LC019   = LCELL( _EQ003 $  GND);
-  _EQ003 =  c &  d &  r
-         # !c &  _LC019 &  r;
+-- Node name is 'q2' = ':6' 
+-- Equation name is 'q2', type is output 
+ q2      = DFFE( q2a $  GND, !c,  VCC,  VCC,  VCC);
 
--- Node name is '~107~1' 
--- Equation name is '~107~1', location is LC020, type is buried.
--- synthesized logic cell 
-_LC020   = LCELL( _EQ004 $  GND);
-  _EQ004 =  c &  q1 &  r
-         # !c &  _LC020 &  r;
+-- Node name is ':9' = 'q2a' 
+-- Equation name is 'q2a', location is LC020, type is buried.
+q2a      = DFFE( q1a $  GND,  c, GLOBAL( r),  VCC,  VCC);
 
 
 
@@ -363,4 +363,4 @@ Compilation Times
 Memory Allocated
 -----------------
 
-Peak memory allocated during compilation  = 3,225K
+Peak memory allocated during compilation  = 3,692K

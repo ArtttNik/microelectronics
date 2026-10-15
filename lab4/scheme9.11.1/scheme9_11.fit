@@ -1,6 +1,6 @@
 -- MAX+plus II Compiler Fit File      
 -- Version 9.01 07/30/98              
--- Compiled: 10/14/21 23:17:05        
+-- Compiled: 10/15/26 14:43:57        
 
 -- Copyright (C) 1988-1998 Altera Corporation
 -- Any megafunction design, and related net list (encrypted or decrypted),
@@ -29,11 +29,11 @@ BEGIN
 
     "c"                            : INPUT_PIN  = 4      ; -- LC1
     "d"                            : INPUT_PIN  = 5      ; -- LC2
-    "r"                            : INPUT_PIN  = 6      ; -- LC3
+    "r"                            : INPUT_PIN  = 1      ;
+    "q2"                           : OUTPUT_PIN = 40     ; -- LC18
     "q1"                           : BIDIR_PIN  = 41     ; -- LC17
-    "q2"                           : BIDIR_PIN  = 40     ; -- LC18
-    "~101~1"                       : LOCATION   = LC19   ; -- PIN 39
-    "~107~1"                       : LOCATION   = LC20   ; -- PIN 38
+    ":8"                           : LOCATION   = LC19   ; -- PIN 39  -- q1a
+    ":9"                           : LOCATION   = LC20   ; -- PIN 38  -- q2a
 
 END;
 
@@ -42,9 +42,8 @@ BEGIN
 	DEVICE = EPM7032LC44-6;
 	LC17    : LORAX = "G13R0";
 	LC18    : LORAX = "G14R0";
-	OH0R0P4 : LORAX = "G43R0,PA20R0C1";
-	OH2R0P6 : LORAX = "G45R0,PA22R0C1";
 	LC19    : LORAX = "G15R0,PA3R0C1";
 	OH1R0P5 : LORAX = "G44R0,PA19R0C1";
+	OH0R0P4 : LORAX = "G43R0,PA20R0C1";
 	LC20    : LORAX = "G16R0,PA1R0C1";
 END;

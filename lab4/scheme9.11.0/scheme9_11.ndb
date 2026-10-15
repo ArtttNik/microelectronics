@@ -6,18 +6,20 @@ Index Hierarchy Path
 ----- --------------
 !	&null_hpath&
 
-The number of name info structs is : 11
+The number of name info structs is : 13
 
 InsOrder BitField SymTableIndex NextSyn SynParent Loc ChainType NextChain ChainParent FanOut DirExp ParExp ShareExp NodeName
 -------- -------- ------------- ------- --------- --- --------- --------- ----------- ------ ------ ------ -------- --------
-"	Ky'5	!	1	*	:10	v
-#	IGdG	!	:11	x
-$	Ky'5	!	1	+	:12	w
-%	IGdG	!	:13	y
-&	IGdW	!	:8	t
-'	IGdW	!	:9	u
-(	Ky&|	!	4	*	+	"	$	C	p
-)	Ky&|	!	1	"	D	o
-*	Ky&}	!	1	$	Q1	r
-+	IGdq	!	Q2	s
-,	(@>U^	!	4	*	+	"	$	R	q
+"	IGdG	!	:10	x
+#	IGdG	!	:11	z
+$	IGdG	!	:12	y
+%	IGdG	!	:13	{
+&	IGdW	!	:8	v
+'	IGdW	!	:9	w
+(	Ky&|	!	4	*	+	,	-	C	p
+)	Ky&|	!	1	+	D	o
+*	Ky&}	!	1	-	Q1	r
++	Ky&}	!	1	*	Q1D	t
+,	IGdq	!	Q2	u
+-	Ky&}	!	1	,	Q2D	s
+.	(@>U^	!	4	*	-	+	,	R	q
